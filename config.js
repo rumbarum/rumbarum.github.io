@@ -3,12 +3,12 @@
 module.exports = {
   url: 'https://rumbarum.github.io/',
   pathPrefix: '/',
-  title: 'Blog by John Doe',
-  subtitle: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+  title: 'rumbarum 개발세발',
+  subtitle: '개발자 성장일기',
   copyright: '© All rights reserved.',
-  disqusShortname: '',
-  postsPerPage: 4,
-  googleAnalyticsId: 'UA-73379983-2',
+  disqusShortname: 'rumbarum',
+  postsPerPage: 5,
+  googleAnalyticsId: '',
   useKatex: false,
   menu: [
     {
@@ -25,14 +25,14 @@ module.exports = {
     }
   ],
   author: {
-    name: 'John Doe',
-    photo: '/photo.jpg',
-    bio: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+    name: 'Bareum Han',
+    photo: '/media/rumbarum.png',
+    bio: '개발세발 개발로 세상을 좀더 발전시켜보자!',
     contacts: {
-      email: '#',
+      email: 'rumbarum@gmail.com',
       telegram: '#',
       twitter: '#',
-      github: '#',
+      github: 'rumbarum',
       rss: '#',
       vkontakte: '#'
     }
