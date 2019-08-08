@@ -2,13 +2,13 @@
 title: 위코더로 살아남기 
 date: "2018-10-01T23:46:37.121Z"
 template: "post"
-draft: false
+draft: true
 slug: "/posts/bolgblog/"
 category: "Web Develope"
 tags:
   - "develope"
   - "develope"
-description: "동해물과 백두산이 마르고 닳도록!!!!!!!!!!."
+description: "동해물과 백두산이 마르고 닳도록!!!!!!!!!!"
 ---
 
 Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi lacinia molestie dui. Praesent blandit dolor. Sed non quam. In vel mi sit amet augue congue elementum.

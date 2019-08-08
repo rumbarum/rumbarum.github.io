@@ -3,7 +3,7 @@
 module.exports = {
   url: 'https://rumbarum.github.io/',
   pathPrefix: '/',
-  title: 'rumbarum 개발세발개발',
+  title: ' 개발세발개발',
   subtitle: '개발자 성장일기',
   copyright: '© All rights reserved.',
   disqusShortname: 'rumbarum',
@@ -20,7 +20,7 @@ module.exports = {
       path: '/pages/about'
     },
     {
-      label: '연락이 필요하시다면',
+      label: '만남이 필요하시다면',
       path: '/pages/contacts'
     }
   ],
