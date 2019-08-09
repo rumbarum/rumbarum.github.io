@@ -7,7 +7,7 @@ module.exports = {
   subtitle: '개발자 성장일기',
   copyright: '© All rights reserved.',
   disqusShortname: 'rumbarum',
-  postsPerPage: 5,
+  postsPerPage: 10,
   googleAnalyticsId: '',
   useKatex: true,
   menu: [
