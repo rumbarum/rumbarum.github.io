@@ -16,11 +16,11 @@ module.exports = {
       path: '/'
     },
     {
-      label: '바름이는 누구?',
+      label: '개발세발개발?',
       path: '/pages/about'
     },
     {
-      label: '만남이 필요하시다면',
+      label: '바름이는 누구?',
       path: '/pages/contacts'
     }
   ],
