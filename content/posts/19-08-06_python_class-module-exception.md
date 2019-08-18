@@ -3,7 +3,7 @@ title: "Python -Class, Module, Exception "
 date: "2019-08-06T01:23:45.678Z"
 template: "post"
 draft: false
-slug: "/posts/19-08-06_	python/"
+slug: "/posts/19-08-06_python/"
 category: "Develop"
 tags:
 - "Python"
