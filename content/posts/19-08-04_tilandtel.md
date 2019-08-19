@@ -1,6 +1,6 @@
 ---
 title: "TIL & TEL 19.07.29~ 19.08.04 "
-date: "2019-??-??T01:23:45.678Z"
+date: "2019-08-04T01:23:45.678Z"
 template: "post"
 draft: false
 slug: "/posts/TIL&TEL_weekly_19-08-04 /"
