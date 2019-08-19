@@ -3,28 +3,31 @@
 <url> <loc>https://rumbarum.github.io/tags</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rumbarum.github.io/categories</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rumbarum.github.io/pages/contacts/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://rumbarum.github.io/posts/TIL&amp;TEL_weekly_19-08-04 /</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://rumbarum.github.io/posts/19-08-02_outPut /</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rumbarum.github.io/pages/about/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://rumbarum.github.io/posts/19-08-02_outPut /</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rumbarum.github.io/posts/ 19-08-03_outPut/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://rumbarum.github.io/posts/TIL&amp;TEL_weekly_19-08-04 /</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://rumbarum.github.io/posts//</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rumbarum.github.io/posts/19-08-05_python_decorator /</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rumbarum.github.io/posts/TIL&amp;TEL~19-08-11/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rumbarum.github.io/posts/19-08-06_python/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://rumbarum.github.io/posts/WebDevStart/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rumbarum.github.io/posts/TIL&amp;TEL~19-08-12~ 19-08-18/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rumbarum.github.io/posts/createapiwithoutrestframework/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rumbarum.github.io/posts/Onepage_HtmlAndCss/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://rumbarum.github.io/posts/WebDevStart/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://rumbarum.github.io/posts/understandRGBcolor /</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rumbarum.github.io/posts/understandFlexElement /</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rumbarum.github.io/posts/onpagrPython /</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://rumbarum.github.io/posts/understandRGBcolor /</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rumbarum.github.io/tag/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rumbarum.github.io/tag/api</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://rumbarum.github.io/tag/backend</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rumbarum.github.io/tag/concept</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rumbarum.github.io/tag/css</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rumbarum.github.io/tag/develop</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rumbarum.github.io/tag/django</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rumbarum.github.io/tag/flex</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rumbarum.github.io/tag/html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://rumbarum.github.io/tag/javascrip</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rumbarum.github.io/tag/javascript</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rumbarum.github.io/tag/method</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rumbarum.github.io/tag/python</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
