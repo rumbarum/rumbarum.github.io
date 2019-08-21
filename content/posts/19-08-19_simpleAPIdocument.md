@@ -1,9 +1,9 @@
 ---
 title: "frontend를 위한 Django API 통신 문서 만들기 "
-date: "2019-08-19 T01:23:45.678Z"
+date: "2019-08-19T01:23:45.678Z"
 template: "post"
 draft: false
-slug: "/posts/\/"
+slug: "/posts/miniterAPIdocument/"
 category: "Develop"
 tags:
 - "Django"
