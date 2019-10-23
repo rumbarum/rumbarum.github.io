@@ -28,9 +28,6 @@ description: "터미널로 서버통신 해보기 어떻게? HTTPie로!"
     $pip install --upgrade https://github.com/jakubroztocil/httpie/archive/master.tar.gz
     ```
 
-    
-
-    
   
 - HTTPie 사용 
 
