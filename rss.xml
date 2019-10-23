@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[ 개발세발개발]]></title><description><![CDATA[개발자 성장일기]]></description><link>https://rumbarum.github.io/</link><generator>RSS for Node</generator><lastBuildDate>Tue, 15 Oct 2019 00:30:59 GMT</lastBuildDate><item><title><![CDATA[ TIL&TEL 19.10.07 ~ 19.10.13]]></title><description><![CDATA[ 19.10.07 ~ 19.10.13 배운것, 씨름한것들 ]]></description><link>https://rumbarum.github.io//posts/TIL&amp;TEL_2019-10-14/</link><guid isPermaLink="false">https://rumbarum.github.io//posts/TIL&amp;TEL_2019-10-14/</guid><pubDate>Mon, 14 Oct 2019 01:23:45 GMT</pubDate><content:encoded>&lt;h2 style=&quot;color:rgb(9, 136, 104)&quot;&gt;TIL &amp; TEL 19.10.07 ~ 19.10.13 &lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[ 개발세발개발]]></title><description><![CDATA[개발자 성장일기]]></description><link>https://rumbarum.github.io/</link><generator>RSS for Node</generator><lastBuildDate>Wed, 23 Oct 2019 12:09:30 GMT</lastBuildDate><item><title><![CDATA[ TIL&TEL 19.10.07 ~ 19.10.13]]></title><description><![CDATA[ 19.10.07 ~ 19.10.13 배운것, 씨름한것들 ]]></description><link>https://rumbarum.github.io//posts/TIL&amp;TEL_2019-10-14/</link><guid isPermaLink="false">https://rumbarum.github.io//posts/TIL&amp;TEL_2019-10-14/</guid><pubDate>Mon, 14 Oct 2019 01:23:45 GMT</pubDate><content:encoded>&lt;h2 style=&quot;color:rgb(9, 136, 104)&quot;&gt;TIL &amp; TEL 19.10.07 ~ 19.10.13 &lt;/h2&gt;
 &lt;h3 id=&quot;til-today-i-learned&quot;&gt;&lt;a href=&quot;#til-today-i-learned&quot; aria-label=&quot;til today i learned permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TIL( Today I Learned)&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -86,7 +86,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;</content:encoded></item><item><title><![CDATA[ TIL&TEL 19.09.30 ~ 19.10.06 ]]></title><description><![CDATA[ 19.09.30 ~ 19.10.06 배운것, 씨름한것들 ]]></description><link>https://rumbarum.github.io//posts/TIL&amp;TEL_2019-10-07&apos;/</link><guid isPermaLink="false">https://rumbarum.github.io//posts/TIL&amp;TEL_2019-10-07&apos;/</guid><pubDate>Invalid Date</pubDate><content:encoded>&lt;h2 style=&quot;color:rgb(9, 136, 104)&quot;&gt;TIL and TEL 19.09.30 ~ 19.10.06 &lt;/h2&gt;
-### TIL( Today I Learned)
+&lt;h3 id=&quot;til-today-i-learned&quot;&gt;&lt;a href=&quot;#til-today-i-learned&quot; aria-label=&quot;til today i learned permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TIL( Today I Learned)&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;19-09-30월&lt;/p&gt;
@@ -168,7 +168,7 @@
 &lt;p&gt;*이번 주에는 모델 설계를 하고, 짝코딩을 하면서 navigator를 하다보니 많이 코딩을 못쳤다라는 변명을 적고보니 비겁한 변명으로 보인다. 그럼에도 배울 점들은 많았는데 게으름에 굴복하지 말자.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;</content:encoded></item><item><title><![CDATA[ TIL&TEL 19.09.23 ~ 19.09.29 ]]></title><description><![CDATA[ 19.09.23 ~ 19.09.29 배운것, 씨름한것들 ]]></description><link>https://rumbarum.github.io//posts/TIL&amp;TEL_19-09-29/</link><guid isPermaLink="false">https://rumbarum.github.io//posts/TIL&amp;TEL_19-09-29/</guid><pubDate>Sun, 29 Sep 2019 01:23:45 GMT</pubDate><content:encoded>&lt;h2 style=&quot;color:rgb(9, 136, 104)&quot;&gt;TIL and TEL 19.09.23 ~ 19.09.29 &lt;/h2&gt;
-### TIL( Today I Learned)
+&lt;h3 id=&quot;til-today-i-learned&quot;&gt;&lt;a href=&quot;#til-today-i-learned&quot; aria-label=&quot;til today i learned permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TIL( Today I Learned)&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;19.09.23&lt;/strong&gt;&lt;/p&gt;
@@ -279,7 +279,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;</content:encoded></item><item><title><![CDATA[ TIL&TEL 19.09.16 ~ 19.09.22 ]]></title><description><![CDATA[ 19.09.16 ~ 19.09.22 배운것, 씨름한것들 ]]></description><link>https://rumbarum.github.io//posts/TIL&amp;TEL_19-09-23/</link><guid isPermaLink="false">https://rumbarum.github.io//posts/TIL&amp;TEL_19-09-23/</guid><pubDate>Mon, 23 Sep 2019 01:23:45 GMT</pubDate><content:encoded>&lt;h2 style=&quot;color:rgb(9, 136, 104)&quot;&gt;TIL and TEL 19.09.16 ~ 19.09.22 &lt;/h2&gt;
-### TIL( Today I Learned)
+&lt;h3 id=&quot;til-today-i-learned&quot;&gt;&lt;a href=&quot;#til-today-i-learned&quot; aria-label=&quot;til today i learned permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TIL( Today I Learned)&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;19.09.16&lt;/strong&gt;&lt;/p&gt;
@@ -404,7 +404,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;</content:encoded></item><item><title><![CDATA[ TIL&TEL 19.09.09 ~ 19.09.15 ]]></title><description><![CDATA[ 19.09.09 ~ 19.09.15 배운것, 씨름한것들 ]]></description><link>https://rumbarum.github.io//posts/TIL&amp;TEL_19-09-15/</link><guid isPermaLink="false">https://rumbarum.github.io//posts/TIL&amp;TEL_19-09-15/</guid><pubDate>Sun, 15 Sep 2019 01:23:45 GMT</pubDate><content:encoded>&lt;h2 style=&quot;color:rgb(9, 136, 104)&quot;&gt;TIL and TEL 19.09.09 ~ 19.09.15 &lt;/h2&gt;
-### TIL( Today I Learned)
+&lt;h3 id=&quot;til-today-i-learned&quot;&gt;&lt;a href=&quot;#til-today-i-learned&quot; aria-label=&quot;til today i learned permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TIL( Today I Learned)&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;19.09.09&lt;/strong&gt;&lt;/p&gt;
@@ -545,9 +545,9 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&quot;&quot;&gt;&lt;a href=&quot;#&quot; aria-label=&quot; permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h1&gt;</content:encoded></item><item><title><![CDATA[SSH 키를 알아보자]]></title><description><![CDATA[계정인증을 위한 또하나의 방법]]></description><link>https://rumbarum.github.io//posts/briefViewofSSHkey/</link><guid isPermaLink="false">https://rumbarum.github.io//posts/briefViewofSSHkey/</guid><pubDate>Thu, 12 Sep 2019 01:23:45 GMT</pubDate><content:encoded>&lt;h2 style=&quot;color:rgb(9, 136, 104)&quot;&gt;ID, PW가 귀찮은 당신에게&lt;/h2&gt;
-&lt;p&gt;다만 컴퓨터는 들고 다니는 당신에게! &lt;/p&gt;
-&lt;p&gt;언제어디서나 접속할일이 있는 경우는 ID/PW 쓰시고요, &lt;/p&gt;
-&lt;p&gt;필요한 사람만 지정된 장치로 접근해야할 경우는 SSH 쓰시면 됩니다. &lt;/p&gt;
+&lt;p&gt;다만 컴퓨터는 들고 다니는 당신에게!
+언제어디서나 접속할일이 있는 경우는 ID/PW 쓰시고요,
+필요한 사람만 지정된 장치로 접근해야할 경우는 SSH 쓰시면 됩니다. &lt;/p&gt;
 &lt;h3 id=&quot;ssh는-무엇인가&quot;&gt;&lt;a href=&quot;#ssh%EB%8A%94-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80&quot; aria-label=&quot;ssh는 무엇인가 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;SSH는 무엇인가?&lt;/h3&gt;
 &lt;p&gt;SSH 는 Secure Shell의 약자 &lt;/p&gt;
 &lt;ul&gt;
@@ -779,7 +779,7 @@ UserHomepage&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;object
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;reference &lt;a href=&quot;https://httpie.org/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://httpie.org/&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[ TIL&TEL 19.09.05~ 19.09.08 ]]></title><description><![CDATA[ 19.09.05~ 19.09.08 배운것, 씨름한것들 ]]></description><link>https://rumbarum.github.io//posts/TIL&amp;TEL_19.09.08/</link><guid isPermaLink="false">https://rumbarum.github.io//posts/TIL&amp;TEL_19.09.08/</guid><pubDate>Sun, 08 Sep 2019 01:23:45 GMT</pubDate><content:encoded>&lt;h2 style=&quot;color:rgb(9, 136, 104)&quot;&gt;TIL and TEL 19.09.05 ~ 19.09.08 &lt;/h2&gt;
-### TIL( Today I Learned)
+&lt;h3 id=&quot;til-today-i-learned&quot;&gt;&lt;a href=&quot;#til-today-i-learned&quot; aria-label=&quot;til today i learned permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TIL( Today I Learned)&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;19.09.05&lt;/strong&gt;&lt;/p&gt;
