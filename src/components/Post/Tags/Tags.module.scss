@@ -35,3 +35,18 @@
   }
 
 }
+
+.tags_insidebar {
+  &__list {
+    &-item {
+      margin: 5px 0;
+
+      &-link {
+        padding: 0 12px;
+        font-size: 12px;
+        line-height: 25px;
+        height: 25px;
+      }
+    }
+  }
+}

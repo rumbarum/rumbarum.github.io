@@ -1,6 +1,6 @@
 ---
 title: "Django QuerySet 에  정렬과 필터를 다이나믹하게(정해진 갯수없이) 거는 방법"
-date: "2020-02-08T01:23:45.678Z"
+date: "2020-02-07T01:23:45.678Z"
 template: "post"
 draft: false
 slug: "/posts/django_dynamic_sort&filter/"
