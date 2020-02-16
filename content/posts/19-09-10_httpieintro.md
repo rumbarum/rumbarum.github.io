@@ -6,13 +6,12 @@ draft: false
 slug: "/posts/httpieintro/"
 category: "Develop"
 tags:
-- "Backtend"
+- "Backend"
 - "Utility"
 - "Httpie"
 description: "터미널로 서버통신 해보기 어떻게? HTTPie로!"
 ---
 <h2 style="color:rgb(9, 136, 104)">터미널로 통신 하는게 중요해?</h2>
-
 그렇다! 그래서 HTTPie가 있다. 
 
 왜? gui를 지원하지 않는 환경에서는 cli로 작업을 해야하거든! 서버 컴퓨터에서는 우리가 눈으로 보는것 같은 그래픽기반( 눈에 보이는 아이콘, 누를 수 있는 버튼의 존재 )이 아니다. 그래서 오로지 텍스트를 보내고 텍스트를 받을 뿐이다. 그런 텍스트도 잘 맞춘 양식에 맞춰 보여준다면 (텍스트 컬러, 텍스트 배치 등을 통해) 작업의 효율이 증대한다!  

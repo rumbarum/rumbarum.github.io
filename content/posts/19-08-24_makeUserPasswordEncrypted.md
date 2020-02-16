@@ -7,7 +7,7 @@ slug: "/posts/makeUserPasswordEncrypted/"
 category: "Develop"
 tags:
 - "Backend"
-- "Argon2"
+- "Argon"
 description: "암호화 생각보다 어렵지 않아요."
 ---
 <h2 style="color:rgb(9, 136, 104)"> 유저 PW 암호화 해야되? </h2>
