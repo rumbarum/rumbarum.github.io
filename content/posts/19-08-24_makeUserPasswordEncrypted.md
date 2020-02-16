@@ -8,11 +8,9 @@ category: "Develop"
 tags:
 - "Backend"
 - "Argon2"
-- ""
 description: "암호화 생각보다 어렵지 않아요."
 ---
 <h2 style="color:rgb(9, 136, 104)"> 유저 PW 암호화 해야되? </h2>
-
 ### **네 해야합니다.**
 
 1. 내부 이용자들의 접근방지 (유저의 정보 악용 방지)

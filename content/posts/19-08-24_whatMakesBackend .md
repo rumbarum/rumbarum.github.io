@@ -8,11 +8,9 @@ category: "Develop"
 tags:
 - "Webdevelop"
 - "Backend"
-- ""
 description: "웹개발의 흐름을 보면 백엔드가 어떻게 나왔는지 알 수 있다. "
 ---
 <h2 style="color:rgb(9, 136, 104)"> 프론트앤드는 안보셔도 됩니다. (라고 썼다고 진짜로 가시면 안되요...) </h2>
-
 ### **웹사이트의 발전과정**
 
 **1세대 웹사이트**

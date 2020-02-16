@@ -1,5 +1,4 @@
-
-// @flow strict
+// @flow
 import React from 'react';
 import { Link } from 'gatsby';
 import cx from 'classnames';
@@ -7,8 +6,8 @@ import styles from './Tags.module.scss';
 
 type Props = {
   tags: string[],
-  tagSlugs: string[]
-  inSidebar?: boolean   
+  tagSlugs: string[],
+  inSidebar?: boolean
 };
 
 const Tags = ({ tags, tagSlugs, inSidebar }: Props) => (
@@ -33,7 +32,6 @@ const Tags = ({ tags, tagSlugs, inSidebar }: Props) => (
           </Link>
         </li>
       ))}
-
     </ul>
   </div>
 );

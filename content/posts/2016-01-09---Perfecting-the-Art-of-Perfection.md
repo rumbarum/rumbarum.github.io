@@ -6,8 +6,9 @@ draft: true
 slug: "/posts/bolgblog/"
 category: "Web Develope"
 tags:
-	-
-  	-
+ - "TIL"
+ - "TEL"
+ - "TWC"
 description: "동해물과 백두산이 마르고 닳도록!!!!!!!!!!"
 ---
 

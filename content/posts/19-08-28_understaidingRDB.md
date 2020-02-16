@@ -8,11 +8,9 @@ category: "Develop"
 tags:
 - "Backend"
 - "RDB"
-- ""
 description: "관계형 DB라는건 뭘까? "
 ---
 <h2 style="color:rgb(9, 136, 104)"> DB 안쓰면 안돼? 응 안돼 </h2>
-
 - ### **저장 공간 왜 필요할까?**
 
   - application 종료시 휘발하는 데이터를 영구 보존하기 위해서 저장을 해야한다. 

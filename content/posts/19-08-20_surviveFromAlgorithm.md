@@ -8,7 +8,6 @@ category: "Develop"
 tags:
 - "Developer"
 - "Howto"
-- ""
 description: "바름은(는) 채용 면접자와 배틀을 시작했다.   "
 ---
 <h1 style="color:rgb(9, 136, 104)">면접자는 알고리즘 공격을 시전했다.</h1>

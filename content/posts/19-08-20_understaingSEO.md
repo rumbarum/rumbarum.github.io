@@ -7,8 +7,6 @@ slug: "/posts/understaingSEO/"
 category: "Develop"
 tags:
 - "Frontend"
-- ""
-- ""
 description: "SEO가 뭐고 어떻게 작동하고 개발자는 뭘 해야하는가. "
 ---
 <h3 style="color:rgb(9, 136, 104)">검색과 SEO </h3>
@@ -63,7 +61,7 @@ description: "SEO가 뭐고 어떻게 작동하고 개발자는 뭘 해야하는
     - 리액트는 react-helmet 사용하면 추가할 수 있다. 
     - robots.txt 를 통해 크롤링 여부 전달
     - sitemap.xml 크롤러에게 사이트 내용 전달한다. 
-    
+  
   2. #### 사이트를 컴퓨터가 이해할 수 있도록 만든다
 
        - 크롤러가 데이터 잘 가져 갈 수 있도록 한다. 

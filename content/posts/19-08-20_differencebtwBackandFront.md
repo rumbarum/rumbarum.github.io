@@ -8,8 +8,6 @@ category: "Develop"
 tags:
 - "Frontend"
 - "Backend"
-- ""
 description: " 프론트와 백은 어떻게 나뉘게 되었을지 알아보자 "
 ---
 <h3 style="color:rgb(9, 136, 104)">원래 둘은 한몸이었으나...</h3></h3>
-

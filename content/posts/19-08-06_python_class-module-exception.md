@@ -7,8 +7,6 @@ slug: "/posts/19-08-06_python/"
 category: "Develop"
 tags:
 - "Python"
-- ""
-- ""
 description: "야생의 바름은(는) 파이썬의 Class,Module,Exception과 조우했다. "
 ---
 
@@ -81,7 +79,6 @@ description: "야생의 바름은(는) 파이썬의 Class,Module,Exception과 �
           return "Hello!"class MyModuleClass: pass
         ```
       
-        
     - import my_module
       - 모듈 전체 import
       
@@ -102,7 +99,6 @@ description: "야생의 바름은(는) 파이썬의 Class,Module,Exception과 �
         my_module_class = my_module.MyModuleClass()
         ```
       
-        
     - Alternative ways to import modules
       - 모듈의 일부분 import
       
@@ -117,51 +113,50 @@ description: "야생의 바름은(는) 파이썬의 Class,Module,Exception과 �
         print(my_module_var)my_module_func()
         ```
       
-        
     - Import As
       - import 해온 정보의 이름을 사용하기 편하게 바꾼다.
       - 이름의 중복 이나 긴 이름을 방지한다.
-
+    
   - Packages
-
-    - 파일에 나누어져 있는 코드들도 다른 곳에서 하나의 module로 불러와서 사용할 수 있도록 해주는것
-
-    - 파이썬 파일들로 이루어져 있는 디렉토리(directory)가 하나의 package
-
-    - Package Initialization
-
-      - [init.py](http://init.py/)파일을 통해 package 초기 설정을 가능하게함
-
-      - Import 할때 경로의 총 길이 줄여주기
-
-        - [init.py](http://init.py/)파일에 먼저 한번 import 후 .py 에서 import
-
-          init
-
-      - Package에서 import 할 수 있는 변수/함수/클래스 제한하기
-
-        - package를 통해 import 될 수 있는 요소들은 모두 변수를 통해 정의
-
-          all
-
-        - all 변수는 string 값의 요소를 가지고 있는 list
-
-        - all 변수의 default 값은 모든 함수/변수/클래스
-
-        - all 변수를 따로 정의해줌으로 import 될 수 있는 요소들을 제한
-
-      - 그 외 package가 import될때 꼭 먼저 실행되어야 하는 코드들을 설정해 놓는다.
-
-    - 다른 사람의 package 사용
-
-      - PIP는 파이썬의 package manager
+  
+  - 파일에 나누어져 있는 코드들도 다른 곳에서 하나의 module로 불러와서 사용할 수 있도록 해주는것
+  
+  - 파이썬 파일들로 이루어져 있는 디렉토리(directory)가 하나의 package
+  
+  - Package Initialization
+  
+    - [init.py](http://init.py/)파일을 통해 package 초기 설정을 가능하게함
+  
+    - Import 할때 경로의 총 길이 줄여주기
+  
+      - [init.py](http://init.py/)파일에 먼저 한번 import 후 .py 에서 import
+  
+        init
+  
+    - Package에서 import 할 수 있는 변수/함수/클래스 제한하기
+  
+      - package를 통해 import 될 수 있는 요소들은 모두 변수를 통해 정의
+  
+        all
+  
+      - all 변수는 string 값의 요소를 가지고 있는 list
+  
+      - all 변수의 default 값은 모든 함수/변수/클래스
+  
+      - all 변수를 따로 정의해줌으로 import 될 수 있는 요소들을 제한
+  
+    - 그 외 package가 import될때 꼭 먼저 실행되어야 하는 코드들을 설정해 놓는다.
+  
+  - 다른 사람의 package 사용
+  
+    - PIP는 파이썬의 package manager
       - pip install Django ( 컴온 장고!)
 
   - How import statement finds modules and packages
-
-    - Import Search 순서
+  
+  - Import Search 순서
       - sys.module
-        - import된 모듈과 package들을 저장
+      - import된 모듈과 package들을 저장
         - 단순한 dictionary
         - 새로 import 하는 모듈은 sys.modules 에서 찾을 수 없다.
       - built-in modules
@@ -175,7 +170,6 @@ description: "야생의 바름은(는) 파이썬의 Class,Module,Exception과 �
           ['', '/Users/song-eun-u/anaconda3/bin', '/Users/song-eun-u/anaconda3/lib/python36.zip', '/Users/song-eun-u/anaconda3/lib/python3.6', '/Users/song-eun-u/anaconda3/lib/python3.6/lib-dynload', '/Users/song-eun-u/anaconda3/lib/python3.6/site-packages', '/Users/song-eun-u/anaconda3/lib/python3.6/site-packages/aeosa', '/Users/song-eun-u/anaconda3/lib/python3.6/site-packages/IPython/extensions', '/Users/song-eun-u/.ipython']
           ```
         
-          
       - Absolute Path & Relative Path
         - Absolute path
           - 최상위 폴더를 기준으로 탐색
@@ -184,7 +178,7 @@ description: "야생의 바름은(는) 파이썬의 Class,Module,Exception과 �
         - relativev path
           - 현재 위치를 기준으로 탐색
           - 헷갈리기 쉽고 파일 위치가 변경되면 경로 위치도 변경되어야 하는 단점이 있습니다
-
+  
 - Exceptions
 
   - 에러 발생시 예외처리 정하기 
