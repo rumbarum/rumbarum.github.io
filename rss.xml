@@ -1,4 +1,65 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[ 개발세발개발]]></title><description><![CDATA[개발자 성장일기]]></description><link>https://rumbarum.github.io/</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 29 Mar 2020 16:12:26 GMT</lastBuildDate><item><title><![CDATA[TIL&TEL 20.03.23 ~ 20.03.29]]></title><description><![CDATA[  20.03.23 ~ 20.03.29  배운것, 씨름한것들]]></description><link>https://rumbarum.github.io//posts/TIL&amp;TEL_2020-03-30/</link><guid isPermaLink="false">https://rumbarum.github.io//posts/TIL&amp;TEL_2020-03-30/</guid><pubDate>Mon, 30 Mar 2020 01:23:45 GMT</pubDate><content:encoded>&lt;h3 id=&quot;til-today-i-learned&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#til-today-i-learned&quot; aria-label=&quot;til today i learned permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TIL( Today I Learned)&lt;/h3&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[ 개발세발개발]]></title><description><![CDATA[개발자 성장일기]]></description><link>https://rumbarum.github.io/</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 05 Apr 2020 09:49:55 GMT</lastBuildDate><item><title><![CDATA[TIL&TEL 20.03.30 ~ 20.04.05]]></title><description><![CDATA[  20.03.30 ~ 20.04.05  배운것, 씨름한것들]]></description><link>https://rumbarum.github.io//posts/TIL&amp;TEL_2020-04-05/</link><guid isPermaLink="false">https://rumbarum.github.io//posts/TIL&amp;TEL_2020-04-05/</guid><pubDate>Sun, 05 Apr 2020 01:23:45 GMT</pubDate><content:encoded>&lt;h3 id=&quot;til-today-i-learned&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#til-today-i-learned&quot; aria-label=&quot;til today i learned permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TIL( Today I Learned)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;20-03-30 월&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;키워드 추출 과정 정리해보기 &lt;/li&gt;
+&lt;li&gt;kiwiepie 테스트&lt;/li&gt;
+&lt;li&gt;API view 흐름도 구상하기 (나머지 화요일로 보냄) &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;20-03-31 화&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;soynlp nounextractor 사용해보기&lt;/li&gt;
+&lt;li&gt;예측 단어들 찾아보기&lt;/li&gt;
+&lt;li&gt;db indexing django api view 처리 모형 만들어서 테스트&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;20-04-01 수&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;진행상황 정리 및 공유&lt;/li&gt;
+&lt;li&gt;라이브러리 비교 해보기 ?? 어떻게 비교 할 것인가???&lt;/li&gt;
+&lt;li&gt;DB 데이터 및 인스타 데이터 훑어보기 및 키워드 처리 하기&lt;/li&gt;
+&lt;li&gt;django api view 보기 &lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;__future__&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;python 2에서 3와 호환을 위해 만들 모듈 그래서 future를 가져왔다.&lt;/li&gt;
+&lt;li&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;Print 
+
+&lt;span class=&quot;token triple-quoted-string string&quot;&gt;&quot;&quot;&quot;가장 눈에 띄는 언어 변화는 print 문법입니다. 파이썬 3에선 함수입니다. 그래서 인자가 괄호안에 있어야 합니다. 파이썬 2에서는 반환과 같이 드러난 구문과 괄호를 사용하지 않아야 합니다. 파이썬의 두 버전에서 발생하는 예가 있으며 간단히 from __future__ import print_function 을 통해 똑같은 코드를 사용할 수 있습니다. &quot;&quot;&quot;&lt;/span&gt;
+
+
+Division 
+&lt;span class=&quot;token triple-quoted-string string&quot;&gt;&quot;&quot;&quot;
+이것은 꽤 간단한 하나로 할 수 있습니다. 당신의 프로그램에 from __future__ import division 이 포함된 경우 당신이 파이썬3 인터프리터를 사용 여부에 따라 당신은 파이썬3 스타일의 나누기를 얻을 수 있습니다. 
+&quot;&quot;&quot;&lt;/span&gt;
+Absolute Import 
+&lt;span class=&quot;token triple-quoted-string string&quot;&gt;&quot;&quot;&quot;가끔 당신은 &quot;표준&quot; 모듈(sys.path의 디렉터리에 있는 목록 중 하나)을 가져올 수 있으며 당신은 당신의 일부 모듈의 코드를 가져올 수 있습니다. 파이썬2에서 이 모듈의 이름이 같은 경우 당신의 실수로 잘못된 모듈 또는 &quot;그림자&quot; 표준 표준 라이브러리 모듈을 가져올 것입니다. 파이썬3에서는 일반적으로 import 구문은 sys.path를 찾습니다. 패키지를 가지고 있고(같은 패키지 디렉터리) 모듈 b를 원한다면 absolute import 문법(from . import b)을 사용하십시오. 이것으로 당신이 표준 모듈과 동일한 이름을 가진 로컬 모듈을 사용할 수 있습니다. 파이썬 2나 파이썬 3 코드에서 이 동작을 from __future__ import absolute_import 로 사용할 수 있습니다.&quot;&quot;&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;20-04-02 목&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;NLP process Research&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;20-04-03 금&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;API 구조 짜기 및 명세서 작성&lt;/li&gt;
+&lt;li&gt;제플린 참고해서 작성해보기&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;TEL (Trial and Error Log)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;코드를 많이 안쳐서 에러를 발생시키지 못했다. 에러를 계속 발생 시키도록.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[TIL&TEL 20.03.23 ~ 20.03.29]]></title><description><![CDATA[  20.03.23 ~ 20.03.29  배운것, 씨름한것들]]></description><link>https://rumbarum.github.io//posts/TIL&amp;TEL_2020-03-30/</link><guid isPermaLink="false">https://rumbarum.github.io//posts/TIL&amp;TEL_2020-03-30/</guid><pubDate>Mon, 30 Mar 2020 01:23:45 GMT</pubDate><content:encoded>&lt;h3 id=&quot;til-today-i-learned&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#til-today-i-learned&quot; aria-label=&quot;til today i learned permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TIL( Today I Learned)&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;20-03-23 월&lt;/strong&gt;&lt;/p&gt;
