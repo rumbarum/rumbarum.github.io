@@ -7,13 +7,17 @@ module.exports = {
   subtitle: '개발자 성장일기',
   copyright: '© All rights reserved.',
   disqusShortname: 'rumbarum',
-  postsPerPage: 6,
+  postsPerPage: 10,
   googleAnalyticsId: '',
   useKatex: true,
   menu: [
     {
-      label: 'Articles',
-      path: '/'
+      label: 'DEVELOP',
+      path: '/category/develop'
+    },
+    {
+      label: 'TIL&TEL',
+      path: '/category/til-tel/'
     },
     {
       label: '개발세발개발?',

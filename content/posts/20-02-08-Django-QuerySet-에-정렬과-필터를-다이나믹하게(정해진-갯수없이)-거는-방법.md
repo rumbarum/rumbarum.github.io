@@ -11,6 +11,8 @@ tags:
  - "filter"
 description: "Order, Filter 프론트에서 요청하는대로 알아서  처리하게 할수 있을까요?"
 ---
+
+
 Django QuerySet 에  정렬과 필터를 다이나믹하게(정해진 갯수없이) 거는 방법
 
 Order, Filter 프론트에서 요청하는대로 알아서  처리하게 할수 있을까요?
@@ -22,7 +24,7 @@ Order, Filter 프론트에서 요청하는대로 알아서  처리하게 할수 
 class Post(models.Model):
  	title = models.CharField() #제목
 	content = models.TextFiled() #내용
-  author = models.CharField() #저자
+ 	author = models.CharField() #저자
 	timestamp = models.DateTimeField(default=timezone.now) #만들어진 시간
 	like_count = models.IntegerField() #좋아요 눌린 횟수
   view_count = models.IntegerField() #뷰 횟수
@@ -188,4 +190,3 @@ posts.objects.filter(search=value)
 #Search는 Post에 없는 Field다. Post가 가지고 있는 filed가 아니면 정의부터 error를 터뜨린다. 
 
 ```
-

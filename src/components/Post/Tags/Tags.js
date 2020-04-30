@@ -17,7 +17,7 @@ const Tags = ({ tags, tagSlugs, inSidebar }: Props) => (
         <li
           className={cx(
             styles['tags__list-item'],
-            inSidebar && styles['tags_insidebar__list-item']
+            styles['tags__list-item2']
           )}
           key={tags[i]}
         >

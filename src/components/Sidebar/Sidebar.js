@@ -26,6 +26,7 @@ const Sidebar = ({ isIndex }: Props) => {
         <Tags
           tags={tags.map((tag) => tag.fieldValue)}
           tagSlugs={tags.map((tag) => `/tag/${tag.fieldValue.toLowerCase()}`)}
+          inSidebar
         />
       </div>
     </div>
