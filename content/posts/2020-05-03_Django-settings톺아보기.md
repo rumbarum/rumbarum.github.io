@@ -8,6 +8,8 @@ category: "Develop"
 tags:
  - "django"
  - "setting"
+ - "wecode"
+ - "위코드"
 description: "처음 장고를 시작하고 세팅을 하려고 하는데 이게 뭔 말...??? "
 ---
 
