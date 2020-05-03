@@ -1,4 +1,118 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[ 개발세발개발]]></title><description><![CDATA[개발자 성장일기]]></description><link>https://rumbarum.github.io/</link><generator>RSS for Node</generator><lastBuildDate>Thu, 30 Apr 2020 08:58:15 GMT</lastBuildDate><item><title><![CDATA[TIL&TEL 20.04.20 ~ 20.04.26]]></title><description><![CDATA[  20.04.20 ~ 20.04.26  배운것, 씨름한것들]]></description><link>https://rumbarum.github.io//posts/TIL&amp;TEL_2020-04-26/</link><guid isPermaLink="false">https://rumbarum.github.io//posts/TIL&amp;TEL_2020-04-26/</guid><pubDate>Sun, 26 Apr 2020 01:23:45 GMT</pubDate><content:encoded>&lt;h2 id=&quot;til-today-i-learned&quot;&gt;&lt;a href=&quot;#til-today-i-learned&quot; aria-label=&quot;til today i learned permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TIL( Today I Learned)&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[ 개발세발개발]]></title><description><![CDATA[개발자 성장일기]]></description><link>https://rumbarum.github.io/</link><generator>RSS for Node</generator><lastBuildDate>Sun, 03 May 2020 14:08:34 GMT</lastBuildDate><item><title><![CDATA[Django settings.py 톺아보기]]></title><description><![CDATA[처음 장고를 시작하고 세팅을 하려고 하는데 이게 뭔 말...??? ]]></description><link>https://rumbarum.github.io//posts/understanding-django-settings/</link><guid isPermaLink="false">https://rumbarum.github.io//posts/understanding-django-settings/</guid><pubDate>Sun, 03 May 2020 01:23:45 GMT</pubDate><content:encoded>&lt;p&gt;파이썬으로 쉽게 웹서버를 만들 수 있게 도와준다는 프레임웤 Django가 있다고 들었다. &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;token variable&quot;&gt;$conda&lt;/span&gt; --create -n &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;nice-env-name&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token assign-left variable&quot;&gt;python&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;3.8&lt;/span&gt;
+&lt;span class=&quot;token variable&quot;&gt;$pip&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; django
+&lt;span class=&quot;token variable&quot;&gt;$django&lt;/span&gt;-admin startproject &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;beautiful-awosome-project&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;까지 실행한 당신, 이제 settings.py를 다뤄야 한다. 고 하는 말을 들었다. &lt;/p&gt;
+&lt;p&gt;근데 지금 까지 공부했던 Python에는 사용하지 않았던 어여쁜 단어들이 눈에 보인다. Django 내에서만 통용되는 값들을 한번 이해하고 넘어가면 좋을 듯 해서 한줄 한줄 주석으로 정리해 본다. &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; os
+&lt;span class=&quot;token comment&quot;&gt;# os 파이썬 실행 환경에서 운영체제(맥북이라면 max OSX, 리눅스라면 ubutu 등)에 접근하기 위한 module로 사용된다.&lt;/span&gt;
+
+
+BASE_DIR &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; os&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;path&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;dirname&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;os&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;path&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;dirname&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;os&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;path&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;abspath&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;__file__&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;# BASE_DIR 는 Django project의 기본 ROOT Dir를 지정 한다. manage.py 파일이 들어있는 폴더를 이 위치로 설정을 한다. &lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;# __file__은 현재 파일, os.path.abspath 를 통해 현재 파일의 절대 경로를 획득한다. 이를테면 &apos;/User/Project/beautiful-awosome-project/beautiful-awosome-project/settings.py&apos;가 될 것이다. os.path.dirname는 settings.py이 들어있는 폴더이름을 찾는다. 이걸 두번 하게 되면? &lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;#BASE_DIR =&apos;/User/Project/beautiful-awosome-project&apos;가 되는 것이다.&lt;/span&gt;
+
+SECRET_KEY &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;1!rfl^^ehfh#9_ig@sy_=5sb&amp;amp;b&amp;amp;24xwb))+#-@c+a0nr@td2pt&apos;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;#프로젝트 내에서 암호화에 사용하게 될 암호키를 설정한다. 암호를 만드는데도 암호키가 필요하고 암호를 해독하는데도 암호키가 필요하다. 그래서 노출하면 절~~~~대 안된다.&lt;/span&gt;
+
+DEBUG &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;True&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;#Django를 실행할때 에러가 생기면 에러를 디테일하게 보여주는 모드이다. True== ON, False==OFF. 프로덕션 배포에서 켜놓게 되면 비관계자들에게 프로젝트 구조를 노출 시킬 수도 있게 된다. &lt;/span&gt;
+
+ALLOWED_HOSTS &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;#접근 가능한 IP를 제한 할 수 있다. 보통 개발할때에는 &apos;*&apos;로 모든 IP에 대한 접근을 허용한다. &lt;/span&gt;
+
+INSTALLED_APPS &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+    &lt;span class=&quot;token string&quot;&gt;&apos;django.contrib.admin&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token string&quot;&gt;&apos;django.contrib.auth&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token string&quot;&gt;&apos;django.contrib.contenttypes&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token string&quot;&gt;&apos;django.contrib.sessions&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token string&quot;&gt;&apos;django.contrib.messages&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token string&quot;&gt;&apos;django.contrib.staticfiles&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  	&lt;span class=&quot;token string&quot;&gt;&apos;fantastic-app&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;#장고에서 프로젝트 하위에 app을 만들면 여기에 등록을 해줘야한다. 그렇지 않으면 django에서 앱으로 인식을 하지 못한다. 이건 django에서 개발자가 만든 app도 포함이며, django를 더 원할하게 사용하기 위한 부가 app e.g.&gt; django-extension 들도 등록을 해야 작동이 가능하다. 처음 앱을 시작하게 될 경우 기본 설정되어 있는 값들은 django에서 기본적으로 사용하는 앱들이나 필요에 의해 사용하지 않아도 된다. &lt;/span&gt;
+
+MIDDLEWARE &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+    &lt;span class=&quot;token string&quot;&gt;&apos;django.middleware.security.SecurityMiddleware&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token string&quot;&gt;&apos;django.contrib.sessions.middleware.SessionMiddleware&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token string&quot;&gt;&apos;django.middleware.common.CommonMiddleware&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token string&quot;&gt;&apos;django.middleware.csrf.CsrfViewMiddleware&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token string&quot;&gt;&apos;django.contrib.auth.middleware.AuthenticationMiddleware&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token string&quot;&gt;&apos;django.contrib.messages.middleware.MessageMiddleware&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token string&quot;&gt;&apos;django.middleware.clickjacking.XFrameOptionsMiddleware&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;#django의 파일들이 동작을 중간에서 연결하는 middleware를 관리하는 부분이다. INSTALLE_APP과 유사하다. 필요에 의해 추가하거나 삭제가 가능하다.&lt;/span&gt;
+
+ROOT_URLCONF &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;django_template.urls&apos;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;#URL routing을 해주는 django urls의 ROOT 파일을 지정한다. url요청을 제일 먼저 받게 된다. 그리고 그 밑에 여러 urls를 거느려서 해당 urls의 views 로 연결이 되게 한다.&lt;/span&gt;
+
+TEMPLATES &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token string&quot;&gt;&apos;BACKEND&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;django.template.backends.django.DjangoTemplates&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      	&lt;span class=&quot;token comment&quot;&gt;#django Template 엔진을 설정한다.&lt;/span&gt;
+        &lt;span class=&quot;token string&quot;&gt;&apos;DIRS&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      	&lt;span class=&quot;token comment&quot;&gt;#Template 폴더 위치를 지정한다.&lt;/span&gt;
+        &lt;span class=&quot;token string&quot;&gt;&apos;APP_DIRS&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      	&lt;span class=&quot;token comment&quot;&gt;#앱별로 template폴더를 가지고 있는지 확인한다. &lt;/span&gt;
+        &lt;span class=&quot;token string&quot;&gt;&apos;OPTIONS&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;token comment&quot;&gt;#Template과 관련된 옵션들을 설정한다. &lt;/span&gt;
+            &lt;span class=&quot;token string&quot;&gt;&apos;context_processors&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+                &lt;span class=&quot;token string&quot;&gt;&apos;django.template.context_processors.debug&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+                &lt;span class=&quot;token string&quot;&gt;&apos;django.template.context_processors.request&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+                &lt;span class=&quot;token string&quot;&gt;&apos;django.contrib.auth.context_processors.auth&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+                &lt;span class=&quot;token string&quot;&gt;&apos;django.contrib.messages.context_processors.messages&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+
+WSGI_APPLICATION &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;django_template.wsgi.application&apos;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;#웹서버와 연결시 어떤 세팅을 이용하는지 세팅값과 연결을 시켜준다.&lt;/span&gt;
+
+DATABASES &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token string&quot;&gt;&apos;default&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token string&quot;&gt;&apos;ENGINE&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;django.db.backends.sqlite3&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;token string&quot;&gt;&apos;NAME&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; os&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;path&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;join&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;BASE_DIR&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;db.sqlite3&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;#django project가 연결할 데이터 베이스 정보를 설정한다. ID/PW등도 같이 설정한다. &lt;/span&gt;
+
+
+AUTH_PASSWORD_VALIDATORS &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token string&quot;&gt;&apos;NAME&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;django.contrib.auth.password_validation.UserAttributeSimilarityValidator&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token string&quot;&gt;&apos;NAME&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;django.contrib.auth.password_validation.MinimumLengthValidator&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token string&quot;&gt;&apos;NAME&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;django.contrib.auth.password_validation.CommonPasswordValidator&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token string&quot;&gt;&apos;NAME&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;django.contrib.auth.password_validation.NumericPasswordValidator&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;#친절하게도, PW 검증을 할 수 있는 옵션을 지원해준다. 글쓴이도 아직 써보지는 못했다. &lt;/span&gt;
+
+LANGUAGE_CODE &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;en-us&apos;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;#언어설정 3.0이상부터는 한국어를 설정하려면 &apos;ko&apos;를 사용, 그 이전 버전은 &apos;ko-kr&apos;을 사용하면 된다.&lt;/span&gt;
+
+TIME_ZONE &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;UTC&apos;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;#시간존 설정, UTC는 그리니치 천문대의 시간이다. 한국 시간보다 9시간 빠르다. 한국시간대로 설정을 하려면 &apos;Asia/Seoul&apos;을 설정한다. 그러면 UTC +9된 한국시간을 표준시간으로 잡는다. (DB 저장시)&lt;/span&gt;
+
+USE_I18N &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;True&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;#django의 번역 (영어 =&gt; 한국어) 을 설정하는 옵션, 편의를 위해 기본적으로 켜져있다.&lt;/span&gt;
+
+USE_L10N &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;True&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;#설정한 언어형태에 맞추어 시간과 숫자 표시를 맞추는지 여부. 기본은 True로 되어있다.&lt;/span&gt;
+
+USE_TZ &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;True&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;#TIME_ZONE 옵션을 사용할지 묻는 옵션이다. 이게 위에 있어랴 할거 같은데 아래에 있다. 왜그런진 나도 모르겠다.이게 True일 경우 django 내부시간대를 사용(&apos;America/Chicago&apos;가 Django의 출생지라 기본 설정이 그렇게 되어있다고 한다.), False 일 경우 내가 설정한 time-zone을 기준으로 움직인다. &lt;/span&gt;
+
+STATIC_URL &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;/static/&apos;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;#django 실행시 불러올 정적 파일, css 라던가, css라든가, css라던가.. 를 불러올 url을 설정한다. 기본으로 설정된 값을 기본으로 한다면, main-url/static/이 정적파일 접근 경로가 된다. &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[TIL&TEL 20.04.20 ~ 20.04.26]]></title><description><![CDATA[  20.04.20 ~ 20.04.26  배운것, 씨름한것들]]></description><link>https://rumbarum.github.io//posts/TIL&amp;TEL_2020-04-26/</link><guid isPermaLink="false">https://rumbarum.github.io//posts/TIL&amp;TEL_2020-04-26/</guid><pubDate>Sun, 26 Apr 2020 01:23:45 GMT</pubDate><content:encoded>&lt;h2 id=&quot;til-today-i-learned&quot;&gt;&lt;a href=&quot;#til-today-i-learned&quot; aria-label=&quot;til today i learned permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TIL( Today I Learned)&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;20-04-20 월&lt;/strong&gt;&lt;/p&gt;
@@ -3320,32 +3434,6 @@ Worse: if greeting is True:&lt;/li&gt;
 &lt;li&gt;git에 PR을 요청하고 마스터에서 다른 작업을 하려고 하는데 전파일이 필요하다면? 좋은 방법이 있을 것만 같은데 진행이 안된다. &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[ TIL&TEL 19.08.26~19.08.28 ]]></title><description><![CDATA[ 19.08.26~ 19.08.28 배운것, 씨름한것들 ]]></description><link>https://rumbarum.github.io//posts/TIL&amp;TEL_19-08-28/</link><guid isPermaLink="false">https://rumbarum.github.io//posts/TIL&amp;TEL_19-08-28/</guid><pubDate>Wed, 28 Aug 2019 01:23:45 GMT</pubDate><content:encoded>&lt;h3 id=&quot;til-today-i-learned&quot;&gt;&lt;a href=&quot;#til-today-i-learned&quot; aria-label=&quot;til today i learned permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TIL( Today I Learned)&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;19.08.26&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Scrapy를 이용한 웹사이트 크롤링 - 하나의 정보만 긁어 오자면 1시간도 안걸려서 긁어 올 수 있다. 사이트 정보의 정리가 잘 되어 있을 경우에는 금방 긁어 올 수 있다. 여러개의 정보를 선택적으로 가져오려면 머리를 좀 써야 한다. &lt;/li&gt;
-&lt;li&gt;프로젝트 소스기본환경 설정 - 어려운건 아닌데 꼼꼼하게 해야한다. 그래야 동료들이 중복되는 일을 하는걸 막아 시간낭비를 줄인다.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;19.08.27&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;데이터베이스에 대한 이해 - 기존에 접해 보지 못했던 분야라 이해가 알듯 말듯 아리송하다. &lt;/li&gt;
-&lt;li&gt;크롤링 세션 by 지훈님 - html이란 구조로 이루어져 있는 것이 웹이다 보니, 구조를 통해 정보를 빼오는 것도 쉽다. 모든 데이터가 웹으로 올라오는 순간 모든이에게 열리는 것인데 꼭 좋은건가. &lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;19.08.28&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;DB 세션 by 은우님 - 제대로 다루려면 적응하는데 상당한 시간이 들어갈 것 같다.&lt;/li&gt;
-&lt;li&gt;django 를 통한 데이터베이스만들기에 대한 이해 - SQL을 통해 DB 모델을 만드는 것과, 그것을 편하게 만들기 위해 만들어진 django는 또 다르다. 어떻게 보면 사용자 편의성을 증대하는 것이고, 다른 면에서는 성장을 막는것 같기도 하다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;tel-trial-and-error-log&quot;&gt;&lt;a href=&quot;#tel-trial-and-error-log&quot; aria-label=&quot;tel trial and error log permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TEL (Trial and Error Log)&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;19.08.26&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;python index( ) &amp;#x3C;== index[ ]  index( element) 를 사용하면 원하는 element 를 찾을 수 있다. 메소드다 . &lt;/li&gt;
-&lt;li&gt;python str slice = str[startposition:endposition] (endposition str is Not included)  &lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;19.08.27&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;module import from 을 안써주었다. from을 안써도 되는게 있긴 있다. 헷갈리진 말자&lt;/li&gt;
-&lt;li&gt;max&lt;em&gt;length Max&lt;/em&gt;length로 잘못침 &lt;/li&gt;
-&lt;li&gt;django settings language setting &lt;code class=&quot;language-text&quot;&gt;ko-KR&lt;/code&gt; &amp;#x3C;== ko_KR&lt;/li&gt;
-&lt;li&gt;python ’ ’ 안에는 ” ” , ” ” 안에는 ’ ’ 로 따옴표 표시한다. &lt;/li&gt;
-&lt;li&gt;python shell 에서 django orm 부르기 from app이름.models import 모델 클래스&lt;/li&gt;
-&lt;li&gt;scrapy.py는 반응형으로 튀어나온 html을 잡지 못한다. &lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;19.08.28&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;django class 다음  &lt;code class=&quot;language-text&quot;&gt;:&lt;/code&gt; 빼먹음  은근히 자꾸 까먹는다. &lt;/li&gt;
 &lt;/ul&gt;</content:encoded></item><item><title><![CDATA[관계형 DB 알아보자 ]]></title><description><![CDATA[관계형 DB라는건 뭘까? ]]></description><link>https://rumbarum.github.io//posts/understaidingRDB/</link><guid isPermaLink="false">https://rumbarum.github.io//posts/understaidingRDB/</guid><pubDate>Wed, 28 Aug 2019 01:23:45 GMT</pubDate><content:encoded>&lt;h2 style=&quot;color:rgb(9, 136, 104)&quot;&gt; DB 안쓰면 안돼? 응 안돼 &lt;/h2&gt;
 - ### **저장 공간 왜 필요할까?**
 &lt;ul&gt;
@@ -3449,6 +3537,32 @@ Worse: if greeting is True:&lt;/li&gt;
 &lt;li&gt;궁극적으로 관계형만은 사용할 수 없다. &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[ TIL&TEL 19.08.26~19.08.28 ]]></title><description><![CDATA[ 19.08.26~ 19.08.28 배운것, 씨름한것들 ]]></description><link>https://rumbarum.github.io//posts/TIL&amp;TEL_19-08-28/</link><guid isPermaLink="false">https://rumbarum.github.io//posts/TIL&amp;TEL_19-08-28/</guid><pubDate>Wed, 28 Aug 2019 01:23:45 GMT</pubDate><content:encoded>&lt;h3 id=&quot;til-today-i-learned&quot;&gt;&lt;a href=&quot;#til-today-i-learned&quot; aria-label=&quot;til today i learned permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TIL( Today I Learned)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;19.08.26&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Scrapy를 이용한 웹사이트 크롤링 - 하나의 정보만 긁어 오자면 1시간도 안걸려서 긁어 올 수 있다. 사이트 정보의 정리가 잘 되어 있을 경우에는 금방 긁어 올 수 있다. 여러개의 정보를 선택적으로 가져오려면 머리를 좀 써야 한다. &lt;/li&gt;
+&lt;li&gt;프로젝트 소스기본환경 설정 - 어려운건 아닌데 꼼꼼하게 해야한다. 그래야 동료들이 중복되는 일을 하는걸 막아 시간낭비를 줄인다.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;19.08.27&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;데이터베이스에 대한 이해 - 기존에 접해 보지 못했던 분야라 이해가 알듯 말듯 아리송하다. &lt;/li&gt;
+&lt;li&gt;크롤링 세션 by 지훈님 - html이란 구조로 이루어져 있는 것이 웹이다 보니, 구조를 통해 정보를 빼오는 것도 쉽다. 모든 데이터가 웹으로 올라오는 순간 모든이에게 열리는 것인데 꼭 좋은건가. &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;19.08.28&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;DB 세션 by 은우님 - 제대로 다루려면 적응하는데 상당한 시간이 들어갈 것 같다.&lt;/li&gt;
+&lt;li&gt;django 를 통한 데이터베이스만들기에 대한 이해 - SQL을 통해 DB 모델을 만드는 것과, 그것을 편하게 만들기 위해 만들어진 django는 또 다르다. 어떻게 보면 사용자 편의성을 증대하는 것이고, 다른 면에서는 성장을 막는것 같기도 하다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;tel-trial-and-error-log&quot;&gt;&lt;a href=&quot;#tel-trial-and-error-log&quot; aria-label=&quot;tel trial and error log permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TEL (Trial and Error Log)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;19.08.26&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;python index( ) &amp;#x3C;== index[ ]  index( element) 를 사용하면 원하는 element 를 찾을 수 있다. 메소드다 . &lt;/li&gt;
+&lt;li&gt;python str slice = str[startposition:endposition] (endposition str is Not included)  &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;19.08.27&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;module import from 을 안써주었다. from을 안써도 되는게 있긴 있다. 헷갈리진 말자&lt;/li&gt;
+&lt;li&gt;max&lt;em&gt;length Max&lt;/em&gt;length로 잘못침 &lt;/li&gt;
+&lt;li&gt;django settings language setting &lt;code class=&quot;language-text&quot;&gt;ko-KR&lt;/code&gt; &amp;#x3C;== ko_KR&lt;/li&gt;
+&lt;li&gt;python ’ ’ 안에는 ” ” , ” ” 안에는 ’ ’ 로 따옴표 표시한다. &lt;/li&gt;
+&lt;li&gt;python shell 에서 django orm 부르기 from app이름.models import 모델 클래스&lt;/li&gt;
+&lt;li&gt;scrapy.py는 반응형으로 튀어나온 html을 잡지 못한다. &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;19.08.28&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;django class 다음  &lt;code class=&quot;language-text&quot;&gt;:&lt;/code&gt; 빼먹음  은근히 자꾸 까먹는다. &lt;/li&gt;
 &lt;/ul&gt;</content:encoded></item><item><title><![CDATA[스크럼을 알아보자 ]]></title><description><![CDATA[소프트웨어 산업 작업 방식인 스크럼을 알아보자 그리고 위코드에서 실습을 해보자. ]]></description><link>https://rumbarum.github.io//posts/understandScrum/</link><guid isPermaLink="false">https://rumbarum.github.io//posts/understandScrum/</guid><pubDate>Mon, 26 Aug 2019 01:23:45 GMT</pubDate><content:encoded>&lt;h2 style=&quot;color:rgb(9, 136, 104)&quot;&gt;소프트웨어 똑똑한놈 혼자(리눅스? 잡스? 빌게이츠?)만드는거 아니뇨? &lt;/h2&gt;
 그렇게 생각하고 있다면 그것은 경기도 오산! 
 &lt;ul&gt;
@@ -3832,6 +3946,78 @@ future auto field types such as a theoretical UUIDAutoField.&lt;/code&gt;&lt;/pr
 &lt;li&gt;기본 깃 기능에 추가 기능들 구현( git summary)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[ TIL&TEL 19.08.19~ 19.08.21 ]]></title><description><![CDATA[ 19.08.19~ 19.08.21 배운것, 씨름한것들 ]]></description><link>https://rumbarum.github.io//posts/TIL&amp;TEL_19.08.21/</link><guid isPermaLink="false">https://rumbarum.github.io//posts/TIL&amp;TEL_19.08.21/</guid><pubDate>Wed, 21 Aug 2019 01:23:45 GMT</pubDate><content:encoded>&lt;h3 id=&quot;til-today-i-learned&quot;&gt;&lt;a href=&quot;#til-today-i-learned&quot; aria-label=&quot;til today i learned permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TIL( Today I Learned)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;19.08.19&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;API 앤드포인트 view 수정 &lt;/li&gt;
+&lt;li&gt;알고리즘 면접법 세션 by 은우님 - 문제 접근, 면접관과의  커뮤니케이션 중요 &lt;/li&gt;
+&lt;li&gt;웹크롤링 기본 세션 by 지훈님 - 잘 모르는 사람도 쓰기 쉽게 잘 만들어 논거 같다.&lt;/li&gt;
+&lt;li&gt;API 앤드포인트 수정 및 작동 확인 - 기능을 뭉터기로 뭉처노니 머리가  아팠는데 앤드포인트 나눠서 기능을 나누니 세상편하네- 라고 생각을 했는데 잘못된 선택이었다.&lt;/li&gt;
+&lt;li&gt;API 문서 작성 - 머리로는 정리가 잘 되는것 같은데 써보려니 잘 정리하기가 쉽지 않다. 정리하는 습관 미리 들여야할것 같다. 나만의 프레임이 필요할듯 .&lt;/li&gt;
+&lt;li&gt;코드카타 - 이주의 시작은 쉬웠다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;19.08.20&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;django api 앱 변경 -앤드포인트 나눈거 다시 수정.&lt;/li&gt;
+&lt;li&gt;http 통신, restful api 세션 by 은우님  - RESTful 좋구나!&lt;/li&gt;
+&lt;li&gt;vim과 개발세팅 변경 - 세팅의 끝은 순정일까? 극커스텀일까? 알수 없다. &lt;/li&gt;
+&lt;li&gt;SEO by 예리님 - 구글의 시작은 미약했으나 현재는 킹왕짱.&lt;/li&gt;
+&lt;li&gt;코드카타 - 코딩 바로 들어가지 말고 검토한번 하면 좋을듯 &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;19.08.21&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;프론트_백 연결 -  본격 온라인시대 개막 !&lt;/li&gt;
+&lt;li&gt;팀프로젝트 아이디어 회의 - 태양아래 새로운 것이 없구만.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;tel-trial-and-error-log&quot;&gt;&lt;a href=&quot;#tel-trial-and-error-log&quot; aria-label=&quot;tel trial and error log permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TEL (Trial and Error Log)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;19.08.19&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;파이썬 else… 뒤에 조건 안 붙습니다. 붙이지 마세요. &lt;/li&gt;
+&lt;li&gt;django JsonResponse ( ) 에 들어가는 {} 은 한개만, 두개 들어가면 에러납니다. &lt;/li&gt;
+&lt;li&gt;문자에러 user =&gt;uesr&lt;/li&gt;
+&lt;li&gt;조건문 연속 인지 아닌지, 앞변수 변화가 뒷 변수 변화에 영향을 주지 않는 방향으로 생각하기 &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;19.08.20&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;domain naming &lt;/li&gt;
+&lt;li&gt;/는 계층구조 / 다음은 식별자 &lt;/li&gt;
+&lt;li&gt;식별자 끝에는 /를 붙이지 않는다&lt;/li&gt;
+&lt;li&gt;domain/country/city/street/building/222&lt;/li&gt;
+&lt;li&gt;동일 db를 여러 앱으로 쪼개서 편하게 하려고 했는데 그러면 안된다..&lt;/li&gt;
+&lt;li&gt;왜? end point 인식이 어렵다. &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;19.08.21&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;splice 쓰는거 상황에 따라 달라진다. &lt;/li&gt;
+&lt;li&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token class-name&quot;&gt;Array&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;prototype&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;splice &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; mutable
+arr&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;splice&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt; idx&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; number &lt;span class=&quot;token keyword&quot;&gt;of&lt;/span&gt; remove element&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; element to insert&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; 
+arr을 부르면 splice 처리가 먹힌 arr 리턴 
+arr&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;splice&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;을부르면 잘린 부분을 부른다&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;splice로 삭제되는 부분이 array로 불린다&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;  
+
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; arr2 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; somearr &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; arr2&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;splice&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;dd&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;	라고 하고 
+
+console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;somearr&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// [3,4]&lt;/span&gt;
+console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;arr2&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;splice&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;dd&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// [3,4]&lt;/span&gt;
+console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;arr2&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;//[1,2,&quot;dd&quot;,5,6]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;</content:encoded></item><item><title><![CDATA[HTTP, RESTful API 이해하기]]></title><description><![CDATA[Http 와 RESTful API 간단하게 톺아보자 ]]></description><link>https://rumbarum.github.io//posts/understaingHttpandRestfulAPI/</link><guid isPermaLink="false">https://rumbarum.github.io//posts/understaingHttpandRestfulAPI/</guid><pubDate>Wed, 21 Aug 2019 01:23:45 GMT</pubDate><content:encoded>&lt;h3 style=&quot;color:rgb(9, 136, 104)&quot;&gt;통신은 계속해서 발전한다.&lt;/h3&gt;
 ## Http? 
 &lt;p&gt;Hyper Text Transfer Protocol  &lt;/p&gt;
@@ -3971,78 +4157,6 @@ future auto field types such as a theoretical UUIDAutoField.&lt;/code&gt;&lt;/pr
 &lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;/&lt;/code&gt;(슬래시)는 계층 관계를 나타낼때 사용된다.&lt;/li&gt;
 &lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;_&lt;/code&gt;(underscore)는 주로 포함하지않고 또한 영어 대문자보다 소문자를 쓴다. 그리고 너무 긴 단어는 잘 사용하지 않는다.&lt;/li&gt;
 &lt;li&gt;URI는 명사를 사용한다.&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[ TIL&TEL 19.08.19~ 19.08.21 ]]></title><description><![CDATA[ 19.08.19~ 19.08.21 배운것, 씨름한것들 ]]></description><link>https://rumbarum.github.io//posts/TIL&amp;TEL_19.08.21/</link><guid isPermaLink="false">https://rumbarum.github.io//posts/TIL&amp;TEL_19.08.21/</guid><pubDate>Wed, 21 Aug 2019 01:23:45 GMT</pubDate><content:encoded>&lt;h3 id=&quot;til-today-i-learned&quot;&gt;&lt;a href=&quot;#til-today-i-learned&quot; aria-label=&quot;til today i learned permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TIL( Today I Learned)&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;19.08.19&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;API 앤드포인트 view 수정 &lt;/li&gt;
-&lt;li&gt;알고리즘 면접법 세션 by 은우님 - 문제 접근, 면접관과의  커뮤니케이션 중요 &lt;/li&gt;
-&lt;li&gt;웹크롤링 기본 세션 by 지훈님 - 잘 모르는 사람도 쓰기 쉽게 잘 만들어 논거 같다.&lt;/li&gt;
-&lt;li&gt;API 앤드포인트 수정 및 작동 확인 - 기능을 뭉터기로 뭉처노니 머리가  아팠는데 앤드포인트 나눠서 기능을 나누니 세상편하네- 라고 생각을 했는데 잘못된 선택이었다.&lt;/li&gt;
-&lt;li&gt;API 문서 작성 - 머리로는 정리가 잘 되는것 같은데 써보려니 잘 정리하기가 쉽지 않다. 정리하는 습관 미리 들여야할것 같다. 나만의 프레임이 필요할듯 .&lt;/li&gt;
-&lt;li&gt;코드카타 - 이주의 시작은 쉬웠다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;19.08.20&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;django api 앱 변경 -앤드포인트 나눈거 다시 수정.&lt;/li&gt;
-&lt;li&gt;http 통신, restful api 세션 by 은우님  - RESTful 좋구나!&lt;/li&gt;
-&lt;li&gt;vim과 개발세팅 변경 - 세팅의 끝은 순정일까? 극커스텀일까? 알수 없다. &lt;/li&gt;
-&lt;li&gt;SEO by 예리님 - 구글의 시작은 미약했으나 현재는 킹왕짱.&lt;/li&gt;
-&lt;li&gt;코드카타 - 코딩 바로 들어가지 말고 검토한번 하면 좋을듯 &lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;19.08.21&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;프론트_백 연결 -  본격 온라인시대 개막 !&lt;/li&gt;
-&lt;li&gt;팀프로젝트 아이디어 회의 - 태양아래 새로운 것이 없구만.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;tel-trial-and-error-log&quot;&gt;&lt;a href=&quot;#tel-trial-and-error-log&quot; aria-label=&quot;tel trial and error log permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TEL (Trial and Error Log)&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;19.08.19&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;파이썬 else… 뒤에 조건 안 붙습니다. 붙이지 마세요. &lt;/li&gt;
-&lt;li&gt;django JsonResponse ( ) 에 들어가는 {} 은 한개만, 두개 들어가면 에러납니다. &lt;/li&gt;
-&lt;li&gt;문자에러 user =&gt;uesr&lt;/li&gt;
-&lt;li&gt;조건문 연속 인지 아닌지, 앞변수 변화가 뒷 변수 변화에 영향을 주지 않는 방향으로 생각하기 &lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;19.08.20&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;domain naming &lt;/li&gt;
-&lt;li&gt;/는 계층구조 / 다음은 식별자 &lt;/li&gt;
-&lt;li&gt;식별자 끝에는 /를 붙이지 않는다&lt;/li&gt;
-&lt;li&gt;domain/country/city/street/building/222&lt;/li&gt;
-&lt;li&gt;동일 db를 여러 앱으로 쪼개서 편하게 하려고 했는데 그러면 안된다..&lt;/li&gt;
-&lt;li&gt;왜? end point 인식이 어렵다. &lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;19.08.21&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;splice 쓰는거 상황에 따라 달라진다. &lt;/li&gt;
-&lt;li&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token class-name&quot;&gt;Array&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;prototype&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;splice &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; mutable
-arr&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;splice&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt; idx&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; number &lt;span class=&quot;token keyword&quot;&gt;of&lt;/span&gt; remove element&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; element to insert&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; 
-arr을 부르면 splice 처리가 먹힌 arr 리턴 
-arr&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;splice&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;을부르면 잘린 부분을 부른다&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;splice로 삭제되는 부분이 array로 불린다&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;  
-
-&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; arr2 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
-&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; somearr &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; arr2&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;splice&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;dd&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;	라고 하고 
-
-console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;somearr&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// [3,4]&lt;/span&gt;
-console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;arr2&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;splice&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;dd&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// [3,4]&lt;/span&gt;
-console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;arr2&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;//[1,2,&quot;dd&quot;,5,6]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
 &lt;/ul&gt;</content:encoded></item><item><title><![CDATA[SEO 이해하기 ]]></title><description><![CDATA[SEO가 뭐고 어떻게 작동하고 개발자는 뭘 해야하는가. ]]></description><link>https://rumbarum.github.io//posts/understaingSEO/</link><guid isPermaLink="false">https://rumbarum.github.io//posts/understaingSEO/</guid><pubDate>Tue, 20 Aug 2019 02:23:45 GMT</pubDate><content:encoded>&lt;h3 style=&quot;color:rgb(9, 136, 104)&quot;&gt;검색과 SEO &lt;/h3&gt;
 - ## 검색 노출은 프론트 앤드의 역할이다 (백엔드 지망이라 다행... )
 &lt;ul&gt;
