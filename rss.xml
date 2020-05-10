@@ -1,62 +1,133 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[ 개발세발개발]]></title><description><![CDATA[개발자 성장일기]]></description><link>https://rumbarum.github.io/</link><generator>RSS for Node</generator><lastBuildDate>Sun, 03 May 2020 14:26:05 GMT</lastBuildDate><item><title><![CDATA[Django settings.py 톺아보기]]></title><description><![CDATA[처음 장고를 시작하고 세팅을 하려고 하는데 이게 뭔 말...??? ]]></description><link>https://rumbarum.github.io//posts/understanding-django-settings/</link><guid isPermaLink="false">https://rumbarum.github.io//posts/understanding-django-settings/</guid><pubDate>Sun, 03 May 2020 01:23:45 GMT</pubDate><content:encoded>&lt;p&gt;파이썬으로 쉽게 웹서버를 만들 수 있게 도와준다는 프레임웤 Django가 있다고 들었다. &lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;token variable&quot;&gt;$conda&lt;/span&gt; --create -n &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;nice-env-name&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token assign-left variable&quot;&gt;python&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;3.8&lt;/span&gt;
-&lt;span class=&quot;token variable&quot;&gt;$pip&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; django
-&lt;span class=&quot;token variable&quot;&gt;$django&lt;/span&gt;-admin startproject &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;beautiful-awosome-project&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;까지 실행한 당신, 이제 settings.py를 다뤄야 한다. 고 하는 말을 들었다. &lt;/p&gt;
-&lt;p&gt;근데 지금 까지 공부했던 Python에는 사용하지 않았던 어여쁜 단어들이 눈에 보인다. Django 내에서만 통용되는 값들을 한번 이해하고 넘어가면 좋을 듯 해서 한줄 한줄 주석으로 정리해 본다. &lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; os
-&lt;span class=&quot;token comment&quot;&gt;# os 파이썬 실행 환경에서 운영체제(맥북이라면 max OSX, 리눅스라면 ubutu 등)에 접근하기 위한 module로 사용된다.&lt;/span&gt;
-
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[ 개발세발개발]]></title><description><![CDATA[개발자 성장일기]]></description><link>https://rumbarum.github.io/</link><generator>RSS for Node</generator><lastBuildDate>Sun, 10 May 2020 14:39:43 GMT</lastBuildDate><item><title><![CDATA[ Django settings.py 분리하기]]></title><description><![CDATA[Django 개발과 프로덕션 설정을 쉽게 분리하는 방법 ]]></description><link>https://rumbarum.github.io//posts/seperate-django-settings/</link><guid isPermaLink="false">https://rumbarum.github.io//posts/seperate-django-settings/</guid><pubDate>Sun, 10 May 2020 01:23:45 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;https://rumbarum.github.io/posts/understanding-django-settings/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;앞선 글&lt;/a&gt; 에선 장고 세팅에 설정 되는 값들을 알아보았다. &lt;/p&gt;
+&lt;p&gt;장고 연습이 아닌, 프로젝트를 진행하게 되면 production이 동작할 환경, develop 서버에서 돌아갈 환경, local 서버에서 돌아갈 환경등을 세팅하게 된다. 경우에 따라 더 늘어나거나 줄어들거나 할수도 있다. &lt;/p&gt;
+&lt;p&gt;django 프로젝트를 처음 열게 되면, &lt;code class=&quot;language-text&quot;&gt;settings.py&lt;/code&gt;는  한개 밖에 존재하지 않는다. &lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 700px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/05fb8f7d85a5e4b2f3f77db9decddbfd/67d4f/sc_1_80398.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 43.57142857142857%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAJABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAIF/8QAFgEBAQEAAAAAAAAAAAAAAAAAAQAC/9oADAMBAAIQAxAAAAHJipcgX//EABUQAQEAAAAAAAAAAAAAAAAAAAEQ/9oACAEBAAEFAmt//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFBABAAAAAAAAAAAAAAAAAAAAIP/aAAgBAQAGPwJf/8QAFRABAQAAAAAAAAAAAAAAAAAAICH/2gAIAQEAAT8hhf/aAAwDAQACAAMAAAAQYy//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAYEAEAAwEAAAAAAAAAAAAAAAABECExgf/aAAgBAQABPxBgA1LvJx2f/9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/05fb8f7d85a5e4b2f3f77db9decddbfd/01472/sc_1_80398.webp 240w,
+/static/05fb8f7d85a5e4b2f3f77db9decddbfd/222bd/sc_1_80398.webp 480w,
+/static/05fb8f7d85a5e4b2f3f77db9decddbfd/a7632/sc_1_80398.webp 700w&quot;
+          sizes=&quot;(max-width: 700px) 100vw, 700px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/05fb8f7d85a5e4b2f3f77db9decddbfd/3bc27/sc_1_80398.jpg 240w,
+/static/05fb8f7d85a5e4b2f3f77db9decddbfd/98431/sc_1_80398.jpg 480w,
+/static/05fb8f7d85a5e4b2f3f77db9decddbfd/67d4f/sc_1_80398.jpg 700w&quot;
+          sizes=&quot;(max-width: 700px) 100vw, 700px&quot;
+          type=&quot;image/jpeg&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/05fb8f7d85a5e4b2f3f77db9decddbfd/67d4f/sc_1_80398.jpg&quot;
+          alt=&quot;초기 생성한 프로젝트 이미지&quot;
+          title=&quot;초기 생성한 프로젝트 이미지&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;어떻게 쪼갤 수 있을까 ? &lt;/p&gt;
+&lt;p&gt;방법은 간단하다. 공통적으로 들어가는 세팅값 ( INSTALLED_APPS 나 MIDDLEWARE) 은 하나로 쓰고, 달라지는 값 (DEBUG, DATABASE)등을 쪼개면 된다. &lt;/p&gt;
+&lt;p&gt;이름은 짓기 나름인데, 내가 봤던 경우들은&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;base.py &amp;#x3C;== 공통 settings.py&lt;/li&gt;
+&lt;li&gt;product.py &amp;#x3C;== 실제 사용할 settings.py&lt;/li&gt;
+&lt;li&gt;develop.py &amp;#x3C;== 개발 테스트 settings.py&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;local.py &amp;#x3C;== 개발자 개발용 settings.py&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 700px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/f8f4bffbcfc657af8848810457ab00df/67d4f/sc_2_80398.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 46.71428571428571%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAJABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAIF/8QAFgEBAQEAAAAAAAAAAAAAAAAAAQAC/9oADAMBAAIQAxAAAAHJi4cgX//EABYQAQEBAAAAAAAAAAAAAAAAABABQf/aAAgBAQABBQLCv//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABQQAQAAAAAAAAAAAAAAAAAAACD/2gAIAQEABj8CX//EABYQAQEBAAAAAAAAAAAAAAAAAAEQMf/aAAgBAQABPyFaxf/aAAwDAQACAAMAAAAQIC//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAZEAACAwEAAAAAAAAAAAAAAAABERAhMUH/2gAIAQEAAT8QUNoul0TvP//Z&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/f8f4bffbcfc657af8848810457ab00df/01472/sc_2_80398.webp 240w,
+/static/f8f4bffbcfc657af8848810457ab00df/222bd/sc_2_80398.webp 480w,
+/static/f8f4bffbcfc657af8848810457ab00df/a7632/sc_2_80398.webp 700w&quot;
+          sizes=&quot;(max-width: 700px) 100vw, 700px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/f8f4bffbcfc657af8848810457ab00df/3bc27/sc_2_80398.jpg 240w,
+/static/f8f4bffbcfc657af8848810457ab00df/98431/sc_2_80398.jpg 480w,
+/static/f8f4bffbcfc657af8848810457ab00df/67d4f/sc_2_80398.jpg 700w&quot;
+          sizes=&quot;(max-width: 700px) 100vw, 700px&quot;
+          type=&quot;image/jpeg&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/f8f4bffbcfc657af8848810457ab00df/67d4f/sc_2_80398.jpg&quot;
+          alt=&quot;분리된 세팅&quot;
+          title=&quot;분리된 세팅&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;정도로 나눠서 세팅을 구분했다. &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;#base.py &lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; os
 
 BASE_DIR &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; os&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;path&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;dirname&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;os&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;path&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;dirname&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;os&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;path&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;abspath&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;__file__&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;token comment&quot;&gt;# BASE_DIR 는 Django project의 기본 ROOT Dir를 지정 한다. manage.py 파일이 들어있는 폴더를 이 위치로 설정을 한다. &lt;/span&gt;
-&lt;span class=&quot;token comment&quot;&gt;# __file__은 현재 파일, os.path.abspath 를 통해 현재 파일의 절대 경로를 획득한다. 이를테면 &apos;/User/Project/beautiful-awosome-project/beautiful-awosome-project/settings.py&apos;가 될 것이다. os.path.dirname는 settings.py이 들어있는 폴더이름을 찾는다. 이걸 두번 하게 되면? &lt;/span&gt;
-&lt;span class=&quot;token comment&quot;&gt;#BASE_DIR =&apos;/User/Project/beautiful-awosome-project&apos;가 되는 것이다.&lt;/span&gt;
 
-SECRET_KEY &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;1!rfl^^ehfh#9_ig@sy_=5sb&amp;amp;b&amp;amp;24xwb))+#-@c+a0nr@td2pt&apos;&lt;/span&gt;
-&lt;span class=&quot;token comment&quot;&gt;#프로젝트 내에서 암호화에 사용하게 될 암호키를 설정한다. 암호를 만드는데도 암호키가 필요하고 암호를 해독하는데도 암호키가 필요하다. 그래서 노출하면 절~~~~대 안된다.&lt;/span&gt;
-
-DEBUG &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;True&lt;/span&gt;
-&lt;span class=&quot;token comment&quot;&gt;#Django를 실행할때 에러가 생기면 에러를 디테일하게 보여주는 모드이다. True== ON, False==OFF. 프로덕션 배포에서 켜놓게 되면 비관계자들에게 프로젝트 구조를 노출 시킬 수도 있게 된다. &lt;/span&gt;
-
-ALLOWED_HOSTS &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
-&lt;span class=&quot;token comment&quot;&gt;#접근 가능한 IP를 제한 할 수 있다. 보통 개발할때에는 &apos;*&apos;로 모든 IP에 대한 접근을 허용한다. &lt;/span&gt;
+SECRET_KEY &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;SECRET_KEY&apos;&lt;/span&gt;
 
 INSTALLED_APPS &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
     &lt;span class=&quot;token string&quot;&gt;&apos;django.contrib.admin&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
     &lt;span class=&quot;token string&quot;&gt;&apos;django.contrib.auth&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
     &lt;span class=&quot;token string&quot;&gt;&apos;django.contrib.contenttypes&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
     &lt;span class=&quot;token string&quot;&gt;&apos;django.contrib.sessions&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token string&quot;&gt;&apos;django.contrib.sites&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
     &lt;span class=&quot;token string&quot;&gt;&apos;django.contrib.messages&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
     &lt;span class=&quot;token string&quot;&gt;&apos;django.contrib.staticfiles&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-  	&lt;span class=&quot;token string&quot;&gt;&apos;fantastic-app&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+		&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
-&lt;span class=&quot;token comment&quot;&gt;#장고에서 프로젝트 하위에 app을 만들면 여기에 등록을 해줘야한다. 그렇지 않으면 django에서 앱으로 인식을 하지 못한다. 이건 django에서 개발자가 만든 app도 포함이며, django를 더 원할하게 사용하기 위한 부가 app e.g.&gt; django-extension 들도 등록을 해야 작동이 가능하다. 처음 앱을 시작하게 될 경우 기본 설정되어 있는 값들은 django에서 기본적으로 사용하는 앱들이나 필요에 의해 사용하지 않아도 된다. &lt;/span&gt;
+
 
 MIDDLEWARE &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
     &lt;span class=&quot;token string&quot;&gt;&apos;django.middleware.security.SecurityMiddleware&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
     &lt;span class=&quot;token string&quot;&gt;&apos;django.contrib.sessions.middleware.SessionMiddleware&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token string&quot;&gt;&apos;corsheaders.middleware.CorsMiddleware&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
     &lt;span class=&quot;token string&quot;&gt;&apos;django.middleware.common.CommonMiddleware&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
     &lt;span class=&quot;token string&quot;&gt;&apos;django.middleware.csrf.CsrfViewMiddleware&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;token string&quot;&gt;&apos;django.contrib.auth.middleware.AuthenticationMiddleware&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;token string&quot;&gt;&apos;django.contrib.messages.middleware.MessageMiddleware&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;token string&quot;&gt;&apos;django.middleware.clickjacking.XFrameOptionsMiddleware&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token string&quot;&gt;&apos;corsheaders.middleware.CorsPostCsrfMiddleware&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
-&lt;span class=&quot;token comment&quot;&gt;#django의 파일들이 동작을 중간에서 연결하는 middleware를 관리하는 부분이다. INSTALLE_APP과 유사하다. 필요에 의해 추가하거나 삭제가 가능하다.&lt;/span&gt;
 
-ROOT_URLCONF &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;django_template.urls&apos;&lt;/span&gt;
-&lt;span class=&quot;token comment&quot;&gt;#URL routing을 해주는 django urls의 ROOT 파일을 지정한다. url요청을 제일 먼저 받게 된다. 그리고 그 밑에 여러 urls를 거느려서 해당 urls의 views 로 연결이 되게 한다.&lt;/span&gt;
+ROOT_URLCONF &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;beautifur_awsome_project.urls&apos;&lt;/span&gt;
 
 TEMPLATES &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
     &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
         &lt;span class=&quot;token string&quot;&gt;&apos;BACKEND&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;django.template.backends.django.DjangoTemplates&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-      	&lt;span class=&quot;token comment&quot;&gt;#django Template 엔진을 설정한다.&lt;/span&gt;
-        &lt;span class=&quot;token string&quot;&gt;&apos;DIRS&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-      	&lt;span class=&quot;token comment&quot;&gt;#Template 폴더 위치를 지정한다.&lt;/span&gt;
+        &lt;span class=&quot;token string&quot;&gt;&apos;DIRS&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;templates&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
         &lt;span class=&quot;token string&quot;&gt;&apos;APP_DIRS&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-      	&lt;span class=&quot;token comment&quot;&gt;#앱별로 template폴더를 가지고 있는지 확인한다. &lt;/span&gt;
         &lt;span class=&quot;token string&quot;&gt;&apos;OPTIONS&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;token comment&quot;&gt;#Template과 관련된 옵션들을 설정한다. &lt;/span&gt;
             &lt;span class=&quot;token string&quot;&gt;&apos;context_processors&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
                 &lt;span class=&quot;token string&quot;&gt;&apos;django.template.context_processors.debug&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
                 &lt;span class=&quot;token string&quot;&gt;&apos;django.template.context_processors.request&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
@@ -64,21 +135,14 @@ TEMPLATES &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span c
                 &lt;span class=&quot;token string&quot;&gt;&apos;django.contrib.messages.context_processors.messages&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
             &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
         &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-
     &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
 
-WSGI_APPLICATION &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;django_template.wsgi.application&apos;&lt;/span&gt;
-&lt;span class=&quot;token comment&quot;&gt;#웹서버와 연결시 어떤 세팅을 이용하는지 세팅값과 연결을 시켜준다.&lt;/span&gt;
+AUTHENTICATION_BACKENDS &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
+    &lt;span class=&quot;token string&quot;&gt;&apos;django.contrib.auth.backends.ModelBackend&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 
-DATABASES &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;token string&quot;&gt;&apos;default&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;token string&quot;&gt;&apos;ENGINE&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;django.db.backends.sqlite3&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;token string&quot;&gt;&apos;NAME&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; os&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;path&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;join&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;BASE_DIR&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;db.sqlite3&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;token comment&quot;&gt;#django project가 연결할 데이터 베이스 정보를 설정한다. ID/PW등도 같이 설정한다. &lt;/span&gt;
-
+WSGI_APPLICATION &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;beautiful_awosome_project.wsgi.application&apos;&lt;/span&gt;
 
 AUTH_PASSWORD_VALIDATORS &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
     &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
@@ -94,25 +158,159 @@ AUTH_PASSWORD_VALIDATORS &lt;span class=&quot;token operator&quot;&gt;=&lt;/span
         &lt;span class=&quot;token string&quot;&gt;&apos;NAME&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;django.contrib.auth.password_validation.NumericPasswordValidator&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
     &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
-&lt;span class=&quot;token comment&quot;&gt;#친절하게도, PW 검증을 할 수 있는 옵션을 지원해준다. 글쓴이도 아직 써보지는 못했다. &lt;/span&gt;
 
-LANGUAGE_CODE &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;en-us&apos;&lt;/span&gt;
-&lt;span class=&quot;token comment&quot;&gt;#언어설정 3.0이상부터는 한국어를 설정하려면 &apos;ko&apos;를 사용, 그 이전 버전은 &apos;ko-kr&apos;을 사용하면 된다.&lt;/span&gt;
+LANGUAGE_CODE &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;ko-KR&apos;&lt;/span&gt;
 
-TIME_ZONE &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;UTC&apos;&lt;/span&gt;
-&lt;span class=&quot;token comment&quot;&gt;#시간존 설정, UTC는 그리니치 천문대의 시간이다. 한국 시간보다 9시간 빠르다. 한국시간대로 설정을 하려면 &apos;Asia/Seoul&apos;을 설정한다. 그러면 UTC +9된 한국시간을 표준시간으로 잡는다. (DB 저장시)&lt;/span&gt;
+TIME_ZONE &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;Asia/Seoul&apos;&lt;/span&gt;
 
 USE_I18N &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;True&lt;/span&gt;
-&lt;span class=&quot;token comment&quot;&gt;#django의 번역 (영어 =&gt; 한국어) 을 설정하는 옵션, 편의를 위해 기본적으로 켜져있다.&lt;/span&gt;
 
 USE_L10N &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;True&lt;/span&gt;
-&lt;span class=&quot;token comment&quot;&gt;#설정한 언어형태에 맞추어 시간과 숫자 표시를 맞추는지 여부. 기본은 True로 되어있다.&lt;/span&gt;
 
-USE_TZ &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;True&lt;/span&gt;
-&lt;span class=&quot;token comment&quot;&gt;#TIME_ZONE 옵션을 사용할지 묻는 옵션이다. 이게 위에 있어랴 할거 같은데 아래에 있다. 왜그런진 나도 모르겠다.이게 True일 경우 django 내부시간대를 사용(&apos;America/Chicago&apos;가 Django의 출생지라 기본 설정이 그렇게 되어있다고 한다.), False 일 경우 내가 설정한 time-zone을 기준으로 움직인다. &lt;/span&gt;
+USE_TZ &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;True&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;# product.py&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;base &lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;
 
-STATIC_URL &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;/static/&apos;&lt;/span&gt;
-&lt;span class=&quot;token comment&quot;&gt;#django 실행시 불러올 정적 파일, css 라던가, css라든가, css라던가.. 를 불러올 url을 설정한다. 기본으로 설정된 값을 기본으로 한다면, main-url/static/이 정적파일 접근 경로가 된다. &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[TIL&TEL 20.04.20 ~ 20.04.26]]></title><description><![CDATA[  20.04.20 ~ 20.04.26  배운것, 씨름한것들]]></description><link>https://rumbarum.github.io//posts/TIL&amp;TEL_2020-04-26/</link><guid isPermaLink="false">https://rumbarum.github.io//posts/TIL&amp;TEL_2020-04-26/</guid><pubDate>Sun, 26 Apr 2020 01:23:45 GMT</pubDate><content:encoded>&lt;h2 id=&quot;til-today-i-learned&quot;&gt;&lt;a href=&quot;#til-today-i-learned&quot; aria-label=&quot;til today i learned permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TIL( Today I Learned)&lt;/h2&gt;
+DEBUG &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;False&lt;/span&gt; 
+&lt;span class=&quot;token comment&quot;&gt;# 꼭꼭꼭 까먹지 말아야한다. &lt;/span&gt;
+ALLOWED_HOSTS &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;*&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+
+CORS_ORIGIN_ALLOW_ALL &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;True&lt;/span&gt;
+
+DATABASES &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token string&quot;&gt;&apos;default&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token string&quot;&gt;&apos;ENGINE&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;django.db.backends.postgresql_psycopg2&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;token string&quot;&gt;&apos;NAME&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;prod_db_name&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;token string&quot;&gt;&apos;USER&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;prod_db_user&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;token string&quot;&gt;&apos;PASSWORD&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;prod_db_password&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;token string&quot;&gt;&apos;HOST&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;prod_db_host&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;token string&quot;&gt;&apos;PORT&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;prod_db_port&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+WSGI_APPLICATION &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;beautiful_awosome_project.wsgi.application&apos;&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;#그외 추가 적인 세팅&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;# local.py &lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;base &lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;
+
+DEBUG &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;True&lt;/span&gt; 
+ 
+ALLOWED_HOSTS &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;*&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+
+CORS_ORIGIN_ALLOW_ALL &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;True&lt;/span&gt;
+
+DATABASES &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token string&quot;&gt;&apos;default&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token string&quot;&gt;&apos;ENGINE&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;django.db.backends.postgresql_psycopg2&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;token string&quot;&gt;&apos;NAME&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;local_db_name&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;token string&quot;&gt;&apos;USER&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;local_db_user&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;token string&quot;&gt;&apos;PASSWORD&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;local_db_password&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;token string&quot;&gt;&apos;HOST&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;local_db_host&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;token string&quot;&gt;&apos;PORT&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;local_db_port&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+WSGI_APPLICATION &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;beautiful_awosome_project.wsgi.application&apos;&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;#그외 추가 적인 세팅&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;이렇게 세팅을 잡아놓으면 편하게 사용이 가능하다. &lt;/p&gt;</content:encoded></item><item><title><![CDATA[Django settings.py 톺아보기]]></title><description><![CDATA[처음 장고를 시작하고 세팅을 하려고 하는데 이게 뭔 말...??? ]]></description><link>https://rumbarum.github.io//posts/understanding-django-settings/</link><guid isPermaLink="false">https://rumbarum.github.io//posts/understanding-django-settings/</guid><pubDate>Sun, 03 May 2020 01:23:45 GMT</pubDate><content:encoded>&lt;p&gt;파이썬으로 쉽게 웹서버를 만들 수 있게 도와준다는 프레임웤 Django가 있다고 들었다. &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;token variable&quot;&gt;$conda&lt;/span&gt; --create -n &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;nice-env-name&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token assign-left variable&quot;&gt;python&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;3.8&lt;/span&gt;
+&lt;span class=&quot;token variable&quot;&gt;$pip&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; django
+&lt;span class=&quot;token variable&quot;&gt;$django&lt;/span&gt;-admin startproject &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;beautiful-awosome-project&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;까지 실행한 당신, 이제 settings.py를 다뤄야 한다. 고 하는 말을 들었다. &lt;/p&gt;
+&lt;p&gt;지금 까지 공부했던 Python에는 사용하지 않았던 어여쁜 단어들이 눈에 보인다. Django 내에서만 통용되는 세팅 값들을 한번 이해하고 넘어가면 좋을 듯 해서 한줄 한줄 정리해 본다. &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; os&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt; 파이썬 실행 환경에서 운영체제(맥북이라면 max OSX, 리눅스라면 ubutu 등)에 접근하기 위한 module로 사용된다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;BASE_DIR &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; os&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;path&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;dirname&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;os&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;path&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;dirname&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;os&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;path&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;abspath&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;__file__&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt; BASE&lt;em&gt;DIR 는 Django project의 기본 ROOT Dir를 지정 한다. manage.py 파일이 들어있는 폴더를 이 위치로 설정을 한다.
+__file__ 은 현재 파일, os.path.abspath 를 통해 현재 파일의 절대 경로를 획득한다. 이를테면 ‘/User/Project/beautiful-awosome-project/beautiful-awosome-project/settings.py’가 될 것이다. os.path.dirname는 settings.py이 들어있는 폴더이름을 찾는다. 이걸 두번 하게 되면?
+BASE&lt;/em&gt;DIR =‘/User/Project/beautiful-awosome-project’가 되는 것이다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;SECRET_KEY &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;1!rfl^^ehfh9_ig@sy_=5sb&amp;amp;b&amp;amp;24xwb))+-@c+a0nr@td2pt&apos;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;프로젝트 내에서 암호화에 사용하게 될 암호키를 설정한다. 암호를 만드는데도 암호키가 필요하고 암호를 해독하는데도 암호키가 필요하다. 그래서 노출하면 절&lt;del&gt;&lt;/del&gt;대 안된다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;DEBUG &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;True&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Django를 실행할때 에러가 생기면 에러를 디테일하게 보여주는 모드이다. True== ON, False==OFF. 프로덕션 배포에서 켜놓게 되면 비관계자들에게 프로젝트 구조를 노출 시킬 수도 있게 되므로 주의가 필요하다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;ALLOWED_HOSTS &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;접근 가능한 IP를 제한 할 수 있다. 보통 개발할때에는 ’*‘로 모든 IP에 대한 접근을 허용한다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;INSTALLED_APPS &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+    &lt;span class=&quot;token string&quot;&gt;&apos;django.contrib.admin&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token string&quot;&gt;&apos;django.contrib.auth&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token string&quot;&gt;&apos;django.contrib.contenttypes&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token string&quot;&gt;&apos;django.contrib.sessions&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token string&quot;&gt;&apos;django.contrib.messages&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token string&quot;&gt;&apos;django.contrib.staticfiles&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token string&quot;&gt;&apos;fantastic-app&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;장고에서 프로젝트 하위에 app을 만들면 여기에 등록을 해줘야한다. 그렇지 않으면 django에서 앱으로 인식을 하지 못한다. 이건 django에서 개발자가 만든 app도 포함이며, django를 더 원할하게 사용하기 위한 부가 app e.g.&gt; django-extension 들도 등록을 해야 작동이 가능하다. 처음 앱을 시작하게 될 경우 기본 설정되어 있는 값들은 django에서 기본적으로 사용하는 앱들이나 필요에 의해 사용하지 않아도 된다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;MIDDLEWARE &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+    &lt;span class=&quot;token string&quot;&gt;&apos;django.middleware.security.SecurityMiddleware&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token string&quot;&gt;&apos;django.contrib.sessions.middleware.SessionMiddleware&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token string&quot;&gt;&apos;django.middleware.common.CommonMiddleware&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token string&quot;&gt;&apos;django.middleware.csrf.CsrfViewMiddleware&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token string&quot;&gt;&apos;django.contrib.auth.middleware.AuthenticationMiddleware&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token string&quot;&gt;&apos;django.contrib.messages.middleware.MessageMiddleware&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token string&quot;&gt;&apos;django.middleware.clickjacking.XFrameOptionsMiddleware&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;django의 파일들(url, view, template )이 동작을 중간에서 연결하는 middleware를 관리하는 부분이다. INSTALLE_APP과 유사하다. 필요에 의해 추가하거나 삭제가 가능하다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;ROOT_URLCONF &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;django_template.urls&apos;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;URL routing을 해주는 django urls의 ROOT 파일을 지정한다. url요청을 제일 먼저 받게 된다. 그리고 그 밑에 여러 urls를 거느려서 해당 urls의 views 로 연결이 되게 한다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;TEMPLATES &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token string&quot;&gt;&apos;BACKEND&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;django.template.backends.django.DjangoTemplates&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;token comment&quot;&gt;#django Template 엔진을 설정한다.&lt;/span&gt;
+        &lt;span class=&quot;token string&quot;&gt;&apos;DIRS&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;token comment&quot;&gt;#Template 폴더 위치를 지정한다.&lt;/span&gt;
+        &lt;span class=&quot;token string&quot;&gt;&apos;APP_DIRS&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;token comment&quot;&gt;#앱별로 template폴더를 가지고 있는지 확인한다.&lt;/span&gt;
+        &lt;span class=&quot;token string&quot;&gt;&apos;OPTIONS&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;token comment&quot;&gt;#Template과 관련된 옵션들을 설정한다.&lt;/span&gt;
+            &lt;span class=&quot;token string&quot;&gt;&apos;context_processors&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+                &lt;span class=&quot;token string&quot;&gt;&apos;django.template.context_processors.debug&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+                &lt;span class=&quot;token string&quot;&gt;&apos;django.template.context_processors.request&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+                &lt;span class=&quot;token string&quot;&gt;&apos;django.contrib.auth.context_processors.auth&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+                &lt;span class=&quot;token string&quot;&gt;&apos;django.contrib.messages.context_processors.messages&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;코드 블록내 주석 참조&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;WSGI_APPLICATION &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;django_template.wsgi.application&apos;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;웹서버와 연결시 어떤 세팅을 이용하는지 세팅값과 연결을 시켜준다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;DATABASES &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token string&quot;&gt;&apos;default&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token string&quot;&gt;&apos;ENGINE&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;django.db.backends.sqlite3&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;token string&quot;&gt;&apos;NAME&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; os&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;path&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;join&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;BASE_DIR&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;db.sqlite3&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;django project가 연결할 데이터 베이스 정보를 설정한다. ID/PW등도 같이 설정한다. 멀티 데이터 베이스도 가능하긴 하다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;AUTH_PASSWORD_VALIDATORS &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token string&quot;&gt;&apos;NAME&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;django.contrib.auth.password_validation.UserAttributeSimilarityValidator&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token string&quot;&gt;&apos;NAME&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;django.contrib.auth.password_validation.MinimumLengthValidator&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token string&quot;&gt;&apos;NAME&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;django.contrib.auth.password_validation.CommonPasswordValidator&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token string&quot;&gt;&apos;NAME&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;django.contrib.auth.password_validation.NumericPasswordValidator&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;친절하게도, PW 검증을 할 수 있는 옵션을 지원해준다. 글쓴이도 아직 써보지는 못했다. &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;LANGUAGE_CODE &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;en-us&apos;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;언어설정, 3.0이상부터는 한국어를 설정하려면 ‘ko’를 사용, 그 이전 버전은 ‘ko-kr’을 사용하면 된다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;TIME_ZONE &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;UTC&apos;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;시간존 설정, UTC는 그리니치 천문대의 시간이다. 한국 시간보다 9시간 빠르다. 한국시간대로 설정을 하려면 ‘Asia/Seoul’을 설정한다. 그러면 UTC +9된 한국시간을 표준시간으로 잡는다. (DB 저장시)&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;USE_I18N &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;True&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;django의 번역 (영어 =&gt; 한국어) 을 설정하는 옵션, 편의를 위해 기본적으로 켜져있다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;USE_L10N &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;True&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;설정한 언어형태에 맞추어 시간과 숫자 표시를 맞추는지 여부. 기본은 True로 되어있다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;USE_TZ &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;True&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;TIME_ZONE 옵션을 사용할지 묻는 옵션이다. 이게 위에 있어랴 할거 같은데 아래에 있다. 왜그런진 나도 모르겠다.이게 True일 경우 django 내부시간대를 사용(‘America/Chicago’가 Django의 출생지라 기본 설정이 그렇게 되어있다고 한다.), False 일 경우 내가 설정한 time-zone을 기준으로 움직인다. &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;STATIC_URL &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;/static/&apos;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;django 실행시 불러올 정적 파일, css 라던가, css라든가, css라던가.. 를 불러올 url을 설정한다. 기본으로 설정된 값을 기본으로 한다면, main-url/static/이 정적파일 접근 경로가 된다&lt;/p&gt;</content:encoded></item><item><title><![CDATA[TIL&TEL 20.04.20 ~ 20.04.26]]></title><description><![CDATA[  20.04.20 ~ 20.04.26  배운것, 씨름한것들]]></description><link>https://rumbarum.github.io//posts/TIL&amp;TEL_2020-04-26/</link><guid isPermaLink="false">https://rumbarum.github.io//posts/TIL&amp;TEL_2020-04-26/</guid><pubDate>Sun, 26 Apr 2020 01:23:45 GMT</pubDate><content:encoded>&lt;h2 id=&quot;til-today-i-learned&quot;&gt;&lt;a href=&quot;#til-today-i-learned&quot; aria-label=&quot;til today i learned permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TIL( Today I Learned)&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;20-04-20 월&lt;/strong&gt;&lt;/p&gt;
