@@ -7,7 +7,6 @@ template: "page"
 
 한발음, 한빠름, 한바름 하는 한바름입니다.
 
-
 <a href="https://rumbarum.github.io/posts/WebDevStart/">바름이는 어쩌다 개발자가 되기로 했을까?
 </a>
 
@@ -15,7 +14,7 @@ template: "page"
 
 현재  **'The White Communication'** 에서 파이썬 개발자로 근무 중 입니다.
 
-취미는 인물 그리기, 독서모임 놀러가기, 그 외 기타  
+취미는 인물 그리기, 실내 클라이밍 그 외 기타  
 
 
 
