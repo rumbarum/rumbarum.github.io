@@ -1,12 +1,12 @@
 ---
 title: " Django settings.py 분리하기"
-date: "2020-05-10T01:23:45.678Z"
+date: "2020-05-10T01:23:45.679Z"
 template: "post"
 draft: false
 slug: "/posts/seperate-django-settings/"
 category: "DEVELOP"
 tags:
- - "Django"
+ - "django"
  - "setting"
  - "wecode"
 description: "Django 개발과 프로덕션 설정을 쉽게 분리하는 방법 "
