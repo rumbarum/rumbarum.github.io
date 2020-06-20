@@ -4,7 +4,7 @@ date: "2020-06-14T01:23:45.678Z"
 template: "post"
 draft: false
 slug: "/posts/understand-F-class-on-django/"
-category: "Develop"
+category: "develop"
 tags:
  - "Django"
  - "database"

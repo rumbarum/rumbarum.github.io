@@ -4,7 +4,7 @@ date: "2020-05-03T01:23:45.678Z"
 template: "post"
 draft: false
 slug: "/posts/understanding-django-settings/"
-category: "Develop"
+category: "develop"
 tags:
  - "django"
  - "setting"
