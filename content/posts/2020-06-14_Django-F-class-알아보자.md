@@ -1,6 +1,6 @@
 ---
 title: " Django F class 알아보자"
-date: "2020-06-14T01:23:45.678Z"
+date: "2020-06-14T11:23:45.678Z"
 template: "post"
 draft: false
 slug: "/posts/understand-F-class-on-django/"
