@@ -2,18 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
 <url> <loc>https://rumbarum.github.io/tags</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rumbarum.github.io/categories</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://rumbarum.github.io/pages/about/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://rumbarum.github.io/pages/contacts/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rumbarum.github.io/posts/19-08-02_outPut /</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rumbarum.github.io/posts/19-08-03_outPut/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://rumbarum.github.io/posts/TIL&amp;TEL_weekly_19-08-04 /</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://rumbarum.github.io/posts/19-08-05_python_decorator /</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://rumbarum.github.io/posts/19-08-06_python/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rumbarum.github.io/posts/createapiwithoutrestframework/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://rumbarum.github.io/posts/TIL&amp;TEL~19-08-11/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://rumbarum.github.io/posts/TIL&amp;TEL_weekly_19-08-04 /</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://rumbarum.github.io/posts/19-08-06_python/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rumbarum.github.io/posts/miniterAPIdocument/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://rumbarum.github.io/posts/surviveFromAlgorithmtest/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://rumbarum.github.io/posts/19-08-05_python_decorator /</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://rumbarum.github.io/posts/TIL&amp;TEL~19-08-11/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rumbarum.github.io/posts/TIL&amp;TEL~19-08-12~ 19-08-18/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://rumbarum.github.io/posts/surviveFromAlgorithmtest/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rumbarum.github.io/posts/understaingHttpandRestfulAPI/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rumbarum.github.io/posts/understaingSEO/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rumbarum.github.io/posts/TIL&amp;TEL_19.08.21/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -23,61 +21,65 @@
 <url> <loc>https://rumbarum.github.io/posts/TIL&amp;TEL_19-08-25/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rumbarum.github.io/posts/understandScrum/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rumbarum.github.io/posts/TIL&amp;TEL_19-08-28/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://rumbarum.github.io/posts/understaidingRDB/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://rumbarum.github.io/posts/TIL&amp;TEL_19-09-01/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rumbarum.github.io/posts/TIL&amp;TEL_19-09-04/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://rumbarum.github.io/posts/TIL&amp;TEL_19-09-01/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://rumbarum.github.io/posts/understaidingRDB/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rumbarum.github.io/posts/TIL&amp;TEL_19.09.08/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://rumbarum.github.io/posts/TIL&amp;TEL_19-09-15/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rumbarum.github.io/posts/httpieintro/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rumbarum.github.io/posts/briefViewofSSHkey/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://rumbarum.github.io/posts/TIL&amp;TEL_19-09-15/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rumbarum.github.io/posts/TIL&amp;TEL_19-09-23/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rumbarum.github.io/posts/briefview_Query/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://rumbarum.github.io/posts/TIL&amp;TEL_19-09-29/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://rumbarum.github.io/posts/TIL&amp;TEL_2019-10-07&#039;/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://rumbarum.github.io/posts/TIL&amp;TEL_2019-10-21/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rumbarum.github.io/posts/TIL&amp;TEL_2019-10-27/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://rumbarum.github.io/posts/TIL&amp;TEL_2019-10-07&#039;/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://rumbarum.github.io/posts/TIL&amp;TEL_19-09-29/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rumbarum.github.io/posts/TIL&amp;TEL_2019-11-04/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://rumbarum.github.io/posts/Interview_tip_for_wecoder/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://rumbarum.github.io/posts/TIL&amp;TEL_2019-12-22/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://rumbarum.github.io/posts/TIL&amp;TEL_2019-10-21/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rumbarum.github.io/posts/TIL&amp;TEL_2019-12-29/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rumbarum.github.io/posts/WebDevStart/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rumbarum.github.io/posts/Onepage_HtmlAndCss/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://rumbarum.github.io/posts/TIL&amp;TEL_2019-12-22/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rumbarum.github.io/posts/understandFlexElement /</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rumbarum.github.io/posts/understandRGBcolor /</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rumbarum.github.io/posts/TIL&amp;TEL_2020-01-06/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rumbarum.github.io/posts/TIL&amp;TEL_2020-01-12/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rumbarum.github.io/posts/TIL&amp;TEL_2020-01-19/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rumbarum.github.io/posts/TIL&amp;TEL_2020-01-27/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://rumbarum.github.io/posts/django_dynamic_sort&amp;filter/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://rumbarum.github.io/posts/onpagrPython /</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rumbarum.github.io/posts/TIL&amp;TEL_2020-02-08/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rumbarum.github.io/posts/TIL&amp;TEL_2020-02-16/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://rumbarum.github.io/posts/django_dynamic_sort&amp;filter/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rumbarum.github.io/posts/TIL&amp;TEL_20-05-03/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://rumbarum.github.io/posts/Interview_tip_for_wecoder/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rumbarum.github.io/posts/TIL&amp;TEL_20-05-10/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://rumbarum.github.io/posts/TIL&amp;TEL_2019-10-14/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rumbarum.github.io/posts/TIL&amp;TEL_2020-02-24/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://rumbarum.github.io/posts/TIL&amp;TEL_2020-03-08/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://rumbarum.github.io/posts/TIL&amp;TEL_2019-10-14/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rumbarum.github.io/posts/TIL&amp;TEL_2020-03-02/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://rumbarum.github.io/posts/TIL&amp;TEL_2020-03-08/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rumbarum.github.io/posts/TIL&amp;TEL_2020-03-15/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://rumbarum.github.io/posts/TIL&amp;TEL_2020-03-22/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://rumbarum.github.io/posts/TIL&amp;TEL_2020-03-30/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rumbarum.github.io/posts/TIL&amp;TEL_2020-04-05/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://rumbarum.github.io/posts/TIL&amp;TEL_2020-03-22/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rumbarum.github.io/posts/TIL&amp;TEL_2020-04-18/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://rumbarum.github.io/posts/TIL&amp;TEL_2020-04-26/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://rumbarum.github.io/posts/TIL&amp;TEL_2020-03-30/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rumbarum.github.io/posts/understanding-django-settings/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://rumbarum.github.io/posts/TIL&amp;TEL_20-05-17/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rumbarum.github.io/posts/seperate-django-settings/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rumbarum.github.io/posts/tirgger-managepy-with-variable-settings/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://rumbarum.github.io/posts/TIL&amp;TEL_20-05-24/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://rumbarum.github.io/posts/TIL&amp;TEL_2020-04-26/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rumbarum.github.io/posts/TIL&amp;TEL_20-05-31/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://rumbarum.github.io/posts/django_migration_trouble/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rumbarum.github.io/posts/TIL&amp;TEL_20-06-07/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://rumbarum.github.io/posts/TIL&amp;TEL_20-06-14/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rumbarum.github.io/posts/control-cursor-on-terminal/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rumbarum.github.io/posts/understand-F-class-on-django/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://rumbarum.github.io/posts/TIL&amp;TEL_20-06-14/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rumbarum.github.io/posts/book-recommendation-for-python-novice/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rumbarum.github.io/posts/TIL&amp;TEL_20-06-21/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://rumbarum.github.io/posts/TIL&amp;TEL_20-06-28/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://rumbarum.github.io/posts/TIL&amp;TEL_20-07-05/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rumbarum.github.io/posts/knowing-JWT/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://rumbarum.github.io/posts/onpagrPython /</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://rumbarum.github.io/posts/TIL&amp;TEL_20-05-17/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://rumbarum.github.io/posts/django_migration_trouble/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://rumbarum.github.io/pages/about/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://rumbarum.github.io/pages/contacts/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://rumbarum.github.io/posts/TIL&amp;TEL_20-05-24/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rumbarum.github.io/tag/api</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rumbarum.github.io/tag/argon</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rumbarum.github.io/tag/backend</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
