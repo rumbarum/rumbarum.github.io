@@ -1,6 +1,6 @@
 ---
 title: " Parameter,Argument,Default Parameter"
-date: "2020-11-08T01:23:45.678Z"
+date: "2020-11-08T02:23:45.678Z"
 template: "post"
 draft: false
 slug: "/posts/python_param_args/"
