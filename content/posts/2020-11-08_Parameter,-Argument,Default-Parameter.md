@@ -7,8 +7,7 @@ slug: "/posts/python_param_args/"
 category: "develop"
 tags:
  - "python"
- - "definotion"
- - ""
+ - "definition"
 description: "헷갈리는 녀석들 정리해보기 "
 ---
 <h2 style="color:rgb(9, 136, 104)">  </h2>
