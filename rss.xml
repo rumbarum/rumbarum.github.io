@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[ 개발세발개발]]></title><description><![CDATA[개발자 성장일기]]></description><link>https://rumbarum.github.io/</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 14 Mar 2021 13:59:25 GMT</lastBuildDate><item><title><![CDATA[ TIL&TEL 21.03.08~21.03.14  ]]></title><description><![CDATA[ 21.03.08~21.03.14 배운것, 씨름한것들 ]]></description><link>https://rumbarum.github.io//posts/TIL&amp;TEL_21-03-14/</link><guid isPermaLink="false">https://rumbarum.github.io//posts/TIL&amp;TEL_21-03-14/</guid><pubDate>Sun, 14 Mar 2021 01:23:45 GMT</pubDate><content:encoded>&lt;h2 id=&quot;til-today-i-learned&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#til-today-i-learned&quot; aria-label=&quot;til today i learned permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TIL( Today I Learned)&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[ 개발세발개발]]></title><description><![CDATA[개발자 성장일기]]></description><link>https://rumbarum.github.io/</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 15 Mar 2021 02:08:50 GMT</lastBuildDate><item><title><![CDATA[ TIL&TEL 21.03.08~21.03.14  ]]></title><description><![CDATA[ 21.03.08~21.03.14 배운것, 씨름한것들 ]]></description><link>https://rumbarum.github.io//posts/TIL&amp;TEL_21-03-14/</link><guid isPermaLink="false">https://rumbarum.github.io//posts/TIL&amp;TEL_21-03-14/</guid><pubDate>Sun, 14 Mar 2021 01:23:45 GMT</pubDate><content:encoded>&lt;h2 id=&quot;til-today-i-learned&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#til-today-i-learned&quot; aria-label=&quot;til today i learned permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TIL( Today I Learned)&lt;/h2&gt;
 &lt;h3 id=&quot;21-03-08-월&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#21-03-08-%EC%9B%94&quot; aria-label=&quot;21 03 08 월 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;21-03-08 월&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -11,17 +11,13 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&quot;21-03-09-화&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#21-03-09-%ED%99%94&quot; aria-label=&quot;21 03 09 화 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;21-03-09 화&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
 &lt;p&gt;업무&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;bert 코드 보기&lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;app 쪼개기&lt;/p&gt;
+&lt;p&gt;bert 코드 보기&lt;/p&gt;
 &lt;ul&gt;
+&lt;li&gt;app 쪼개기&lt;/li&gt;
 &lt;li&gt;create_app( ) 팩토리 생성 패턴 만들기&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -58,21 +54,33 @@
 &lt;ul&gt;
 &lt;li&gt;SITUATION: ssh, gcp console 접속이 안됨&lt;/li&gt;
 &lt;li&gt;REASON: vm에러&lt;/li&gt;
-&lt;li&gt;SOLUTION:&lt;/li&gt;
-&lt;li&gt;VM 재설정(재시작)&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;SOLUTION:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;VM 설정(재시작)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;ERROR: tar : Cannot open: File exists&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;SITUATION: tar로 압축해제중&lt;/li&gt;
-&lt;li&gt;REASON: others have no write permission&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;REASON: others have no write permission&lt;/p&gt;
+&lt;ul&gt;
 &lt;li&gt;권한 문제이다 &lt;/li&gt;
 &lt;li&gt;권한 문제이다&lt;/li&gt;
 &lt;li&gt;권한 문제이다&lt;/li&gt;
 &lt;li&gt;기존에 있는 tar 파일 수정 권한이 없다.&lt;/li&gt;
-&lt;li&gt;SOLUTION:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;SOLUTION:&lt;/p&gt;
+&lt;ul&gt;
 &lt;li&gt;권한 있는 계정으로 진행한다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
@@ -80,8 +88,12 @@
 &lt;ul&gt;
 &lt;li&gt;SITUATION: Publish Over SSH 동작에서 문제가 발생한다&lt;/li&gt;
 &lt;li&gt;REASON: 명령어 실행 위치로 이동을 안했다.&lt;/li&gt;
-&lt;li&gt;SOLUTION:&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;SOLUTION:&lt;/p&gt;
+&lt;ul&gt;
 &lt;li&gt;cd &lt;target&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
@@ -89,23 +101,35 @@
 &lt;ul&gt;
 &lt;li&gt;SITUATION: django 실행중&lt;/li&gt;
 &lt;li&gt;REASON: request.headers[‘key’]로 값 가져오는중&lt;/li&gt;
-&lt;li&gt;SOLUTION:&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;SOLUTION:&lt;/p&gt;
+&lt;ul&gt;
 &lt;li&gt;.get() 으로 변경한다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;ERROR: This site can’t provide a secure connection - ERR&lt;em&gt;SSL&lt;/em&gt;PROTOCOL_ERROR&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;SITUATION: 브라우저에서 아예 접속을 못함&lt;/li&gt;
-&lt;li&gt;REASON:&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;REASON:&lt;/p&gt;
+&lt;ul&gt;
 &lt;li&gt;Incorrect computer data and time settings&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Mismatched SSL certificate name with the domain name&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;Untrusted, outdated or unauthorized SSL certificate&lt;/li&gt;
 &lt;li&gt;Antivirus or firewall protection&lt;/li&gt;
 &lt;li&gt;Webpage containing some insecure data&lt;/li&gt;
 &lt;li&gt;Browser problem&lt;/li&gt;
-&lt;li&gt;SOLUTION:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;SOLUTION:&lt;/p&gt;
+&lt;ul&gt;
 &lt;li&gt;DNS 네임 get&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
@@ -113,8 +137,12 @@
 &lt;ul&gt;
 &lt;li&gt;SITUATION: 깃 업데이트&lt;/li&gt;
 &lt;li&gt;REASON: 다른 프로젝트였다.&lt;/li&gt;
-&lt;li&gt;SOLUTION:&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;SOLUTION:&lt;/p&gt;
+&lt;ul&gt;
 &lt;li&gt;git remote -v 로 연결된 브런치 확인한다&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -125,8 +153,12 @@
 &lt;ul&gt;
 &lt;li&gt;SITUATION: flask runserver 동작을 못함&lt;/li&gt;
 &lt;li&gt;REASON: tf 공식 에러&lt;/li&gt;
-&lt;li&gt;SOLUTION:&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;SOLUTION:&lt;/p&gt;
+&lt;ul&gt;
 &lt;li&gt;tf 2.2 이상 올라가야함&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
@@ -134,8 +166,12 @@
 &lt;ul&gt;
 &lt;li&gt;SITUATION: flask initiating&lt;/li&gt;
 &lt;li&gt;REASON: 명령어를 잘못 침&lt;/li&gt;
-&lt;li&gt;SOLUTION:&lt;/li&gt;
-&lt;li&gt;uwsgi ~~ “app:func()” &amp;#x3C;= uwsgi ~ app:func&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;SOLUTION:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;uwsgi ~~ “app:func()” &amp;#x3C;= uwsgi ~ app:func &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
@@ -143,8 +179,12 @@
 &lt;ul&gt;
 &lt;li&gt;SITUATION: bert serving initiating&lt;/li&gt;
 &lt;li&gt;REASON: ckpt number 잘못 입력&lt;/li&gt;
-&lt;li&gt;SOLUTION:&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;SOLUTION:&lt;/p&gt;
+&lt;ul&gt;
 &lt;li&gt;ckpt 0 한개 뺌&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -154,10 +194,18 @@
 &lt;p&gt;ERROR: Specifying limit and offset in Django QuerySet wont work&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;SITUATION: django queryset[offset:limit] test&lt;/li&gt;
-&lt;li&gt;REASON:&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;REASON:&lt;/p&gt;
+&lt;ul&gt;
 &lt;li&gt;You were printing (or, at least, trying to print) the repr() of the queryset. To avoid people accidentally trying to retrieve and print a million results, we (well, I) changed that to only retrieve and print the first 20 results and print “remainder truncated” if there were more. This is achieved by limiting the query to 21 results (if there are 21 results there are more than 20, so we print the “truncated” message). That only happens in the &lt;strong&gt;repr&lt;/strong&gt;() — i.e. it’s only for diagnostic printing. No normal user code has this limit included automatically, so you happily create a queryset that iterates over a million results.&lt;/li&gt;
-&lt;li&gt;SOLUTION:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;SOLUTION:&lt;/p&gt;
+&lt;ul&gt;
 &lt;li&gt;not error, intended result by maker &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
@@ -165,7 +213,9 @@
 &lt;ul&gt;
 &lt;li&gt;SITUATION: default 동작이 필요하다.&lt;/li&gt;
 &lt;li&gt;REASON: &lt;/li&gt;
-&lt;li&gt;SOLUTION:&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;SOLUTION:&lt;/p&gt;
+&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&amp;#x3C;input ~~~ checked&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -174,8 +224,12 @@
 &lt;/li&gt;
 &lt;li&gt;라디오버튼이 동작을 할때&lt;/li&gt;
 &lt;li&gt;
-&lt;body onload= function() &gt; 
-- 이렇게 하면 라디오 선택function이 동작한다.
+&lt;body onload= function() &gt;
+&lt;ul&gt;
+&lt;li&gt;이렇게 하면 라디오 선택function이 동작한다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
@@ -184,8 +238,12 @@
 &lt;ul&gt;
 &lt;li&gt;SITUATION: dataframe 편집하는상황&lt;/li&gt;
 &lt;li&gt;REASON: 원본 보존을 위해 변조를 막는다. &lt;/li&gt;
-&lt;li&gt;SOLUTION:&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;SOLUTION:&lt;/p&gt;
+&lt;ul&gt;
 &lt;li&gt;.copy() method를 사용, 새로운 df instance를 만든다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -203,10 +261,16 @@
 &lt;p&gt;ERROR:pip3 bad interpreter: No such file or directory&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;SITUATION: python3 이동후 call&lt;/li&gt;
-&lt;li&gt;REASON: 다른 파이썬을 불러온다&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;REASON: 다른 파이썬을 불러온다&lt;/p&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://stackoverflow.com/questions/51373063/pip3-bad-interpreter-no-such-file-or-directory&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;참고&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;SOLUTION:&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;SOLUTION:&lt;/p&gt;
+&lt;ul&gt;
 &lt;li&gt;pip shebang 변경 &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
@@ -214,8 +278,14 @@
 &lt;ul&gt;
 &lt;li&gt;SITUATION: elasticsearch 재부팅중&lt;/li&gt;
 &lt;li&gt;REASON: 이미 가동중인 녀석이 있다.&lt;/li&gt;
-&lt;li&gt;SOLUTION:&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;SOLUTION:&lt;/p&gt;
+&lt;ul&gt;
 &lt;li&gt;netstat -nlp | grep 9200으로 잡아서 처리한다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;</content:encoded></item><item><title><![CDATA[ TIL&TEL 21.03.01~21.03.07  ]]></title><description><![CDATA[ 21.03.01~21.03.07 배운것, 씨름한것들 ]]></description><link>https://rumbarum.github.io//posts/TIL&amp;TEL_21-03-07/</link><guid isPermaLink="false">https://rumbarum.github.io//posts/TIL&amp;TEL_21-03-07/</guid><pubDate>Sun, 07 Mar 2021 01:23:45 GMT</pubDate><content:encoded>&lt;h2 id=&quot;til-today-i-learned&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#til-today-i-learned&quot; aria-label=&quot;til today i learned permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TIL( Today I Learned)&lt;/h2&gt;
@@ -11239,47 +11309,7 @@ print(number) number += 1&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[ 19.08.03 작업결과물]]></title><description><![CDATA[Javascript를 통해서 간단한 떨어지는 유령과 움직이는 영웅을 구현 ]]></description><link>https://rumbarum.github.io//posts/19-08-03_outPut/</link><guid isPermaLink="false">https://rumbarum.github.io//posts/19-08-03_outPut/</guid><pubDate>Sat, 03 Aug 2019 01:23:45 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 801px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/23fc494393ba91ec4efa77f6bc3d5b00/2ad15/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202019-08-03%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%203.51.49.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 74.16666666666667%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsSAAALEgHS3X78AAADXUlEQVQ4yz1T+1fiZhTMv7K157Rd2rO2W62Eh0AIeYGGEJLAvuqyvrbrqkjxtVtFZFWe4SH+udNJ9OwP37k3Icw3c2euUDiOo3CegNqIQj+LQztagdaMQm2KUD7/BeUwCvnjMnL7K1APV6DzvX4Sg1pfgfH0vd6M8T8i1k4TEKIbL5A9FlG9k+D1ZZQf8tiYGdieqlgf52B1JVj9LIo9CeVJDu69CofHnWvf+1fzPNyegtiHRQIWf4b08U/Y3SxKt1m89jU0xjq+sr4eK/AmCsoEdnlBdW6EfaXP51Eu7G1Wh9W5yyL59gUE7ySB8lUa1XsZ3jCDT8Mcric6ulMDh4McvJEcMlFPY1iu/gqLTCsTlcyzML9lno4Ek0qML0kI9vkqahdR1AnQGBK0l8DfEw1HQxUmWZb9R5nqiYgl86cQ0J6RNRkFxxkTvJfF+m0Gi8aPEMyOjK32EhrzbYwftnDdi6M1LeDQV1Gi5EBOIM2h9CrnVmK/O1SwTZaF6xQStd9RvKHCGX87iEJ4riyg8O4X7HXjuL8R8W8/jQqBXJ8G+awjLQS0eEy+M8YyPo8U7HIsGUqMKD9AaSVRnWqw6yKEAq022hI+DBKYU65LmSX/iVUASKY2+032RxzFHiVeczwXEwP7BK2T2QHfebysQqeFYNCZg2Var2InMCBwkZI8ApQ5K2eqhIAbdHOP4Dtk35rqOPPz2Bto+Geo45tvYKsnY7ESgRAvRyDtvkSxK2OdzjmTxxhUR8zaZQplulgmqHOvweIcCzSuTkb7XQ1ecO5UHA8N7DAdyc2XjM15EqXLVTzXFiAymDYdtcjUJhOTzpUYapvPQSSKHc43mB/Zt4Os8vzn67jiCN7Q6Qy3TXAZG7udhvslgQ3WGoHOKG2fp8ZZviUrcyAjknmG1Z0/4D1o4YVFMg0ct8m+RFVBDpe4JMIaZa1T1icO93Smh3L6szwu2B+MNdQovTLh2nXIkKtpcWOcpxgVbzJYa6VgcW0DFeZVBkJEfgaR+1ziTSZf5kePsahxvV71U9gcreKonUWzwwXwU3g/SH/Ppk2WVl8K19DpSPhNX4BgtdKwuDoVMnI5myqrxwG/IbtmN4GTkYh3X+niqYTGhOC3sXD1XEbIZfXouMfe4/fFyzT+B6P/fr5Hep62AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;picture&gt;
-        &lt;source
-          srcset=&quot;/static/23fc494393ba91ec4efa77f6bc3d5b00/8ac56/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202019-08-03%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%203.51.49.webp 240w,
-/static/23fc494393ba91ec4efa77f6bc3d5b00/d3be9/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202019-08-03%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%203.51.49.webp 480w,
-/static/23fc494393ba91ec4efa77f6bc3d5b00/99a1d/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202019-08-03%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%203.51.49.webp 801w&quot;
-          sizes=&quot;(max-width: 801px) 100vw, 801px&quot;
-          type=&quot;image/webp&quot;
-        /&gt;
-        &lt;source
-          srcset=&quot;/static/23fc494393ba91ec4efa77f6bc3d5b00/8ff5a/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202019-08-03%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%203.51.49.png 240w,
-/static/23fc494393ba91ec4efa77f6bc3d5b00/e85cb/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202019-08-03%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%203.51.49.png 480w,
-/static/23fc494393ba91ec4efa77f6bc3d5b00/2ad15/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202019-08-03%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%203.51.49.png 801w&quot;
-          sizes=&quot;(max-width: 801px) 100vw, 801px&quot;
-          type=&quot;image/png&quot;
-        /&gt;
-        &lt;img
-          class=&quot;gatsby-resp-image-image&quot;
-          src=&quot;/static/23fc494393ba91ec4efa77f6bc3d5b00/2ad15/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202019-08-03%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%203.51.49.png&quot;
-          alt=&quot;           2019 08 03      3 51 49&quot;
-          title=&quot;           2019 08 03      3 51 49&quot;
-          loading=&quot;lazy&quot;
-          style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        /&gt;
-      &lt;/picture&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[ 19.08.03 작업결과물]]></title><description><![CDATA[Javascript를 통해서 간단한 떨어지는 유령과 움직이는 영웅을 구현 ]]></description><link>https://rumbarum.github.io//posts/19-08-03_outPut/</link><guid isPermaLink="false">https://rumbarum.github.io//posts/19-08-03_outPut/</guid><pubDate>Sat, 03 Aug 2019 01:23:45 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;/media/imageForBlog/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202019-08-03%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%203.51.49.png&quot;&gt;
 유령비가 내려와~~&lt;/p&gt;
 &lt;h3 style=&quot;color:rgb(9, 136, 104)&quot;&gt;오늘의 작업물&lt;/h3&gt;
 - 1. 바탕화면 깔기
@@ -11358,51 +11388,7 @@ print(number) number += 1&lt;/p&gt;
 &lt;li&gt;보라 rgb( 120,0,120) #800080&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[08.02 작업물 ]]></title><description><![CDATA[위코드 2주차 프로젝트 트위터 간단하게 클론해보기 ]]></description><link>https://rumbarum.github.io//posts/19-08-02_outPut /</link><guid isPermaLink="false">https://rumbarum.github.io//posts/19-08-02_outPut /</guid><pubDate>Thu, 01 Aug 2019 01:23:45 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 960px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/8b930656eb034bd62f7336773fba9f05/e67a8/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202019-08-02%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%203.45.01.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 63.74999999999999%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAABYlAAAWJQFJUiTwAAACHklEQVQ4y4WSS2/TQBSFLfgH8IfYIbFG/BgkNrBBIFYgtkgINlVX3bVIlZAaUlGViKSleTm2k7iOHb+S+DF+Hu6dpJEKpYzy+cxcT07OnYny7EuMBx9yPPqU4eFHIZXXTw9WaHsxmm6J5jxD07mdb8Qx7VOe7GS48xy49xq4/4b0FXD3BfB4R6BlRfg5DqD5GaZRjcnqZsaESZx5FZQjPcNeH9htp3i7r2G3I7DXAw7VFGd2jEzkqMoSdVXfCOgjoUcoSigiWdI8pUKOJLSl8iiKBA07Q2MOokbDJXWqLUdSa3w1E+wbAi+PgXctSuiuBPIS21FvdJkInDgRTsIKp26O71aC00V9jR+UpWlHODCWeN/K8LmbQ7H8AE4Ywg4CzAh7A8875+dQNQ3CCRAPTdQ1tcldSl3/dFFWWND3RRSgEBEU1bLQnUzQm0638Jrrg+EQ6khF4i+QuSGqqiSqDet5URSI4xgRkaYCijabYXh5eY2BaUKzbZlwyIYzjxJO10aUjHWbkAwD6oZhY2nIBn8ajqhuUkqL1jX+Hldtl/QPWC6XiKIISZL825ATdvt9dNptGLqBi18XUFVVMhqNYNN73/dh0l7DMGTNcZzbE+rjMaZ0ntzOfD6H53lS2YiTXZ0hp4vlGab/Tziki3FdFyHdJBuzKRtym7zmVLquS25NyPUJaZ9Me70eBoOBNO92u7JtPi82ZeQtU8osy/AbPhzA0R6196AAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;picture&gt;
-        &lt;source
-          srcset=&quot;/static/8b930656eb034bd62f7336773fba9f05/8ac56/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202019-08-02%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%203.45.01.webp 240w,
-/static/8b930656eb034bd62f7336773fba9f05/d3be9/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202019-08-02%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%203.45.01.webp 480w,
-/static/8b930656eb034bd62f7336773fba9f05/e46b2/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202019-08-02%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%203.45.01.webp 960w,
-/static/8b930656eb034bd62f7336773fba9f05/f992d/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202019-08-02%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%203.45.01.webp 1440w,
-/static/8b930656eb034bd62f7336773fba9f05/31418/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202019-08-02%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%203.45.01.webp 1740w&quot;
-          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
-          type=&quot;image/webp&quot;
-        /&gt;
-        &lt;source
-          srcset=&quot;/static/8b930656eb034bd62f7336773fba9f05/8ff5a/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202019-08-02%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%203.45.01.png 240w,
-/static/8b930656eb034bd62f7336773fba9f05/e85cb/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202019-08-02%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%203.45.01.png 480w,
-/static/8b930656eb034bd62f7336773fba9f05/d9199/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202019-08-02%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%203.45.01.png 960w,
-/static/8b930656eb034bd62f7336773fba9f05/07a9c/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202019-08-02%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%203.45.01.png 1440w,
-/static/8b930656eb034bd62f7336773fba9f05/e67a8/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202019-08-02%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%203.45.01.png 1740w&quot;
-          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
-          type=&quot;image/png&quot;
-        /&gt;
-        &lt;img
-          class=&quot;gatsby-resp-image-image&quot;
-          src=&quot;/static/8b930656eb034bd62f7336773fba9f05/d9199/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202019-08-02%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%203.45.01.png&quot;
-          alt=&quot;오늘의 작업물&quot;
-          title=&quot;오늘의 작업물&quot;
-          loading=&quot;lazy&quot;
-          style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        /&gt;
-      &lt;/picture&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[08.02 작업물 ]]></title><description><![CDATA[위코드 2주차 프로젝트 트위터 간단하게 클론해보기 ]]></description><link>https://rumbarum.github.io//posts/19-08-02_outPut /</link><guid isPermaLink="false">https://rumbarum.github.io//posts/19-08-02_outPut /</guid><pubDate>Thu, 01 Aug 2019 01:23:45 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;/media/imageForBlog/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202019-08-02%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%203.45.01.png&quot; alt=&quot;오늘의 작업물&quot;&gt;&lt;/p&gt;
 &lt;h3 style=&quot;color:rgb(9, 136, 104)&quot;&gt;오늘 작업이 끝난 미니터&lt;/h3&gt;
 들어간 기능들
 &lt;ol&gt;
