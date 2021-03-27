@@ -121,5 +121,53 @@ addopts = --reuse-db
         assert response.content == 'Foobar'
     ```
 
+    ### fixture 만들기 샘플 
+
+    ```python
+    # user 라는 fixtrue를 만들어 다른 곳에서 사용한다.
+    
+    import pytest
+    
+    from model_bakery import baker
+    
+    @pytest.fixture()
+    def user(db):
+        return baker.bake(User)
+    
+    
+    
+    class SiteAPIViewTestSuite:
+    	  # 위에서 만든 user 라는 fixture를 사용한다. 
+        # client는 pytest-django 내장 client를 지칭한다.
+        def test_create_view(self, client, user):
+            assert Site.objects.count() == 0
+    
+            post_data = {
+                'name': 'Stackoverflow'
+                'url': 'http://stackoverflow.com',
+                'user_id': user.id,
+            }
+            response = client.post(
+                reverse('sites:create'),
+                json.dumps(post_data),
+                content_type='application/json',
+            )
+    
+            data = response.json()
+            assert response.status_code == 201
+            assert Site.objects.count() == 1
+            assert data == {
+                'count': 1,
+                'next': None,
+                'previous': None
+                'results': [{
+                    'pk': 1,
+                    'name': 'Stackoverflow',
+                    'url': 'http://stackoverflow.com',
+                    'user_id': user.id
+                }]
+            }
+    ```
+
     
 
