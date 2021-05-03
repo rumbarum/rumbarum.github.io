@@ -1,4 +1,123 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[ 개발세발개발]]></title><description><![CDATA[개발자 성장일기]]></description><link>https://rumbarum.github.io/</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 30 Apr 2021 14:05:01 GMT</lastBuildDate><item><title><![CDATA[ TIL&TEL 21.04.26~21.05.02  ]]></title><description><![CDATA[ 21.04.26~21.05.02 배운것, 씨름한것들 ]]></description><link>https://rumbarum.github.io//posts/TIL&amp;TEL_21-05-02/</link><guid isPermaLink="false">https://rumbarum.github.io//posts/TIL&amp;TEL_21-05-02/</guid><pubDate>Sun, 02 May 2021 01:23:45 GMT</pubDate><content:encoded>&lt;h2 id=&quot;til-today-i-learned&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#til-today-i-learned&quot; aria-label=&quot;til today i learned permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TIL( Today I Learned)&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[ 개발세발개발]]></title><description><![CDATA[개발자 성장일기]]></description><link>https://rumbarum.github.io/</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 03 May 2021 05:39:14 GMT</lastBuildDate><item><title><![CDATA[Python IntelliJ 개발 환경 Docker 로 만들기]]></title><description><![CDATA[IntelliJ에서 Docker를 활용해서 Python 개발 환경 구성하기]]></description><link>https://rumbarum.github.io//posts/python-develop-with-docker/</link><guid isPermaLink="false">https://rumbarum.github.io//posts/python-develop-with-docker/</guid><pubDate>Mon, 03 May 2021 01:23:45 GMT</pubDate><content:encoded>&lt;h1 id=&quot;intellij-docker-개발-환경-구성하기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#intellij-docker-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD-%EA%B5%AC%EC%84%B1%ED%95%98%EA%B8%B0&quot; aria-label=&quot;intellij docker 개발 환경 구성하기 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;IntelliJ Docker 개발 환경 구성하기&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;h2 id=&quot;required&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#required&quot; aria-label=&quot;required permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Required&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Docker desktop app for Mac installed&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;IntelliJ &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;docker plugin installed&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;h2 id=&quot;project-docker-설정&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#project-docker-%EC%84%A4%EC%A0%95&quot; aria-label=&quot;project docker 설정 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;project docker 설정&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;project Docker-dev 설정&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;python image, dependency (requirements.txt)&lt;/li&gt;
+&lt;li&gt;pip install&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;project docker-compose.yml&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;build :  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;context: . &lt;/li&gt;
+&lt;li&gt;dockerfile: docker-file-path&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;envirionment: &lt;/p&gt;
+&lt;p&gt;  db image config 설정&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;depends_on: &lt;/p&gt;
+&lt;p&gt;- db&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;volumes:&lt;/p&gt;
+&lt;p&gt;- ./:/app&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;h2 id=&quot;python-sdk-설정&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#python-sdk-%EC%84%A4%EC%A0%95&quot; aria-label=&quot;python sdk 설정 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Python SDK 설정&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.jetbrains.com/help/idea/configuring-remote-python-sdks.html#Docker&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;IntelliJ 홈페이지 설명문&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;h2 id=&quot;django-module-설정&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#django-module-%EC%84%A4%EC%A0%95&quot; aria-label=&quot;django module 설정 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Django module 설정&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;File &gt; Project Structure &gt; Project Settings &gt; Modules &lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;+ New Module &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Python &gt; Django&lt;/li&gt;
+&lt;li&gt;Select Prior Python SDK&lt;/li&gt;
+&lt;li&gt;Next&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Set Module Name &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If project already exist, choose that.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Set Module settings&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Project root : project root - manage.py located dir.&lt;/li&gt;
+&lt;li&gt;Settings : settings.py file path&lt;/li&gt;
+&lt;li&gt;Manage script : manage.py file path&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;h2 id=&quot;django--실행-설정&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#django--%EC%8B%A4%ED%96%89-%EC%84%A4%EC%A0%95&quot; aria-label=&quot;django  실행 설정 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Django  실행 설정&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Open Run/Debug Configuration&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Host : 0.0.0.0&lt;/li&gt;
+&lt;li&gt;Port: could be differ &lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Environment variables: &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;if settings.py is different from default, add DJANGO&lt;em&gt;SETTINGS&lt;/em&gt;MODULE= &amp;#x3C;file path with . &gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Python Interpreter: &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Use Specified Interpreter: Select prior python SDK.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Docker compose &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;command and options: &lt;code class=&quot;language-text&quot;&gt;up --build django&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;extra&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#extra&quot; aria-label=&quot;extra permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Extra&lt;/h2&gt;
+&lt;p&gt;* if python manage.py or other python commands required, &lt;/p&gt;
+&lt;p&gt;​	&lt;code class=&quot;language-text&quot;&gt;$docker-compose exec &amp;lt;docker-compose service name&amp;gt; sh -c &amp;#39;python some command with args&amp;#39;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;NOTICE:&lt;/p&gt;
+&lt;p&gt;​	Command will excute on /app/curernt-project-dir in Docker Containter. &lt;/p&gt;</content:encoded></item><item><title><![CDATA[ TIL&TEL 21.04.26~21.05.02  ]]></title><description><![CDATA[ 21.04.26~21.05.02 배운것, 씨름한것들 ]]></description><link>https://rumbarum.github.io//posts/TIL&amp;TEL_21-05-02/</link><guid isPermaLink="false">https://rumbarum.github.io//posts/TIL&amp;TEL_21-05-02/</guid><pubDate>Sun, 02 May 2021 01:23:45 GMT</pubDate><content:encoded>&lt;h2 id=&quot;til-today-i-learned&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#til-today-i-learned&quot; aria-label=&quot;til today i learned permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TIL( Today I Learned)&lt;/h2&gt;
 &lt;h3 id=&quot;21-04-26-월&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#21-04-26-%EC%9B%94&quot; aria-label=&quot;21 04 26 월 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;21-04-26 월&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;bg job 동작 확인&lt;/li&gt;
@@ -12959,47 +13078,7 @@ print(number) number += 1&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[ 19.08.03 작업결과물]]></title><description><![CDATA[Javascript를 통해서 간단한 떨어지는 유령과 움직이는 영웅을 구현 ]]></description><link>https://rumbarum.github.io//posts/19-08-03_outPut/</link><guid isPermaLink="false">https://rumbarum.github.io//posts/19-08-03_outPut/</guid><pubDate>Sat, 03 Aug 2019 01:23:45 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 801px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/23fc494393ba91ec4efa77f6bc3d5b00/2ad15/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202019-08-03%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%203.51.49.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 74.16666666666667%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsSAAALEgHS3X78AAADXUlEQVQ4yz1T+1fiZhTMv7K157Rd2rO2W62Eh0AIeYGGEJLAvuqyvrbrqkjxtVtFZFWe4SH+udNJ9OwP37k3Icw3c2euUDiOo3CegNqIQj+LQztagdaMQm2KUD7/BeUwCvnjMnL7K1APV6DzvX4Sg1pfgfH0vd6M8T8i1k4TEKIbL5A9FlG9k+D1ZZQf8tiYGdieqlgf52B1JVj9LIo9CeVJDu69CofHnWvf+1fzPNyegtiHRQIWf4b08U/Y3SxKt1m89jU0xjq+sr4eK/AmCsoEdnlBdW6EfaXP51Eu7G1Wh9W5yyL59gUE7ySB8lUa1XsZ3jCDT8Mcric6ulMDh4McvJEcMlFPY1iu/gqLTCsTlcyzML9lno4Ek0qML0kI9vkqahdR1AnQGBK0l8DfEw1HQxUmWZb9R5nqiYgl86cQ0J6RNRkFxxkTvJfF+m0Gi8aPEMyOjK32EhrzbYwftnDdi6M1LeDQV1Gi5EBOIM2h9CrnVmK/O1SwTZaF6xQStd9RvKHCGX87iEJ4riyg8O4X7HXjuL8R8W8/jQqBXJ8G+awjLQS0eEy+M8YyPo8U7HIsGUqMKD9AaSVRnWqw6yKEAq022hI+DBKYU65LmSX/iVUASKY2+032RxzFHiVeczwXEwP7BK2T2QHfebysQqeFYNCZg2Var2InMCBwkZI8ApQ5K2eqhIAbdHOP4Dtk35rqOPPz2Bto+Geo45tvYKsnY7ESgRAvRyDtvkSxK2OdzjmTxxhUR8zaZQplulgmqHOvweIcCzSuTkb7XQ1ecO5UHA8N7DAdyc2XjM15EqXLVTzXFiAymDYdtcjUJhOTzpUYapvPQSSKHc43mB/Zt4Os8vzn67jiCN7Q6Qy3TXAZG7udhvslgQ3WGoHOKG2fp8ZZviUrcyAjknmG1Z0/4D1o4YVFMg0ct8m+RFVBDpe4JMIaZa1T1icO93Smh3L6szwu2B+MNdQovTLh2nXIkKtpcWOcpxgVbzJYa6VgcW0DFeZVBkJEfgaR+1ziTSZf5kePsahxvV71U9gcreKonUWzwwXwU3g/SH/Ppk2WVl8K19DpSPhNX4BgtdKwuDoVMnI5myqrxwG/IbtmN4GTkYh3X+niqYTGhOC3sXD1XEbIZfXouMfe4/fFyzT+B6P/fr5Hep62AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;picture&gt;
-        &lt;source
-          srcset=&quot;/static/23fc494393ba91ec4efa77f6bc3d5b00/8ac56/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202019-08-03%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%203.51.49.webp 240w,
-/static/23fc494393ba91ec4efa77f6bc3d5b00/d3be9/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202019-08-03%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%203.51.49.webp 480w,
-/static/23fc494393ba91ec4efa77f6bc3d5b00/99a1d/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202019-08-03%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%203.51.49.webp 801w&quot;
-          sizes=&quot;(max-width: 801px) 100vw, 801px&quot;
-          type=&quot;image/webp&quot;
-        /&gt;
-        &lt;source
-          srcset=&quot;/static/23fc494393ba91ec4efa77f6bc3d5b00/8ff5a/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202019-08-03%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%203.51.49.png 240w,
-/static/23fc494393ba91ec4efa77f6bc3d5b00/e85cb/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202019-08-03%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%203.51.49.png 480w,
-/static/23fc494393ba91ec4efa77f6bc3d5b00/2ad15/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202019-08-03%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%203.51.49.png 801w&quot;
-          sizes=&quot;(max-width: 801px) 100vw, 801px&quot;
-          type=&quot;image/png&quot;
-        /&gt;
-        &lt;img
-          class=&quot;gatsby-resp-image-image&quot;
-          src=&quot;/static/23fc494393ba91ec4efa77f6bc3d5b00/2ad15/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202019-08-03%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%203.51.49.png&quot;
-          alt=&quot;           2019 08 03      3 51 49&quot;
-          title=&quot;           2019 08 03      3 51 49&quot;
-          loading=&quot;lazy&quot;
-          style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        /&gt;
-      &lt;/picture&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[ 19.08.03 작업결과물]]></title><description><![CDATA[Javascript를 통해서 간단한 떨어지는 유령과 움직이는 영웅을 구현 ]]></description><link>https://rumbarum.github.io//posts/19-08-03_outPut/</link><guid isPermaLink="false">https://rumbarum.github.io//posts/19-08-03_outPut/</guid><pubDate>Sat, 03 Aug 2019 01:23:45 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;/media/imageForBlog/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202019-08-03%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%203.51.49.png&quot;&gt;
 유령비가 내려와~~&lt;/p&gt;
 &lt;h3 style=&quot;color:rgb(9, 136, 104)&quot;&gt;오늘의 작업물&lt;/h3&gt;
 - 1. 바탕화면 깔기
@@ -13078,51 +13157,7 @@ print(number) number += 1&lt;/p&gt;
 &lt;li&gt;보라 rgb( 120,0,120) #800080&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[08.02 작업물 ]]></title><description><![CDATA[위코드 2주차 프로젝트 트위터 간단하게 클론해보기 ]]></description><link>https://rumbarum.github.io//posts/19-08-02_outPut /</link><guid isPermaLink="false">https://rumbarum.github.io//posts/19-08-02_outPut /</guid><pubDate>Thu, 01 Aug 2019 01:23:45 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 960px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/8b930656eb034bd62f7336773fba9f05/e67a8/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202019-08-02%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%203.45.01.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 63.74999999999999%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAABYlAAAWJQFJUiTwAAACHklEQVQ4y4WSS2/TQBSFLfgH8IfYIbFG/BgkNrBBIFYgtkgINlVX3bVIlZAaUlGViKSleTm2k7iOHb+S+DF+Hu6dpJEKpYzy+cxcT07OnYny7EuMBx9yPPqU4eFHIZXXTw9WaHsxmm6J5jxD07mdb8Qx7VOe7GS48xy49xq4/4b0FXD3BfB4R6BlRfg5DqD5GaZRjcnqZsaESZx5FZQjPcNeH9htp3i7r2G3I7DXAw7VFGd2jEzkqMoSdVXfCOgjoUcoSigiWdI8pUKOJLSl8iiKBA07Q2MOokbDJXWqLUdSa3w1E+wbAi+PgXctSuiuBPIS21FvdJkInDgRTsIKp26O71aC00V9jR+UpWlHODCWeN/K8LmbQ7H8AE4Ywg4CzAh7A8875+dQNQ3CCRAPTdQ1tcldSl3/dFFWWND3RRSgEBEU1bLQnUzQm0638Jrrg+EQ6khF4i+QuSGqqiSqDet5URSI4xgRkaYCijabYXh5eY2BaUKzbZlwyIYzjxJO10aUjHWbkAwD6oZhY2nIBn8ajqhuUkqL1jX+Hldtl/QPWC6XiKIISZL825ATdvt9dNptGLqBi18XUFVVMhqNYNN73/dh0l7DMGTNcZzbE+rjMaZ0ntzOfD6H53lS2YiTXZ0hp4vlGab/Tziki3FdFyHdJBuzKRtym7zmVLquS25NyPUJaZ9Me70eBoOBNO92u7JtPi82ZeQtU8osy/AbPhzA0R6196AAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;picture&gt;
-        &lt;source
-          srcset=&quot;/static/8b930656eb034bd62f7336773fba9f05/8ac56/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202019-08-02%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%203.45.01.webp 240w,
-/static/8b930656eb034bd62f7336773fba9f05/d3be9/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202019-08-02%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%203.45.01.webp 480w,
-/static/8b930656eb034bd62f7336773fba9f05/e46b2/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202019-08-02%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%203.45.01.webp 960w,
-/static/8b930656eb034bd62f7336773fba9f05/f992d/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202019-08-02%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%203.45.01.webp 1440w,
-/static/8b930656eb034bd62f7336773fba9f05/31418/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202019-08-02%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%203.45.01.webp 1740w&quot;
-          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
-          type=&quot;image/webp&quot;
-        /&gt;
-        &lt;source
-          srcset=&quot;/static/8b930656eb034bd62f7336773fba9f05/8ff5a/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202019-08-02%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%203.45.01.png 240w,
-/static/8b930656eb034bd62f7336773fba9f05/e85cb/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202019-08-02%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%203.45.01.png 480w,
-/static/8b930656eb034bd62f7336773fba9f05/d9199/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202019-08-02%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%203.45.01.png 960w,
-/static/8b930656eb034bd62f7336773fba9f05/07a9c/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202019-08-02%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%203.45.01.png 1440w,
-/static/8b930656eb034bd62f7336773fba9f05/e67a8/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202019-08-02%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%203.45.01.png 1740w&quot;
-          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
-          type=&quot;image/png&quot;
-        /&gt;
-        &lt;img
-          class=&quot;gatsby-resp-image-image&quot;
-          src=&quot;/static/8b930656eb034bd62f7336773fba9f05/d9199/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202019-08-02%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%203.45.01.png&quot;
-          alt=&quot;오늘의 작업물&quot;
-          title=&quot;오늘의 작업물&quot;
-          loading=&quot;lazy&quot;
-          style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        /&gt;
-      &lt;/picture&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[08.02 작업물 ]]></title><description><![CDATA[위코드 2주차 프로젝트 트위터 간단하게 클론해보기 ]]></description><link>https://rumbarum.github.io//posts/19-08-02_outPut /</link><guid isPermaLink="false">https://rumbarum.github.io//posts/19-08-02_outPut /</guid><pubDate>Thu, 01 Aug 2019 01:23:45 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;/media/imageForBlog/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202019-08-02%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%203.45.01.png&quot; alt=&quot;오늘의 작업물&quot;&gt;&lt;/p&gt;
 &lt;h3 style=&quot;color:rgb(9, 136, 104)&quot;&gt;오늘 작업이 끝난 미니터&lt;/h3&gt;
 들어간 기능들
 &lt;ol&gt;
