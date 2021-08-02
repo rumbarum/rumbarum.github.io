@@ -4,7 +4,7 @@ date: "2021-08-02T01:23:45.678Z"
 template: "post"
 draft: false
 slug: "/posts/pytest-django-db-setup/"
-category: ""
+category: "develop"
 tags:
  - "pytest"
  - "django"
