@@ -1,4 +1,191 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[ 개발세발개발]]></title><description><![CDATA[개발자 성장일기]]></description><link>https://rumbarum.github.io/</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 06 Aug 2021 11:25:24 GMT</lastBuildDate><item><title><![CDATA[ TIL&TEL 21.08.02~21.08.08  ]]></title><description><![CDATA[ 21.08.02~21.08.08 배운것, 씨름한것들 ]]></description><link>https://rumbarum.github.io//posts/TIL&amp;TEL_21-08-08/</link><guid isPermaLink="false">https://rumbarum.github.io//posts/TIL&amp;TEL_21-08-08/</guid><pubDate>Sun, 08 Aug 2021 01:23:45 GMT</pubDate><content:encoded>&lt;h2 id=&quot;til-today-i-learned&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#til-today-i-learned&quot; aria-label=&quot;til today i learned permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TIL( Today I Learned)&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[ 개발세발개발]]></title><description><![CDATA[개발자 성장일기]]></description><link>https://rumbarum.github.io/</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 16 Aug 2021 12:37:12 GMT</lastBuildDate><item><title><![CDATA[ TIL&TEL 21.08.09~21.08.15  ]]></title><description><![CDATA[ 21.08.09~21.08.15 배운것, 씨름한것들 ]]></description><link>https://rumbarum.github.io//posts/TIL&amp;TEL_21-08-15/</link><guid isPermaLink="false">https://rumbarum.github.io//posts/TIL&amp;TEL_21-08-15/</guid><pubDate>Sun, 15 Aug 2021 01:23:45 GMT</pubDate><content:encoded>&lt;h2 id=&quot;til-today-i-learned&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#til-today-i-learned&quot; aria-label=&quot;til today i learned permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TIL( Today I Learned)&lt;/h2&gt;
+&lt;h3 id=&quot;21-08-09-월&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#21-08-09-%EC%9B%94&quot; aria-label=&quot;21 08 09 월 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;21-08-09 월&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;TF-IDF 정리&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;조정 가능한 것들&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;ol&gt;
+&lt;li&gt;비교문서군 포함 단어, 단어가 포함된 비교문서군 수&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;포함 단어  ↓ , 미포함단어 ↑&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;포함 단어 Frequency 가 받쳐주지 않으면, 비교문서군에 있는 단어들이 위로 올라옴.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;단어가 들어있는 비교문서군이 많을수록 점수 ↓ &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;그러나 대체로 count가 높아서 그 점수로 위로 올라감&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;비교문서군 숫자 (동일한 내용도 됨 )&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;비교문서 문서수를 늘리면, 전체 점수가 상승 ( 모든 단어 동반 상승, 동일한 폭은 아님 단어 카운트에 따라 달라짐,  점수는 0 ~ 1 분포) &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;e.g. 0.068  -&gt;  0.234 (상대적 숫자) &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;단어가 들어있는 비교문서군 숫자를 늘리면 비교 문서군에 있는 단어, 없는 단어의 점수 배율이 조절된다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;e.g. &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;비교문서군에 다 들어 있는 단어 1점, 비교문서군에 하나도 들어있지 않은 단어 3 점&lt;/li&gt;
+&lt;li&gt;1 - 3점, =&gt;  1 - 5점으로 조정 할 수 있다. (엄청늘릴 수는 없다.)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;비교문서군을 늘릴 수록 처리 속도가 느려질 수 있음&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;TF-IDF 단점&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;단어 카운트 의존&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;tf가 많으면, idf가 적어도 위로 올라간다.&lt;/li&gt;
+&lt;li&gt;tf가 적으면, idf가 많아도 내려간다.&lt;/li&gt;
+&lt;li&gt;비교문서군에 없으면 의미없는, 이상한 단어 점수가 높아진다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;상담의 유형 및 내용에 따라 점수가 들죽날죽해진다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;특수 단어가 1번만 나올 경우 점수가 안나옴.&lt;/li&gt;
+&lt;li&gt;상담원이 1 대화안에서 관용적으로 사용하는 단어가 많을 경우, 특수 단어의 점수가 밑으로 내려간다.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;의미로 검출되지 않아서, 정확한 단어가 아닐 경우 추출 안된다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;e.g. ㅂㅐ송, 물건이 안와요. &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;메일 푸시 서비스&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;메일&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;고객별로 다른 내용&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;전송&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;python only&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;gmail 계정 limit에 걸린다.&lt;/li&gt;
+&lt;li&gt;You may see this message if you send an email to a total of more than 500 recipients in a single email and or more than 500 emails sent in a day.&lt;/li&gt;
+&lt;li&gt;유료 구글 계정 2,000/day&lt;/li&gt;
+&lt;li&gt;If you access Gmail via POP or IMAP clients, like Microsoft Outlook or Apple Mail, you can send an email message to a maximum of 100 people at a time&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;mail deliver service&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;SendGrid Email API ( Paid) &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;가격표&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1만건 무료, 그 이상 과금&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;aws : SES&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;가격표&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;6.2 만 까지 무료, 그 이후 1만건당 1USD&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;multi channel alarm 서비스&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;courier&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;가격표&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;200 / 1USD &lt;/li&gt;
+&lt;li&gt;확장시 추가 될 수 있음&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;email&lt;/li&gt;
+&lt;li&gt;app push&lt;/li&gt;
+&lt;li&gt;sms&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;dm&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;discord&lt;/li&gt;
+&lt;li&gt;facebook messenger&lt;/li&gt;
+&lt;li&gt;intercom&lt;/li&gt;
+&lt;li&gt;teams&lt;/li&gt;
+&lt;li&gt;slack&lt;/li&gt;
+&lt;li&gt;whatsapp&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;21-08-10-화&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#21-08-10-%ED%99%94&quot; aria-label=&quot;21 08 10 화 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;21-08-10 화&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;멀티 프로세스 코드 읽기&lt;/li&gt;
+&lt;li&gt;aiohttp&lt;/li&gt;
+&lt;li&gt;pytest, TDD, TF-IDF 공유&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;21-08-11-수&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#21-08-11-%EC%88%98&quot; aria-label=&quot;21 08 11 수 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;21-08-11 수&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;프로젝트 회의 참석&lt;/li&gt;
+&lt;li&gt;webhook 알림 만들기&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;21-08-12-목&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#21-08-12-%EB%AA%A9&quot; aria-label=&quot;21 08 12 목 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;21-08-12 목&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;코드 수정&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;21-08-13-금&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#21-08-13-%EA%B8%88&quot; aria-label=&quot;21 08 13 금 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;21-08-13 금&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;코드 작업&lt;/li&gt;
+&lt;li&gt;프로젝트 정책 미팅 &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;tel-trial-and-error-log&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#tel-trial-and-error-log&quot; aria-label=&quot;tel trial and error log permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TEL (Trial and Error Log)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;empty&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[ TIL&TEL 21.08.02~21.08.08  ]]></title><description><![CDATA[ 21.08.02~21.08.08 배운것, 씨름한것들 ]]></description><link>https://rumbarum.github.io//posts/TIL&amp;TEL_21-08-08/</link><guid isPermaLink="false">https://rumbarum.github.io//posts/TIL&amp;TEL_21-08-08/</guid><pubDate>Sun, 08 Aug 2021 01:23:45 GMT</pubDate><content:encoded>&lt;h2 id=&quot;til-today-i-learned&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#til-today-i-learned&quot; aria-label=&quot;til today i learned permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TIL( Today I Learned)&lt;/h2&gt;
 &lt;h3 id=&quot;21-08-02-월&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#21-08-02-%EC%9B%94&quot; aria-label=&quot;21 08 02 월 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;21-08-02 월&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -8885,79 +9072,6 @@ $python manage.py --fake migrate &amp;lt;app_name&amp;gt; &amp;lt;migrate_name&a
 &lt;p&gt;디펜던시가 복잡하고 처리가 어렵다면, DB 초기화후 재 생성 하는 방법도 있다. (데이터가 중요하지 않은 경우, 데이터 베이스를 그대로 사용하고 싶으면, DB schema에 models.py를 맞추면 된다. )&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://yuda.dev/216&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;Django DB 초기화 하기&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ol&gt;</content:encoded></item><item><title><![CDATA[manage.py 실행환경 쉽게 설정하기]]></title><description><![CDATA[테스트 서버 환경 변경을 쉽게 해보자!]]></description><link>https://rumbarum.github.io//posts/tirgger-managepy-with-variable-settings/</link><guid isPermaLink="false">https://rumbarum.github.io//posts/tirgger-managepy-with-variable-settings/</guid><pubDate>Sun, 17 May 2020 02:23:45 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;https://rumbarum.github.io/posts/seperate-django-settings/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;앞글&lt;/a&gt;에서 django로 개발할 환경들(product.py, develop.py, local.py )을 세팅해 놨는데, 실행을 위해선 manage.py를 변경해 주어야 한다. &lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;#beautiful_awosome_project/manage.py &lt;/span&gt;
-
-&lt;span class=&quot;token comment&quot;&gt;#!/usr/bin/env python&lt;/span&gt;
-&lt;span class=&quot;token triple-quoted-string string&quot;&gt;&quot;&quot;&quot;Django&apos;s command-line utility for administrative tasks.&quot;&quot;&quot;&lt;/span&gt;
-&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; os
-&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; sys
-
-
-&lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
-    os&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;environ&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;setdefault&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;DJANGO_SETTINGS_MODULE&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;beautiful_awosome_project.settings.local&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;token comment&quot;&gt;#settings 밑에 하위 파일들을 만들어 놓았기 때문에, &lt;/span&gt;
-    &lt;span class=&quot;token comment&quot;&gt;#실행을 원하는 세팅을 명시해놔야한다. 여기서는 local로 설정&lt;/span&gt;
-    &lt;span class=&quot;token keyword&quot;&gt;try&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
-        &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; django&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;core&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;management &lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; execute_from_command_line
-    &lt;span class=&quot;token keyword&quot;&gt;except&lt;/span&gt; ImportError &lt;span class=&quot;token keyword&quot;&gt;as&lt;/span&gt; exc&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
-        &lt;span class=&quot;token keyword&quot;&gt;raise&lt;/span&gt; ImportError&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
-            &lt;span class=&quot;token string&quot;&gt;&quot;Couldn&apos;t import Django. Are you sure it&apos;s installed and &quot;&lt;/span&gt;
-            &lt;span class=&quot;token string&quot;&gt;&quot;available on your PYTHONPATH environment variable? Did you &quot;&lt;/span&gt;
-            &lt;span class=&quot;token string&quot;&gt;&quot;forget to activate a virtual environment?&quot;&lt;/span&gt;
-        &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; exc
-    execute_from_command_line&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;sys&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;argv&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-
-&lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; __name__ &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;__main__&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
-    main&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;이렇게 설정을 해놓으면 &lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;token variable&quot;&gt;$python&lt;/span&gt; manage.py &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;command&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;실행시  &lt;code class=&quot;language-text&quot;&gt;local.py&lt;/code&gt; setting 값으로 command가 실행된다.&lt;/p&gt;
-&lt;p&gt;이렇게 쓰려고 하면  환경을 바꿔서 실행할 경우마다 manage.py를 변경하고 실행해야하므로 번거로워 진다. &lt;/p&gt;
-&lt;p&gt;그래서 manage.py를 살짝 손봐 세팅환경 변경을 쉽게 해보도록 하겠다. &lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;#!/usr/bin/env python&lt;/span&gt;
-&lt;span class=&quot;token triple-quoted-string string&quot;&gt;&quot;&quot;&quot;Django&apos;s command-line utility for administrative tasks.&quot;&quot;&quot;&lt;/span&gt;
-&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; os
-&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; sys
-
-
-&lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;production&apos;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; sys&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;argv&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
-        os&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;environ&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;setdefault&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;DJANGO_SETTINGS_MODULE&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;project.settings.production&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-        sys&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;argv&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;remove&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;production&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;token keyword&quot;&gt;elif&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;develop&apos;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; sys&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;argv&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
-        os&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;environ&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;setdefault&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;DJANGO_SETTINGS_MODULE&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;project.settings.develop&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-        sys&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;argv&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;remove&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;develop&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
-        os&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;environ&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;setdefault&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;DJANGO_SETTINGS_MODULE&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;project.settings.local&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;token keyword&quot;&gt;try&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
-        &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; django&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;core&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;management &lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; execute_from_command_line
-    &lt;span class=&quot;token keyword&quot;&gt;except&lt;/span&gt; ImportError &lt;span class=&quot;token keyword&quot;&gt;as&lt;/span&gt; exc&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
-        &lt;span class=&quot;token keyword&quot;&gt;raise&lt;/span&gt; ImportError&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
-            &lt;span class=&quot;token string&quot;&gt;&quot;Couldn&apos;t import Django. Are you sure it&apos;s installed and &quot;&lt;/span&gt;
-            &lt;span class=&quot;token string&quot;&gt;&quot;available on your PYTHONPATH environment variable? Did you &quot;&lt;/span&gt;
-            &lt;span class=&quot;token string&quot;&gt;&quot;forget to activate a virtual environment?&quot;&lt;/span&gt;
-        &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; exc
-    execute_from_command_line&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;sys&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;argv&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-
-
-&lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; __name__ &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;__main__&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
-    main&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;sys.argv 는  &lt;code class=&quot;language-text&quot;&gt;$python&lt;/code&gt;으로 실행시 입력된 값들을 담은 커맨드 실행 명령 인자 &lt;code class=&quot;language-text&quot;&gt;list&lt;/code&gt; 이다. argv[0]은 실행 파일(&lt;code class=&quot;language-text&quot;&gt;manage.py&lt;/code&gt;)이 된다.&lt;/p&gt;
-&lt;p&gt;원래 있던 파일에 제가 설정한 키워드가 들어가면 그 키워드에 맞추어 실행환경을 세팅합니다. 아무 키워드도 입력하지 않으면 local을 기본 환경으로 동작합니다. 키워드가 남아있으면 manage.py 동작에 방해가 될것 같아 환경을 지정하고 다시 sys.argv에서 삭제를 합니다.&lt;/p&gt;
-&lt;p&gt;이렇게 해놓으면 아래처럼 변수 하나로 python 실행 환경을 자유롭게 이동 할 수 있습니다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;token variable&quot;&gt;$python&lt;/span&gt; manage.py	develop runserver
-&lt;span class=&quot;token comment&quot;&gt;#develop 환경으로 runserver&lt;/span&gt;
-
-&lt;span class=&quot;token variable&quot;&gt;$python&lt;/span&gt; manage.py	product migrate
-&lt;span class=&quot;token comment&quot;&gt;#product 환경으로 migrate&lt;/span&gt;
-
-&lt;span class=&quot;token variable&quot;&gt;$python&lt;/span&gt; manage.py shell
-&lt;span class=&quot;token comment&quot;&gt;#develop 환경으로 shell 접속&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;주의사항  &lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;인자를 확인하고 다시 제거 하기 때문에 환경키워드를 아무 위치에나 두어도 동작은 합니다. django 명령어의 순서는 바꾸면 안됩니다. &lt;/li&gt;
-&lt;li&gt;환경 키워드를 장고 명령어와 동일한 것으로 사용시 꼬여서 에러가 발생할 수 있으니 겹치지 않는 키워드를 사용해 주세요.&lt;/li&gt;
 &lt;/ol&gt;</content:encoded></item><item><title><![CDATA[ TIL&TEL 20.05.11~20.05.17  ]]></title><description><![CDATA[ 20.05.11~20.05.17 배운것, 씨름한것들 ]]></description><link>https://rumbarum.github.io//posts/TIL&amp;TEL_20-05-17/</link><guid isPermaLink="false">https://rumbarum.github.io//posts/TIL&amp;TEL_20-05-17/</guid><pubDate>Sun, 17 May 2020 02:23:45 GMT</pubDate><content:encoded>&lt;h2 id=&quot;til-today-i-learned&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#til-today-i-learned&quot; aria-label=&quot;til today i learned permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TIL( Today I Learned)&lt;/h2&gt;
 &lt;h3 id=&quot;20-05-11-월&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#20-05-11-%EC%9B%94&quot; aria-label=&quot;20 05 11 월 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;strong&gt;20-05-11 월&lt;/strong&gt;&lt;/h3&gt;
 &lt;ul&gt;
@@ -9031,7 +9145,80 @@ Solution: Delete ‘VISIBLE’ on SQL &lt;/li&gt;
 &lt;li&gt;Solution: 2020-05-01 &amp;#x3C;== 20-05-01&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[ TIL&TEL 20.05.04~20.05.10  ]]></title><description><![CDATA[ 20.05.04~20.05.10 배운것, 씨름한것들 ]]></description><link>https://rumbarum.github.io//posts/TIL&amp;TEL_20-05-10/</link><guid isPermaLink="false">https://rumbarum.github.io//posts/TIL&amp;TEL_20-05-10/</guid><pubDate>Sun, 10 May 2020 02:23:45 GMT</pubDate><content:encoded>&lt;h2 id=&quot;til-today-i-learned&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#til-today-i-learned&quot; aria-label=&quot;til today i learned permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TIL( Today I Learned)&lt;/h2&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[manage.py 실행환경 쉽게 설정하기]]></title><description><![CDATA[테스트 서버 환경 변경을 쉽게 해보자!]]></description><link>https://rumbarum.github.io//posts/tirgger-managepy-with-variable-settings/</link><guid isPermaLink="false">https://rumbarum.github.io//posts/tirgger-managepy-with-variable-settings/</guid><pubDate>Sun, 17 May 2020 02:23:45 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;https://rumbarum.github.io/posts/seperate-django-settings/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;앞글&lt;/a&gt;에서 django로 개발할 환경들(product.py, develop.py, local.py )을 세팅해 놨는데, 실행을 위해선 manage.py를 변경해 주어야 한다. &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;#beautiful_awosome_project/manage.py &lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;#!/usr/bin/env python&lt;/span&gt;
+&lt;span class=&quot;token triple-quoted-string string&quot;&gt;&quot;&quot;&quot;Django&apos;s command-line utility for administrative tasks.&quot;&quot;&quot;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; os
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; sys
+
+
+&lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    os&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;environ&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;setdefault&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;DJANGO_SETTINGS_MODULE&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;beautiful_awosome_project.settings.local&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;token comment&quot;&gt;#settings 밑에 하위 파일들을 만들어 놓았기 때문에, &lt;/span&gt;
+    &lt;span class=&quot;token comment&quot;&gt;#실행을 원하는 세팅을 명시해놔야한다. 여기서는 local로 설정&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;try&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; django&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;core&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;management &lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; execute_from_command_line
+    &lt;span class=&quot;token keyword&quot;&gt;except&lt;/span&gt; ImportError &lt;span class=&quot;token keyword&quot;&gt;as&lt;/span&gt; exc&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;raise&lt;/span&gt; ImportError&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
+            &lt;span class=&quot;token string&quot;&gt;&quot;Couldn&apos;t import Django. Are you sure it&apos;s installed and &quot;&lt;/span&gt;
+            &lt;span class=&quot;token string&quot;&gt;&quot;available on your PYTHONPATH environment variable? Did you &quot;&lt;/span&gt;
+            &lt;span class=&quot;token string&quot;&gt;&quot;forget to activate a virtual environment?&quot;&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; exc
+    execute_from_command_line&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;sys&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;argv&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; __name__ &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;__main__&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    main&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;이렇게 설정을 해놓으면 &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;token variable&quot;&gt;$python&lt;/span&gt; manage.py &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;command&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;실행시  &lt;code class=&quot;language-text&quot;&gt;local.py&lt;/code&gt; setting 값으로 command가 실행된다.&lt;/p&gt;
+&lt;p&gt;이렇게 쓰려고 하면  환경을 바꿔서 실행할 경우마다 manage.py를 변경하고 실행해야하므로 번거로워 진다. &lt;/p&gt;
+&lt;p&gt;그래서 manage.py를 살짝 손봐 세팅환경 변경을 쉽게 해보도록 하겠다. &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;#!/usr/bin/env python&lt;/span&gt;
+&lt;span class=&quot;token triple-quoted-string string&quot;&gt;&quot;&quot;&quot;Django&apos;s command-line utility for administrative tasks.&quot;&quot;&quot;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; os
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; sys
+
+
+&lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;production&apos;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; sys&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;argv&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        os&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;environ&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;setdefault&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;DJANGO_SETTINGS_MODULE&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;project.settings.production&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+        sys&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;argv&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;remove&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;production&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;elif&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;develop&apos;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; sys&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;argv&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        os&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;environ&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;setdefault&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;DJANGO_SETTINGS_MODULE&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;project.settings.develop&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+        sys&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;argv&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;remove&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;develop&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        os&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;environ&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;setdefault&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;DJANGO_SETTINGS_MODULE&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;project.settings.local&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;try&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; django&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;core&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;management &lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; execute_from_command_line
+    &lt;span class=&quot;token keyword&quot;&gt;except&lt;/span&gt; ImportError &lt;span class=&quot;token keyword&quot;&gt;as&lt;/span&gt; exc&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;raise&lt;/span&gt; ImportError&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
+            &lt;span class=&quot;token string&quot;&gt;&quot;Couldn&apos;t import Django. Are you sure it&apos;s installed and &quot;&lt;/span&gt;
+            &lt;span class=&quot;token string&quot;&gt;&quot;available on your PYTHONPATH environment variable? Did you &quot;&lt;/span&gt;
+            &lt;span class=&quot;token string&quot;&gt;&quot;forget to activate a virtual environment?&quot;&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; exc
+    execute_from_command_line&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;sys&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;argv&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+
+&lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; __name__ &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;__main__&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    main&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;sys.argv 는  &lt;code class=&quot;language-text&quot;&gt;$python&lt;/code&gt;으로 실행시 입력된 값들을 담은 커맨드 실행 명령 인자 &lt;code class=&quot;language-text&quot;&gt;list&lt;/code&gt; 이다. argv[0]은 실행 파일(&lt;code class=&quot;language-text&quot;&gt;manage.py&lt;/code&gt;)이 된다.&lt;/p&gt;
+&lt;p&gt;원래 있던 파일에 제가 설정한 키워드가 들어가면 그 키워드에 맞추어 실행환경을 세팅합니다. 아무 키워드도 입력하지 않으면 local을 기본 환경으로 동작합니다. 키워드가 남아있으면 manage.py 동작에 방해가 될것 같아 환경을 지정하고 다시 sys.argv에서 삭제를 합니다.&lt;/p&gt;
+&lt;p&gt;이렇게 해놓으면 아래처럼 변수 하나로 python 실행 환경을 자유롭게 이동 할 수 있습니다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;token variable&quot;&gt;$python&lt;/span&gt; manage.py	develop runserver
+&lt;span class=&quot;token comment&quot;&gt;#develop 환경으로 runserver&lt;/span&gt;
+
+&lt;span class=&quot;token variable&quot;&gt;$python&lt;/span&gt; manage.py	product migrate
+&lt;span class=&quot;token comment&quot;&gt;#product 환경으로 migrate&lt;/span&gt;
+
+&lt;span class=&quot;token variable&quot;&gt;$python&lt;/span&gt; manage.py shell
+&lt;span class=&quot;token comment&quot;&gt;#develop 환경으로 shell 접속&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;주의사항  &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;인자를 확인하고 다시 제거 하기 때문에 환경키워드를 아무 위치에나 두어도 동작은 합니다. django 명령어의 순서는 바꾸면 안됩니다. &lt;/li&gt;
+&lt;li&gt;환경 키워드를 장고 명령어와 동일한 것으로 사용시 꼬여서 에러가 발생할 수 있으니 겹치지 않는 키워드를 사용해 주세요.&lt;/li&gt;
+&lt;/ol&gt;</content:encoded></item><item><title><![CDATA[ TIL&TEL 20.05.04~20.05.10  ]]></title><description><![CDATA[ 20.05.04~20.05.10 배운것, 씨름한것들 ]]></description><link>https://rumbarum.github.io//posts/TIL&amp;TEL_20-05-10/</link><guid isPermaLink="false">https://rumbarum.github.io//posts/TIL&amp;TEL_20-05-10/</guid><pubDate>Sun, 10 May 2020 02:23:45 GMT</pubDate><content:encoded>&lt;h2 id=&quot;til-today-i-learned&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#til-today-i-learned&quot; aria-label=&quot;til today i learned permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TIL( Today I Learned)&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;20-05-05 화&lt;/strong&gt;&lt;/p&gt;
@@ -12799,32 +12986,6 @@ Worse: if greeting is True:&lt;/li&gt;
 &lt;li&gt;git에 PR을 요청하고 마스터에서 다른 작업을 하려고 하는데 전파일이 필요하다면? 좋은 방법이 있을 것만 같은데 진행이 안된다. &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[ TIL&TEL 19.08.26~19.08.28 ]]></title><description><![CDATA[ 19.08.26~ 19.08.28 배운것, 씨름한것들 ]]></description><link>https://rumbarum.github.io//posts/TIL&amp;TEL_19-08-28/</link><guid isPermaLink="false">https://rumbarum.github.io//posts/TIL&amp;TEL_19-08-28/</guid><pubDate>Wed, 28 Aug 2019 01:23:45 GMT</pubDate><content:encoded>&lt;h3 id=&quot;til-today-i-learned&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#til-today-i-learned&quot; aria-label=&quot;til today i learned permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TIL( Today I Learned)&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;19.08.26&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Scrapy를 이용한 웹사이트 크롤링 - 하나의 정보만 긁어 오자면 1시간도 안걸려서 긁어 올 수 있다. 사이트 정보의 정리가 잘 되어 있을 경우에는 금방 긁어 올 수 있다. 여러개의 정보를 선택적으로 가져오려면 머리를 좀 써야 한다. &lt;/li&gt;
-&lt;li&gt;프로젝트 소스기본환경 설정 - 어려운건 아닌데 꼼꼼하게 해야한다. 그래야 동료들이 중복되는 일을 하는걸 막아 시간낭비를 줄인다.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;19.08.27&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;데이터베이스에 대한 이해 - 기존에 접해 보지 못했던 분야라 이해가 알듯 말듯 아리송하다. &lt;/li&gt;
-&lt;li&gt;크롤링 세션 by 지훈님 - html이란 구조로 이루어져 있는 것이 웹이다 보니, 구조를 통해 정보를 빼오는 것도 쉽다. 모든 데이터가 웹으로 올라오는 순간 모든이에게 열리는 것인데 꼭 좋은건가. &lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;19.08.28&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;DB 세션 by 은우님 - 제대로 다루려면 적응하는데 상당한 시간이 들어갈 것 같다.&lt;/li&gt;
-&lt;li&gt;django 를 통한 데이터베이스만들기에 대한 이해 - SQL을 통해 DB 모델을 만드는 것과, 그것을 편하게 만들기 위해 만들어진 django는 또 다르다. 어떻게 보면 사용자 편의성을 증대하는 것이고, 다른 면에서는 성장을 막는것 같기도 하다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;tel-trial-and-error-log&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#tel-trial-and-error-log&quot; aria-label=&quot;tel trial and error log permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TEL (Trial and Error Log)&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;19.08.26&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;python index( ) &amp;#x3C;== index[ ]  index( element) 를 사용하면 원하는 element 를 찾을 수 있다. 메소드다 . &lt;/li&gt;
-&lt;li&gt;python str slice = str[startposition:endposition] (endposition str is Not included)  &lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;19.08.27&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;module import from 을 안써주었다. from을 안써도 되는게 있긴 있다. 헷갈리진 말자&lt;/li&gt;
-&lt;li&gt;max&lt;em&gt;length Max&lt;/em&gt;length로 잘못침 &lt;/li&gt;
-&lt;li&gt;django settings language setting &lt;code class=&quot;language-text&quot;&gt;ko-KR&lt;/code&gt; &amp;#x3C;== ko_KR&lt;/li&gt;
-&lt;li&gt;python ’ ’ 안에는 ” ” , ” ” 안에는 ’ ’ 로 따옴표 표시한다. &lt;/li&gt;
-&lt;li&gt;python shell 에서 django orm 부르기 from app이름.models import 모델 클래스&lt;/li&gt;
-&lt;li&gt;scrapy.py는 반응형으로 튀어나온 html을 잡지 못한다. &lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;19.08.28&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;django class 다음  &lt;code class=&quot;language-text&quot;&gt;:&lt;/code&gt; 빼먹음  은근히 자꾸 까먹는다. &lt;/li&gt;
 &lt;/ul&gt;</content:encoded></item><item><title><![CDATA[관계형 DB 알아보자 ]]></title><description><![CDATA[관계형 DB라는건 뭘까? ]]></description><link>https://rumbarum.github.io//posts/understaidingRDB/</link><guid isPermaLink="false">https://rumbarum.github.io//posts/understaidingRDB/</guid><pubDate>Wed, 28 Aug 2019 01:23:45 GMT</pubDate><content:encoded>&lt;h2 style=&quot;color:rgb(9, 136, 104)&quot;&gt; DB 안쓰면 안돼? 응 안돼 &lt;/h2&gt;
 - ### **저장 공간 왜 필요할까?**
 &lt;ul&gt;
@@ -12928,6 +13089,32 @@ Worse: if greeting is True:&lt;/li&gt;
 &lt;li&gt;궁극적으로 관계형만은 사용할 수 없다. &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[ TIL&TEL 19.08.26~19.08.28 ]]></title><description><![CDATA[ 19.08.26~ 19.08.28 배운것, 씨름한것들 ]]></description><link>https://rumbarum.github.io//posts/TIL&amp;TEL_19-08-28/</link><guid isPermaLink="false">https://rumbarum.github.io//posts/TIL&amp;TEL_19-08-28/</guid><pubDate>Wed, 28 Aug 2019 01:23:45 GMT</pubDate><content:encoded>&lt;h3 id=&quot;til-today-i-learned&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#til-today-i-learned&quot; aria-label=&quot;til today i learned permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TIL( Today I Learned)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;19.08.26&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Scrapy를 이용한 웹사이트 크롤링 - 하나의 정보만 긁어 오자면 1시간도 안걸려서 긁어 올 수 있다. 사이트 정보의 정리가 잘 되어 있을 경우에는 금방 긁어 올 수 있다. 여러개의 정보를 선택적으로 가져오려면 머리를 좀 써야 한다. &lt;/li&gt;
+&lt;li&gt;프로젝트 소스기본환경 설정 - 어려운건 아닌데 꼼꼼하게 해야한다. 그래야 동료들이 중복되는 일을 하는걸 막아 시간낭비를 줄인다.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;19.08.27&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;데이터베이스에 대한 이해 - 기존에 접해 보지 못했던 분야라 이해가 알듯 말듯 아리송하다. &lt;/li&gt;
+&lt;li&gt;크롤링 세션 by 지훈님 - html이란 구조로 이루어져 있는 것이 웹이다 보니, 구조를 통해 정보를 빼오는 것도 쉽다. 모든 데이터가 웹으로 올라오는 순간 모든이에게 열리는 것인데 꼭 좋은건가. &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;19.08.28&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;DB 세션 by 은우님 - 제대로 다루려면 적응하는데 상당한 시간이 들어갈 것 같다.&lt;/li&gt;
+&lt;li&gt;django 를 통한 데이터베이스만들기에 대한 이해 - SQL을 통해 DB 모델을 만드는 것과, 그것을 편하게 만들기 위해 만들어진 django는 또 다르다. 어떻게 보면 사용자 편의성을 증대하는 것이고, 다른 면에서는 성장을 막는것 같기도 하다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;tel-trial-and-error-log&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#tel-trial-and-error-log&quot; aria-label=&quot;tel trial and error log permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TEL (Trial and Error Log)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;19.08.26&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;python index( ) &amp;#x3C;== index[ ]  index( element) 를 사용하면 원하는 element 를 찾을 수 있다. 메소드다 . &lt;/li&gt;
+&lt;li&gt;python str slice = str[startposition:endposition] (endposition str is Not included)  &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;19.08.27&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;module import from 을 안써주었다. from을 안써도 되는게 있긴 있다. 헷갈리진 말자&lt;/li&gt;
+&lt;li&gt;max&lt;em&gt;length Max&lt;/em&gt;length로 잘못침 &lt;/li&gt;
+&lt;li&gt;django settings language setting &lt;code class=&quot;language-text&quot;&gt;ko-KR&lt;/code&gt; &amp;#x3C;== ko_KR&lt;/li&gt;
+&lt;li&gt;python ’ ’ 안에는 ” ” , ” ” 안에는 ’ ’ 로 따옴표 표시한다. &lt;/li&gt;
+&lt;li&gt;python shell 에서 django orm 부르기 from app이름.models import 모델 클래스&lt;/li&gt;
+&lt;li&gt;scrapy.py는 반응형으로 튀어나온 html을 잡지 못한다. &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;19.08.28&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;django class 다음  &lt;code class=&quot;language-text&quot;&gt;:&lt;/code&gt; 빼먹음  은근히 자꾸 까먹는다. &lt;/li&gt;
 &lt;/ul&gt;</content:encoded></item><item><title><![CDATA[스크럼을 알아보자 ]]></title><description><![CDATA[소프트웨어 산업 작업 방식인 스크럼을 알아보자 그리고 위코드에서 실습을 해보자. ]]></description><link>https://rumbarum.github.io//posts/understandScrum/</link><guid isPermaLink="false">https://rumbarum.github.io//posts/understandScrum/</guid><pubDate>Mon, 26 Aug 2019 01:23:45 GMT</pubDate><content:encoded>&lt;h2 style=&quot;color:rgb(9, 136, 104)&quot;&gt;소프트웨어 똑똑한놈 혼자(리눅스? 잡스? 빌게이츠?)만드는거 아니뇨? &lt;/h2&gt;
 그렇게 생각하고 있다면 그것은 경기도 오산! 
 &lt;ul&gt;
