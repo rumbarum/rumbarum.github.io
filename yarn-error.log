@@ -1,8 +1,8 @@
 Arguments: 
-  /usr/local/Cellar/node/14.2.0/bin/node /usr/local/Cellar/yarn/1.22.4/libexec/bin/yarn.js upgrade gatsby
+  /usr/local/Cellar/node/14.2.0/bin/node /usr/local/Cellar/yarn/1.22.4/libexec/bin/yarn.js deploy
 
 PATH: 
-  /usr/local/opt/mysql@5.7/bin:/Users/rumbarum/miniconda3/condabin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/opt/fzf/bin
+  /Users/rumbarum/.poetry/bin:/Users/rumbarum/Downloads/google-cloud-sdk/bin:/usr/local/opt/mysql@5.7/bin:/Users/rumbarum/miniconda3/bin:/Users/rumbarum/miniconda3/condabin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/opt/fzf/bin
 
 Yarn version: 
   1.22.4
@@ -14,7 +14,7 @@ Platform:
   darwin x64
 
 Trace: 
-  Error: EACCES: permission denied, unlink '/Users/rumbarum/Project/rumbarum.github.io/node_modules/fsevents/build/.target.mk'
+  Error: ENOSPC: no space left on device, write
 
 npm manifest: 
   {
