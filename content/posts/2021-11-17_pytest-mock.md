@@ -120,7 +120,7 @@ class TestMockingClass:
         ()으로 호출시 return할 값을 지정할 수 있습니다
         patch는 해당 라인 동작시에 동작합니다.
         _tests.py 모듈에 먼저 import 되어 있을경우 patch 동작이 기대한대로 동작하지 않습니다.
-				patch() 후 import 하여야 합니다.
+        patch() 후 import 하여야 합니다.
         """
         mocker.patch("example.mocking_import.some_import_func", return_value={"message": "patched"})
         from example.mocking_import import some_import_func
@@ -132,12 +132,12 @@ class TestMockingClass:
         tests.py 모듈 밖에서의 동작을 mocking 하려면, mocker.patch()를 사용합니다.
         ()으로 호출시 return할 값을 지정할 수 있습니다 return_value=<value>
         B.py 모듈에서 A.py module의 func_a 함수를 가져다 사용할경우, 
-				func_a 함수를 임포트한 B.py 모듈에서 patch 해야 합니다.
-				단, 
-				from A import func_a 가 아니라
-				import A 
-				A.func_a 
-				로 사용한 경우에는, A를 patch 해야 합니다.
+        func_a 함수를 임포트한 B.py 모듈에서 patch 해야 합니다.
+        단, 
+        from A import func_a 가 아니라
+        import A 
+        A.func_a 
+        로 사용한 경우에는, A를 patch 해야 합니다.
         """
         mocker.patch("example.mocking_import2.some_export_func", return_value={"message": "patched"})
         from example.mocking_import2 import SomethingImport2
@@ -199,9 +199,9 @@ class TestMockingClass:
         assert some_mocked.val() == 30600
 
     def test_patch_with_direct_import(self, mocker):
-				"""
-				mocker.patch를 사용하여 import 한 SomethingImport patch
-				"""
+        """
+        mocker.patch를 사용하여 import 한 SomethingImport patch
+        """
         mocker.patch("example.mocking_import.SomethingImport")
         # patch를 걸고, SomthingImport를 import 해야 합니다.
         # 해당 모듈레벨에서 SomthingImport를 import 하고 있다면
@@ -216,40 +216,39 @@ class TestMockingClass:
     def test_patch_other_module_hook(self, mocker):
         "SomethingExport가 정의된 module이 아닌, SomethingExport를 사용하는 module에서 원하는 값이 나오도록 patch 한다. "
         
-				# mock 객체가 리턴할 값을 mock 객체로 지정합니다.
-				mocked_something_export = mocker.patch("example.mocking_import2.SomethingExport")
+        # mock 객체가 리턴할 값을 mock 객체로 지정합니다.
+        mocked_something_export = mocker.patch("example.mocking_import2.SomethingExport")
 
-				# mock 객체가 리턴할 값을 지정합니다.
+        # mock 객체가 리턴할 값을 지정합니다.
         instance = mocked_something_export.return_value
-				# mock 객체의 val method가 리턴할 값을 지정합니다.
+        # mock 객체의 val method가 리턴할 값을 지정합니다.
         instance.val.return_value = 6000
 
-				# patch 한 SomethingExport를 사용하는 SomethingImport2를 초기화합니다.
+        # patch 한 SomethingExport를 사용하는 SomethingImport2를 초기화합니다.
         something_import2 = SomethingImport2()
         assert something_import2.val() == 6600
 
-		def test_side_effect(self, mocker):
-				"""
-				단순 값의 return이 아닌, 원하는 함수 동작을 지정할 수 도 있습니다.
-				Mock(side_effect=<func>) 와 동일합니다.
-				Exception('Boom!')
-				"""
+    def test_side_effect(self, mocker):
+        """
+        단순 값의 return이 아닌, 원하는 함수 동작을 지정할 수 도 있습니다.
+        Mock(side_effect=<func>) 와 동일합니다.
+        Exception('Boom!')
+        """
         def _side_1():
-	        return "SIDE_WORKING"
-				
-				def _side_2():
-					raise Exception("Error")	
-				
-				# Something의 instance.val 이 _side_1을 call 하도록 만든다
+            return "SIDE_WORKING"
+        
+        def _side_2():
+            raise Exception("Error")	
+        
+        # Something의 instance.val 이 _side_1을 call 하도록 만든다
         mocker.patch.object(Something, "val", side_effect=_side_1)
         some = Something()
         assert some.val() == "SIDE_WORKING"
 
-				# Something의 instance.val 이 _side_2(raise Exception)을 하도록 만든다
+        # Something의 instance.val 이 _side_2(raise Exception)을 하도록 만든다
         mocker.patch.object(Something, "val", side_effect=_side_2)
-				some2 = Something()
-				# pytest raise 처리
-				with pytest.raises(Exception):
+        some2 = Something()
+        # pytest raise 처리
+        with pytest.raises(Exception):
             some2.val()
 ```
-
