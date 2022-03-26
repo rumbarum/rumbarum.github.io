@@ -10,3 +10,6 @@ RUN yarn install
 COPY . /usr/src/app
 WORKDIR /usr/src/app
 RUN  yarn build
+
+FROM scratch AS export-stage
+COPY --from=builder /usr/src/app/public /
