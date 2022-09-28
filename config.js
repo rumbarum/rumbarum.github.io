@@ -17,7 +17,11 @@ module.exports = {
     },
     {
       label: 'TIL&TEL',
-      path: '/category/til-tel/'
+      path: '/category/til-tel'
+    },
+    {
+      label: 'BOOK',
+      path: '/category/book'
     },
     {
       label: '개발세발개발?',
@@ -34,6 +38,7 @@ module.exports = {
     bio: '개발로 세상을 발전시키는 개발!',
     contacts: {
       email: 'rumbarum@gmail.com',
+      linkedIn: 'https://www.linkedin.com/in/rumbarum/',
       telegram: '#',
       twitter: '#',
       github: 'rumbarum',
