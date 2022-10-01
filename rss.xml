@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[ 개발세발개발]]></title><description><![CDATA[개발자 성장일기]]></description><link>https://rumbarum.github.io/</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 28 Sep 2022 13:22:51 GMT</lastBuildDate><item><title><![CDATA[ TIL&TEL 22.09.19~22.09.25  ]]></title><description><![CDATA[ 22.09.19~22.09.25 배운것, 씨름한것들 ]]></description><link>https://rumbarum.github.io//posts/TIL&amp;TEL_22-09-25/</link><guid isPermaLink="false">https://rumbarum.github.io//posts/TIL&amp;TEL_22-09-25/</guid><pubDate>Sun, 25 Sep 2022 01:23:45 GMT</pubDate><content:encoded>&lt;h2 id=&quot;til-today-i-learned&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#til-today-i-learned&quot; aria-label=&quot;til today i learned permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TIL( Today I Learned)&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[ 개발세발개발]]></title><description><![CDATA[개발자 성장일기]]></description><link>https://rumbarum.github.io/</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 01 Oct 2022 01:43:15 GMT</lastBuildDate><item><title><![CDATA[ TIL&TEL 22.09.19~22.09.25  ]]></title><description><![CDATA[ 22.09.19~22.09.25 배운것, 씨름한것들 ]]></description><link>https://rumbarum.github.io//posts/TIL&amp;TEL_22-09-25/</link><guid isPermaLink="false">https://rumbarum.github.io//posts/TIL&amp;TEL_22-09-25/</guid><pubDate>Sun, 25 Sep 2022 01:23:45 GMT</pubDate><content:encoded>&lt;h2 id=&quot;til-today-i-learned&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#til-today-i-learned&quot; aria-label=&quot;til today i learned permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TIL( Today I Learned)&lt;/h2&gt;
 &lt;h3 id=&quot;22-09-19-월&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#22-09-19-%EC%9B%94&quot; aria-label=&quot;22 09 19 월 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;22-09-19 월&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -2037,6 +2037,47 @@ user_discr.descriminate(3)```&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;ul&gt;
 &lt;li&gt;None&lt;/li&gt;
 &lt;/ul&gt;</content:encoded></item><item><title><![CDATA[이펙티브 엔지니어]]></title><description><![CDATA[ 22.07.10~22.07.22 ]]></description><link>https://rumbarum.github.io//posts/이펙티브 엔지니어/</link><guid isPermaLink="false">https://rumbarum.github.io//posts/이펙티브 엔지니어/</guid><pubDate>Fri, 22 Jul 2022 01:23:45 GMT</pubDate><content:encoded>&lt;h2 id=&quot;책갈피&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%B1%85%EA%B0%88%ED%94%BC&quot; aria-label=&quot;책갈피 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;책갈피&lt;/h2&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 810px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/af6a74b38ff540e65fa4393b5797bc60/d7542/%E1%84%8B%E1%85%B5%E1%84%91%E1%85%A6%E1%86%A8%E1%84%90%E1%85%B5%E1%84%87%E1%85%B3%E1%84%8B%E1%85%A6%E1%86%AB%E1%84%8C%E1%85%B5%E1%84%82%E1%85%B5%E1%84%8B%E1%85%A5%E1%84%91%E1%85%AD%E1%84%8C%E1%85%B5.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 148.33333333333334%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAeCAIAAACjcKk8AAAACXBIWXMAAAPoAAAD6AG1e1JrAAADPklEQVQ4y41VWU8TURSeln1XEESBRERWt5gYjaK+aEx88sEnXnjHYqHTdqad6XQ643SDbohakEUCSiBiDDGCIcGAZRfFAoq4L4nKv/DcmbYWabHJl8nNzPnuOec7y2CYSh8VDSQCHBp1CKH3oTPWGPy2BRmEMUXLxOGUTKWXq/6ayUSg81YymGL1mgLWMry8+tC/Uml1pWqZbIrDlATiNJApGkOyxoCC2kpGThTqEqHp6dt34+sfDtrcWToWANYSOUlNJ6rpyGRkoSRyKM45Pul69hzIaVpDODlZQwOie67X7ONt67833m9sVLd45SpdmpZB1oisS1DTCTgVmSwhHqeudPXdnXtxwnUT/Gz2HD1nZHFNm2e4Tj0eJYdHQLBM0rhDZ8KUwZw1dNL2gpUKzVOfvjxY8p/y3AaF0gljIOxwRPOcQ/Hs6JhnwlcqONIJJmayCshENsX3zC0OvV6GgkOdA0nGQNYDeaeeG3mz9mR1rZC1gtQp2tjIYj1IKEaV1VVhcULCuRQfa9gS9jDCMUfLIbsbZM83CJkkG7NgSgLKW9s/WNPXf7a1HSYkgzTGnLOSuHSn+1xr+wVvx3lvR7aeSw11WAyCaWEwLnf1XmzrhEOOnpM6LNacIXhIuNLihD5NEBHBLECWloZ4tzQYB4Tm+a/fFr//gMHA6vA4lT4iWVwapBGykhKTwRVKIktn8vpmOqbnjzR5sKu4vFEHfAAEAghtEuQKwquyOIs5WwbJSldAYzzyrw4t+cvNjngVlUvzxSbrfs5WytuLjObgMmhA01dkslZZnTAMFRZHgdEiEz10zS70Lrw86b4FdiWcbS8jFLGWQqO5IJwMp3xGgLvLzM2JYp3QJqF5dmSsbXr2sN0DEsBiAc3zaH4XhZ7xSL/ASKIkMTFVWXAkyy3Omp77tb0Dp0EwMWfpUhHkJsFkoQpLT4W6zOxwT/g8E1PVIhmkkgWXruy/7QnK3Zic6pyZh/HAFJp/9nZUsjzo2ffx88rPX0ehVAp1OBn6DwW/TXvuZoTu2YWBV34kWJCMnnV47b3BM2Iu0X83sOhwKgmn48IaU/qZHHe2FvN2rF6LbfejC10U/hJHfFg1cPgDJFB0T/8eEzIAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/af6a74b38ff540e65fa4393b5797bc60/8ac56/%E1%84%8B%E1%85%B5%E1%84%91%E1%85%A6%E1%86%A8%E1%84%90%E1%85%B5%E1%84%87%E1%85%B3%E1%84%8B%E1%85%A6%E1%86%AB%E1%84%8C%E1%85%B5%E1%84%82%E1%85%B5%E1%84%8B%E1%85%A5%E1%84%91%E1%85%AD%E1%84%8C%E1%85%B5.webp 240w,
+/static/af6a74b38ff540e65fa4393b5797bc60/d3be9/%E1%84%8B%E1%85%B5%E1%84%91%E1%85%A6%E1%86%A8%E1%84%90%E1%85%B5%E1%84%87%E1%85%B3%E1%84%8B%E1%85%A6%E1%86%AB%E1%84%8C%E1%85%B5%E1%84%82%E1%85%B5%E1%84%8B%E1%85%A5%E1%84%91%E1%85%AD%E1%84%8C%E1%85%B5.webp 480w,
+/static/af6a74b38ff540e65fa4393b5797bc60/385bc/%E1%84%8B%E1%85%B5%E1%84%91%E1%85%A6%E1%86%A8%E1%84%90%E1%85%B5%E1%84%87%E1%85%B3%E1%84%8B%E1%85%A6%E1%86%AB%E1%84%8C%E1%85%B5%E1%84%82%E1%85%B5%E1%84%8B%E1%85%A5%E1%84%91%E1%85%AD%E1%84%8C%E1%85%B5.webp 810w&quot;
+          sizes=&quot;(max-width: 810px) 100vw, 810px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/af6a74b38ff540e65fa4393b5797bc60/8ff5a/%E1%84%8B%E1%85%B5%E1%84%91%E1%85%A6%E1%86%A8%E1%84%90%E1%85%B5%E1%84%87%E1%85%B3%E1%84%8B%E1%85%A6%E1%86%AB%E1%84%8C%E1%85%B5%E1%84%82%E1%85%B5%E1%84%8B%E1%85%A5%E1%84%91%E1%85%AD%E1%84%8C%E1%85%B5.png 240w,
+/static/af6a74b38ff540e65fa4393b5797bc60/e85cb/%E1%84%8B%E1%85%B5%E1%84%91%E1%85%A6%E1%86%A8%E1%84%90%E1%85%B5%E1%84%87%E1%85%B3%E1%84%8B%E1%85%A6%E1%86%AB%E1%84%8C%E1%85%B5%E1%84%82%E1%85%B5%E1%84%8B%E1%85%A5%E1%84%91%E1%85%AD%E1%84%8C%E1%85%B5.png 480w,
+/static/af6a74b38ff540e65fa4393b5797bc60/d7542/%E1%84%8B%E1%85%B5%E1%84%91%E1%85%A6%E1%86%A8%E1%84%90%E1%85%B5%E1%84%87%E1%85%B3%E1%84%8B%E1%85%A6%E1%86%AB%E1%84%8C%E1%85%B5%E1%84%82%E1%85%B5%E1%84%8B%E1%85%A5%E1%84%91%E1%85%AD%E1%84%8C%E1%85%B5.png 810w&quot;
+          sizes=&quot;(max-width: 810px) 100vw, 810px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/af6a74b38ff540e65fa4393b5797bc60/d7542/%E1%84%8B%E1%85%B5%E1%84%91%E1%85%A6%E1%86%A8%E1%84%90%E1%85%B5%E1%84%87%E1%85%B3%E1%84%8B%E1%85%A6%E1%86%AB%E1%84%8C%E1%85%B5%E1%84%82%E1%85%B5%E1%84%8B%E1%85%A5%E1%84%91%E1%85%AD%E1%84%8C%E1%85%B5.png&quot;
+          alt=&quot;이펙티브 엔지니어&quot;
+          title=&quot;이펙티브 엔지니어&quot;
+          loading=&quot;lazy&quot;
+          style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;p.47&lt;/p&gt;
 &lt;p&gt;스피브코헨&lt;/p&gt;
 &lt;blockquote&gt;
