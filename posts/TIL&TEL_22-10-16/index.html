@@ -76,64 +76,11 @@
 <p>개발서버 환경 구성 3 | 6</p>
 <ul>
 <li>conda env</li>
-<li>
-<p>git 관리</p>
-<ul>
-<li>등록</li>
-<li>소스 댕겨오기</li>
-</ul>
-</li>
+<li>git 관리</li>
 <li>env export</li>
-<li>
-<p>port 개방</p>
-<ul>
-<li>
-<p>열려있는 포트 확인</p>
-<ul>
-<li>fuser 8000/tcp</li>
-</ul>
-</li>
-<li>
-<p>포트 확인</p>
-<ul>
-<li>sudo ufw status verbose</li>
-</ul>
-</li>
-<li>
-<p>포트 추가</p>
-<ul>
-<li>sudo ufw allow 8000/tcp</li>
-</ul>
-</li>
-</ul>
-</li>
+<li>port 개방</li>
 <li>gunicorn run</li>
-<li>
-<p>bash.sh 로 만들기</p>
-<ul>
-<li>
-<p>깃 댕겨오기 재부팅까지</p>
-<ul>
-<li>
-<p>기존 프로세스 끄기 </p>
-<ul>
-<li>lsof -w -t -iTCP:8000 | xargs kill -9</li>
-<li>ps aux |grep gunicorn | grep -v grep | awk ’{ print $2 }’ | xargs  kill -9</li>
-</ul>
-</li>
-<li>cd ~/ast_ai/isec/isec-server</li>
-<li>export PYTHONPATH=<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mi>P</mi><mi>Y</mi><mi>T</mi><mi>H</mi><mi>O</mi><mi>N</mi><mi>P</mi><mi>A</mi><mi>T</mi><mi>H</mi></mrow><mo>:</mo><mi mathvariant="normal">&quot;</mi></mrow><annotation encoding="application/x-tex">{PYTHONPATH}:&quot;</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.13889em;">P</span><span class="mord mathdefault" style="margin-right:0.22222em;">Y</span><span class="mord mathdefault" style="margin-right:0.13889em;">T</span><span class="mord mathdefault" style="margin-right:0.08125em;">H</span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span><span class="mord mathdefault" style="margin-right:0.13889em;">P</span><span class="mord mathdefault">A</span><span class="mord mathdefault" style="margin-right:0.13889em;">T</span><span class="mord mathdefault" style="margin-right:0.08125em;">H</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord">&quot;</span></span></span></span>PWD”</li>
-<li>conda activate isec</li>
-<li>git checkout develop</li>
-<li>git pull origin develop</li>
-<li>pip install -r requirements.txt</li>
-<li>export SECRET_KEY=asdfqwerzxcv</li>
-<li>gunicorn “production_app:application” —bind 0.0.0.0:8002 -w 1 —threads 1</li>
-<li>config 파일 link</li>
-</ul>
-</li>
-</ul>
-</li>
+<li>bash.sh 로 만들기</li>
 </ul>
 </li>
 </ul>
